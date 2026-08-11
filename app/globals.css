@@ -707,13 +707,14 @@ em {
   text-align: center;
 }
 
-.section-heading .eyebrow {
-  margin-bottom: 8px;
+.section-heading .eyebrow,
+.section-heading .section-subtitle {
+  display: block;
+  margin-bottom: 10px;
   color: var(--gold-dark);
-  font-family: Arial, sans-serif;
-  font-size: 11px;
+  font-size: clamp(18px, 5.2vw, 24px);
   font-weight: 900;
-  letter-spacing: .18em;
+  letter-spacing: .04em;
   line-height: 1.4;
 }
 
@@ -734,13 +735,7 @@ em {
 }
 
 .section-heading .section-subtitle {
-  display: block;
-  margin-bottom: 8px;
   color: #4d4439;
-  font-size: clamp(16px, 4.8vw, 23px);
-  font-weight: 800;
-  letter-spacing: .04em;
-  line-height: 1.4;
 }
 
 .section-heading .open-one-line {
@@ -753,6 +748,7 @@ em {
 
 .section-heading.light h2,
 .section-heading.light .eyebrow { color: #fff; }
+.section-heading.light .section-subtitle { color: #fff; }
 .section-heading.light em { color: var(--gold-light); }
 
 .heading-rule {

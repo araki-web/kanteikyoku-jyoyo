@@ -243,7 +243,7 @@ function Hero() {
       <section className="open-section section-pad" id="open">
         <div className="shell open-grid">
           <div className="open-copy">
-            <SectionHeading eyebrow="KYOTO FIRST STORE"><small className="section-subtitle">＼ 京都に初登場！ ／</small><b className="open-one-line">全国展開の<em>「質屋かんてい局」</em>が</b>城陽市にOPEN！</SectionHeading>
+            <SectionHeading><small className="section-subtitle">＼ 京都に初登場！ ／</small><b className="open-one-line">全国展開の<em>「質屋かんてい局」</em>が</b>城陽市にOPEN！</SectionHeading>
           </div>
           <figure className="store-photo gold-frame"><img src={asset.store} alt="質屋かんてい局 城陽店の店舗外観" width="1448" height="1086" loading="lazy" /></figure>
           <div className="open-date"><span>質屋かんてい局 城陽店</span><strong>2026.12.1 <small>TUE</small></strong><b>GRAND OPEN予定！</b></div>
@@ -266,7 +266,7 @@ function Hero() {
 
       <section className="steps-section section-pad">
         <div className="shell">
-          <SectionHeading eyebrow="VISIT PURCHASE"><small className="section-subtitle">＼ お店まで行かなくてOK！ ／</small><em>自宅にいるだけで</em><br />ブランド品が売れる<br /><span>楽々 出張買取</span></SectionHeading>
+          <SectionHeading><small className="section-subtitle">＼ お店まで行かなくてOK！ ／</small><em>自宅にいるだけで</em><br />ブランド品が売れる<br /><span>楽々 出張買取</span></SectionHeading>
           <div className="steps-grid">
             {[
               ["01", "お申込み", "電話またはLINEから出張買取をご予約ください。", asset.step01],
@@ -312,7 +312,7 @@ function Hero() {
             <p className="condition-bubble">捨てる前に<br />ご相談ください！</p>
           </div>
           <div>
-            <SectionHeading eyebrow="DON'T GIVE UP">こんなお品物も<br /><em>諦める前に</em><br />ご相談ください！</SectionHeading>
+            <SectionHeading>こんなお品物も<br /><em>諦める前に</em><br />ご相談ください！</SectionHeading>
             <div className="concern-grid">{concerns.map((concern) => <span key={concern}>✓ {concern}</span>)}</div>
             <div className="condition-copy">
               <img src={asset.femaleStaff} alt="査定についてご案内する女性スタッフ" width="1536" height="1024" loading="lazy" />
@@ -346,7 +346,7 @@ function Hero() {
 
       <section className="reasons-section section-pad">
         <div className="shell">
-          <SectionHeading eyebrow="WHY HIGH PRICE?" light>どうして高く買えるの？<br />かんてい局城陽店<br /><em>高価買取 3つの理由</em></SectionHeading>
+          <SectionHeading light><small className="section-subtitle">＼ どうして高く買えるの？ ／</small>かんてい局城陽店<br /><em>高価買取 3つの理由</em></SectionHeading>
           <div className="reasons-grid">
             <article className="reason-card"><span>REASON <b>01</b></span><h3>全国チェーンの<br />査定・販売ノウハウ</h3><p>全国展開するかんてい局のネットワークとノウハウを活用。幅広い商品の価値を確認しながら査定します。</p></article>
             <article className="reason-card liberty"><span>REASON <b>02</b></span><h3>京都で育った<br />リバティグループが運営</h3><div className="sales"><small>グループ売上</small><strong>約600億円</strong><b>規模</b></div><p>自動車販売を中心に京都から成長してきた株式会社リバティが運営します。</p></article>
@@ -372,7 +372,7 @@ function Hero() {
 
       <section className="consultation-section section-pad">
         <div className="shell">
-          <SectionHeading eyebrow="CONSULTATION EXAMPLES">こんなご相談を<br /><em>お待ちしています</em></SectionHeading>
+          <SectionHeading>こんなご相談を<br /><em>お待ちしています</em></SectionHeading>
           <p className="example-disclaimer">※以下は実在の口コミではなく、ご相談イメージです</p>
           <div className="consultation-scroll">
             {consultationExamples.map((item, index) => (
@@ -395,7 +395,7 @@ function Hero() {
       <section className="staff-section section-pad">
         <div className="shell staff-grid">
           <div className="staff-copy">
-            <SectionHeading eyebrow="OUR STAFF">私たちが<br /><em>お伺いします！</em></SectionHeading>
+            <SectionHeading>私たちが<br /><em>お伺いします！</em></SectionHeading>
             <div className="staff-name"><small>店舗責任者</small><strong>木村 航平</strong></div>
             <p>ブランド品を売るのが初めてという方にも、できるだけ分かりやすく丁寧にご説明します。売れるかどうか分からないお品物も、まずはお気軽にご相談ください。</p>
           </div>
@@ -406,7 +406,7 @@ function Hero() {
 
       <section className="area-section section-pad">
         <div className="shell area-content">
-          <SectionHeading eyebrow="VISIT AREA">城陽市を中心に<br /><em>京都南部へ出張！</em></SectionHeading>
+          <SectionHeading>城陽市を中心に<br /><em>京都南部へ出張！</em></SectionHeading>
           <div className="area-list">{areas.map((area) => <span key={area}>{area}</span>)}</div>
           <p className="area-note">上記以外のエリアも<br /><strong>お気軽にお問い合わせください。</strong><br /><small>※正式な営業対象地域に差し替えてください</small></p>
         </div>
@@ -423,7 +423,7 @@ function Hero() {
 
       <section className="store-section section-pad" id="store-info">
         <div className="shell">
-          <SectionHeading eyebrow="STORE INFORMATION">質屋かんてい局<br /><em>城陽店</em></SectionHeading>
+          <SectionHeading>質屋かんてい局<br /><em>城陽店</em></SectionHeading>
           <div className="store-grid">
             <figure><img src={asset.store} alt="質屋かんてい局 城陽店 店舗外観" width="1448" height="1086" loading="lazy" /><figcaption>2026年12月1日（火）<b>GRAND OPEN予定！</b></figcaption></figure>
             <dl className="store-details">
@@ -436,7 +436,7 @@ function Hero() {
 
       <section className="faq-section section-pad">
         <div className="shell faq-shell">
-          <SectionHeading eyebrow="FAQ">よくあるご質問</SectionHeading>
+          <SectionHeading>よくあるご質問</SectionHeading>
           <div className="faq-list">
             {faqs.map(([question, answer]) => (
               <details key={question}><summary><span>Q</span><b>{question}</b><i aria-hidden="true">＋</i></summary><div className="faq-answer"><span>A</span><p>{answer}</p></div></details>

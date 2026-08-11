@@ -20,7 +20,7 @@ const asset = {
   step03: "/images/step-03.webp",
   homeItems: "/images/home-items.webp",
   worriedWoman: "/images/worried-woman.png",
-  femaleStaffSurprised: "/images/female-staff-surprised.png",
+  categoryWoman: "/images/category-woman.png",
 } as const;
 
 const contact = {
@@ -298,7 +298,7 @@ function Hero() {
             ))}
           </div>
           <div className="category-note">
-            <img src={asset.femaleStaffSurprised} alt="買取相談をご案内する女性スタッフ" width="1536" height="1024" loading="lazy" />
+            <img src={asset.categoryWoman} alt="買取できる可能性をご案内する女性" width="1122" height="1402" loading="lazy" />
             <div>
               <p>ここに載っていないお品物でも、</p>
               <strong>買取できる<br />可能性があります！</strong>

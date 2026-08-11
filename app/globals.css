@@ -426,12 +426,15 @@ em {
 
 .hero-campaign .campaign-ribbon {
   top: 14px;
-  width: calc(100% - 28px);
-  padding: 9px 10px;
+  width: calc(100% - 16px);
+  padding: 10px 28px;
   background: #c90813;
   box-shadow: none;
-  font-size: 16px;
-  transform: translateX(-50%) rotate(-1deg);
+  clip-path: polygon(0 0, 100% 0, 94% 50%, 100% 100%, 0 100%, 6% 50%);
+  font-size: 18px;
+  font-weight: 1000;
+  letter-spacing: .04em;
+  transform: translateX(-50%);
 }
 
 .hero-campaign .campaign-ribbon::before,
@@ -444,10 +447,10 @@ em {
   gap: 4px;
 }
 
-.hero-campaign .percent-line { height: 142px; }
-.hero-campaign .percent-number { font-size: 150px; letter-spacing: -.01em; }
-.hero-campaign .percent-unit { margin: 18px 0 0 -3px; }
-.hero-campaign .percent-unit b { color: #d4a916; font-size: 50px; }
+.hero-campaign .percent-line { height: 154px; align-items: flex-end; line-height: 1; }
+.hero-campaign .percent-number { font-size: 150px; letter-spacing: -.01em; line-height: 1; }
+.hero-campaign .percent-unit { margin: 0 0 0 -3px; transform: translateY(-13px); }
+.hero-campaign .percent-unit b { color: #d4a916; font-size: 52px; font-weight: 1000; }
 
 .offer-copy {
   display: grid;
@@ -459,9 +462,10 @@ em {
 }
 
 .offer-copy span { font-size: 25px; white-space: nowrap; }
-.offer-copy strong { margin-top: 12px; font-size: 65px; letter-spacing: -.04em; }
+.offer-copy strong { margin-top: 12px; font-size: 78px; font-weight: 1000; letter-spacing: -.05em; }
 
 .hero-campaign .deadline {
+  gap: 1px;
   border: 0;
   color: #111;
   background: transparent;
@@ -476,7 +480,7 @@ em {
   font-size: 22px;
 }
 
-.hero-campaign .deadline strong { color: var(--red); font-size: 36px; }
+.hero-campaign .deadline strong { margin-right: -2px; color: var(--red); font-size: 36px; }
 
 .percent-unit {
   display: grid;

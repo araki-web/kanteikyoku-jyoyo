@@ -19,6 +19,7 @@ const asset = {
   step02: "/images/step-02.webp",
   step03: "/images/step-03.webp",
   homeItems: "/images/home-items.webp",
+  worriedWoman: "/images/worried-woman.png",
   femaleStaffSurprised: "/images/female-staff-surprised.png",
 } as const;
 
@@ -313,16 +314,17 @@ function Hero() {
           <div>
             <SectionHeading>こんなお品物も<br /><em>諦める前に</em><br />ご相談ください！</SectionHeading>
             <div className="concern-grid">{concerns.map((concern) => <span key={concern}>✓ {concern}</span>)}</div>
-            <div className="condition-photo-wrap">
-              <figure className="condition-home-photo">
-                <img src={asset.homeItems} alt="ご自宅にあるバッグ、財布、時計、ジュエリーなどのお品物" width="1446" height="1087" loading="lazy" />
-              </figure>
+            <div className="condition-worry-visual">
+              <img className="condition-worry-person" src={asset.worriedWoman} alt="お品物が売れるか悩んでいる女性" width="1024" height="1536" loading="lazy" />
               <div className="condition-questions" aria-label="よくあるご相談">
                 <span>ボロボロだけど大丈夫？</span>
                 <span>他のお店で断られたんだけど…</span>
                 <span>こんな状態でも売れる？</span>
               </div>
             </div>
+            <figure className="condition-home-photo">
+              <img src={asset.homeItems} alt="ご自宅にあるバッグ、財布、時計、ジュエリーなどのお品物" width="1446" height="1087" loading="lazy" />
+            </figure>
             <div className="condition-message">
               <p>そんなときこそ、</p>
               <strong>捨てる前にご相談ください</strong>

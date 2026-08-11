@@ -1212,6 +1212,17 @@ em {
 .reason-card > span b { font-size: 24px; }
 .reason-card h3 { margin: 15px 0 12px; font-size: 23px; line-height: 1.45; }
 .reason-card p { color: #4d4439; font-size: 13px; }
+.reason-card p strong { color: var(--red); }
+.reason-brand-logo,
+.reason-liberty-logo { width: 100%; margin: 5px 0 16px; padding: 9px; background: #fff; object-fit: contain; }
+.reason-brand-logo { height: 72px; }
+.reason-liberty-logo { height: 66px; }
+.reason-services { display: grid; grid-template-columns: repeat(3, 1fr); gap: 5px; margin-block: 16px; }
+.reason-services span { display: grid; min-height: 65px; place-content: center; border: 1px solid var(--gold-dark); color: var(--gold-dark); font: 700 8px/1.2 Arial, sans-serif; letter-spacing: .08em; text-align: center; }
+.reason-services b { display: block; margin-bottom: 5px; color: var(--ink); font-family: "Yu Gothic", sans-serif; font-size: 13px; letter-spacing: 0; }
+.reason-card h3 em { color: var(--red); }
+.reason-store { overflow: hidden; margin-bottom: 14px; border: 3px solid #fff; box-shadow: 0 8px 18px rgba(62,40,18,.14); }
+.reason-store img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
 .reason-card.liberty { color: #1a1510; background: linear-gradient(145deg, #fffdf7, #ead8aa); }
 .reason-card.liberty > span { color: var(--red); }
 .reason-card.liberty p { color: #4d4439; }

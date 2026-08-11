@@ -334,50 +334,27 @@ function Hero() {
         </div>
       </section>
 
-      <section className="about-section section-pad">
-        <div className="shell about-grid">
-          <div className="about-title">
-            <p>そもそも</p>
-            <h2>「かんてい局」って？</h2>
-            <img src={asset.logo} alt="質屋かんてい局" width="404" height="90" loading="lazy" />
-          </div>
-          <div className="about-copy">
-            <p>全国展開する、<strong>質屋・リユースショップのチェーン</strong>です。ブランドバッグ、時計、ジュエリー、貴金属など幅広いお品物を取り扱います。</p>
-            <div className="service-grid"><span><b>買取</b>BUY</span><span><b>販売</b>SELL</span><span><b>質預かり</b>PAWN</span></div>
-            <div className="network-number"><span>全国</span><strong>約〇〇</strong><b>店舗</b><small>※正式な店舗数に差し替え</small></div>
-          </div>
-        </div>
-      </section>
-
-      <section className="pawn-section section-pad">
-        <div className="shell pawn-grid">
-          <div className="pawn-question"><span>「質屋って、</span><strong>ちょっと入りづらそう…」</strong><b>そんなイメージ、<br />ありませんか？</b></div>
-          <div className="pawn-copy"><p>質屋はブランド品や時計、ジュエリーなど、価値のあるお品物を取り扱う専門店です。</p><p>かんてい局では、初めての方にも分かりやすく丁寧な対応を心がけています。</p><strong>「売れるか分からない」<br />「まず査定してほしい」</strong><p>という方もお気軽にご相談ください。</p></div>
-        </div>
-      </section>
-
       <section className="reasons-section section-pad">
         <div className="shell">
           <SectionHeading light><small className="section-subtitle">＼ どうして高く買えるの？ ／</small>かんてい局城陽店<br /><em>高価買取 3つの理由</em></SectionHeading>
           <div className="reasons-grid">
-            <article className="reason-card"><span>REASON <b>01</b></span><h3>全国チェーンの<br />査定・販売ノウハウ</h3><p>全国展開するかんてい局のネットワークとノウハウを活用。幅広い商品の価値を確認しながら査定します。</p></article>
-            <article className="reason-card liberty"><span>REASON <b>02</b></span><h3>京都で育った<br />リバティグループが運営</h3><div className="sales"><small>グループ売上</small><strong>約600億円</strong><b>規模</b></div><p>自動車販売を中心に京都から成長してきた株式会社リバティが運営します。</p></article>
+            <article className="reason-card reason-brand">
+              <span>REASON <b>01</b></span>
+              <h3>そもそも<br />「かんてい局」って？</h3>
+              <img className="reason-brand-logo" src={asset.logo} alt="質屋かんてい局" width="404" height="90" loading="lazy" />
+              <p>全国展開する、<strong>質屋・リユースショップのチェーン</strong>です。ブランドバッグ、時計、ジュエリー、貴金属など幅広いお品物を取り扱います。</p>
+              <div className="reason-services"><span><b>買取</b>BUY</span><span><b>販売</b>SELL</span><span><b>質預かり</b>PAWN</span></div>
+              <p>全国チェーンの査定・販売ノウハウを活かし、一点ずつ価値を確認しながら査定します。</p>
+            </article>
+            <article className="reason-card liberty">
+              <span>REASON <b>02</b></span>
+              <h3>運営しているのは<br /><em>株式会社リバティ</em>です。</h3>
+              <img className="reason-liberty-logo" src={asset.libertyLogo} alt="株式会社リバティ" width="918" height="264" loading="lazy" />
+              <figure className="reason-store"><img src={asset.store} alt="株式会社リバティが運営する城陽店の外観" width="1448" height="1086" loading="lazy" /></figure>
+              <div className="sales"><small>グループ売上</small><strong>約600億円</strong><b>規模</b></div>
+              <p>城陽店を運営するのは、京都で自動車販売をスタートした株式会社リバティ。高額商品を扱ってきた企業として、ブランド品の買取でも安心してご相談いただける店舗を目指します。</p>
+            </article>
             <article className="reason-card campaign"><span>REASON <b>03</b></span><h3>そして今は…<br /><em>OPEN前だから<br />買取強化中！</em></h3><p>12月1日のOPENに向けて、現在買取を強化中。</p><CampaignLockup small /></article>
-          </div>
-        </div>
-      </section>
-
-      <section className="liberty-section section-pad">
-        <div className="shell liberty-grid">
-          <div className="liberty-visual">
-            <div className="liberty-logo-wrap"><img src={asset.libertyLogo} alt="株式会社リバティ" width="918" height="264" loading="lazy" /></div>
-            <figure><img src={asset.store} alt="株式会社リバティが運営する城陽店の外観" width="1448" height="1086" loading="lazy" /></figure>
-          </div>
-          <div className="liberty-copy">
-            <p className="anxiety">「知らない会社を<br />家に呼ぶのは少し不安…」<br /><strong>そんな方へ。</strong></p>
-            <h2>運営しているのは<br /><em>株式会社リバティ</em>です。</h2>
-            <div className="yes-liberty"><span>「あの車屋さん？」</span><strong>はい。そのリバティです。</strong></div>
-            <p>城陽店を運営するのは、京都で自動車販売をスタートした株式会社リバティ。高額商品を扱ってきた企業として、ブランド品の買取でも安心してご相談いただける店舗を目指します。</p>
           </div>
         </div>
       </section>

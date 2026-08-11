@@ -219,7 +219,7 @@ em {
 }
 
 .hero-topline span {
-  font-size: 10px;
+  font-size: 14px;
 }
 
 .hero-topline strong {
@@ -302,21 +302,39 @@ em {
 }
 
 .hero h1 {
-  margin: 4px 0 4px;
+  margin: 12px 0 4px;
   line-height: 1;
   text-shadow: 0 4px 0 rgba(112,0,7,.35);
 }
 
 .hero h1 span {
   display: block;
-  margin-bottom: 2px;
+  margin-bottom: 8px;
   font-size: clamp(20px, 6.4vw, 32px);
 }
 
-.hero h1 strong {
-  display: block;
-  font-size: clamp(42px, 13.7vw, 72px);
-  letter-spacing: -.06em;
+.hero-service {
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+  width: 100%;
+  letter-spacing: 0;
+}
+
+.hero-service i {
+  display: grid;
+  flex: 1 1 0;
+  max-width: 82px;
+  min-height: 96px;
+  place-items: center;
+  color: #bd000c;
+  background: #fff;
+  box-shadow: 0 7px 0 rgba(117,0,7,.32);
+  font-size: clamp(64px, 20vw, 94px);
+  font-style: normal;
+  font-weight: 1000;
+  line-height: 1;
+  text-shadow: none;
 }
 
 .campaign-lockup {
@@ -398,7 +416,67 @@ em {
   letter-spacing: -.02em;
 }
 
-.hero-copy > .campaign-lockup { margin-top: 28px; }
+.hero-copy > .campaign-lockup { margin-top: 42px; }
+
+.hero-campaign {
+  width: min(100%, 358px);
+  padding: 48px 12px 14px;
+  border-radius: 28px;
+}
+
+.hero-campaign .campaign-ribbon {
+  top: 14px;
+  width: calc(100% - 28px);
+  padding: 9px 10px;
+  background: #c90813;
+  box-shadow: none;
+  font-size: 16px;
+  transform: translateX(-50%) rotate(-1deg);
+}
+
+.hero-campaign .campaign-ribbon::before,
+.hero-campaign .campaign-ribbon::after { display: none; }
+
+.hero-offer {
+  display: grid;
+  grid-template-columns: 1.45fr 1fr;
+  align-items: center;
+  gap: 4px;
+}
+
+.hero-campaign .percent-line { height: 142px; }
+.hero-campaign .percent-number { font-size: 150px; letter-spacing: -.01em; }
+.hero-campaign .percent-unit { margin: 18px 0 0 -3px; }
+.hero-campaign .percent-unit b { color: #d4a916; font-size: 50px; }
+
+.offer-copy {
+  display: grid;
+  align-content: center;
+  color: var(--red);
+  font-weight: 1000;
+  line-height: .9;
+  text-align: left;
+}
+
+.offer-copy span { font-size: 25px; white-space: nowrap; }
+.offer-copy strong { margin-top: 12px; font-size: 65px; letter-spacing: -.04em; }
+
+.hero-campaign .deadline {
+  border: 0;
+  color: #111;
+  background: transparent;
+  font-size: 22px;
+  letter-spacing: -.03em;
+}
+
+.hero-campaign .deadline span {
+  padding: 0;
+  color: #111;
+  background: transparent;
+  font-size: 22px;
+}
+
+.hero-campaign .deadline strong { color: var(--red); font-size: 36px; }
 
 .percent-unit {
   display: grid;

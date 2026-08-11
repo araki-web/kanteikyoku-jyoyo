@@ -146,7 +146,23 @@ function SectionHeading({
   );
 }
 
-function CampaignLockup({ small = false }: { small?: boolean }) {
+function CampaignLockup({ small = false, hero = false }: { small?: boolean; hero?: boolean }) {
+  if (hero) {
+    return (
+      <div className="campaign-lockup hero-campaign">
+        <div className="campaign-ribbon">OPENに向けて買取強化中！</div>
+        <div className="hero-offer">
+          <div className="percent-line">
+            <span className="percent-number">10</span>
+            <span className="percent-unit"><b>%</b></span>
+          </div>
+          <div className="offer-copy"><span>買取価格</span><strong>UP</strong></div>
+        </div>
+        <div className="deadline"><span>OPEN前限定</span><strong>11/30</strong>まで</div>
+      </div>
+    );
+  }
+
   return (
     <div className={`campaign-lockup${small ? " small" : ""}`}>
       <div className="campaign-ribbon">OPEN前限定</div>
@@ -198,9 +214,13 @@ function Hero() {
             <p><b>2026.12.1 TUE</b> GRAND OPEN予定</p>
           </div>
           <div className="hero-copy">
-            <p className="hero-kicker">オープンに向けて<span>買取強化中！</span></p>
-            <h1 id="hero-title"><span>ご自宅で売れる</span><strong>出張買取</strong></h1>
-            <CampaignLockup />
+            <h1 id="hero-title">
+              <span>ご自宅で売れる</span>
+              <strong className="hero-service" aria-label="出張買取">
+                {["出", "張", "買", "取"].map((character) => <i aria-hidden="true" key={character}>{character}</i>)}
+              </strong>
+            </h1>
+            <CampaignLockup hero />
           </div>
           <div className="hero-products" aria-label="主な買取品目">
             <figure className="hero-product bag"><img src={asset.bag01} alt="ブランドバッグのイメージ" width="1024" height="1024" /></figure>

@@ -266,26 +266,6 @@ function Hero() {
         <div className="campaign-terms">※キャンペーンの対象商品・上限金額・対象外品・その他適用条件を入力</div>
       </section>
 
-      <section className="steps-section section-pad">
-        <div className="shell">
-          <SectionHeading><small className="section-subtitle">＼ お店まで行かなくてOK！ ／</small><em>自宅にいるだけで</em><br />ブランド品が売れる<br /><span>楽々 出張買取</span></SectionHeading>
-          <div className="steps-grid">
-            {[
-              ["01", "お申込み", "電話またはLINEから出張買取をご予約ください。", asset.step01],
-              ["02", "ご自宅で査定", "かんてい局スタッフがご自宅までお伺い。ご希望の場所でお品物を査定します。", asset.step02],
-              ["03", "ご成約", "査定内容をご確認いただき、ご納得いただけましたらご成約。", asset.step03],
-            ].map(([num, title, text, image]) => (
-              <article className="step-card" key={num}>
-                <div className="step-number">STEP <b>{num}</b></div>
-                <figure className="step-photo"><img src={image} alt={`${title}のイメージ`} width="1448" height="1086" loading="lazy" /></figure>
-                <h3>{title}</h3><p>{text}</p>
-              </article>
-            ))}
-          </div>
-          <ReservationBlock />
-        </div>
-      </section>
-
       <section className="categories-section section-pad">
         <div className="shell">
           <SectionHeading eyebrow="＼ なんでも高価買取！ ／">こんなお品物、<br /><em>眠っていませんか？</em></SectionHeading>
@@ -331,6 +311,26 @@ function Hero() {
               <span>査定可能かどうか、スタッフが丁寧に確認いたします。</span>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="steps-section section-pad">
+        <div className="shell">
+          <SectionHeading><small className="section-subtitle">＼ お店まで行かなくてOK！ ／</small><em>自宅にいるだけで</em><br />ブランド品が売れる<br /><span>楽々 出張買取</span></SectionHeading>
+          <div className="steps-grid">
+            {[
+              ["01", "お申込み", "電話またはLINEから出張買取をご予約ください。", asset.step01],
+              ["02", "ご自宅で査定", "かんてい局スタッフがご自宅までお伺い。ご希望の場所でお品物を査定します。", asset.step02],
+              ["03", "ご成約", "査定内容をご確認いただき、ご納得いただけましたらご成約。", asset.step03],
+            ].map(([num, title, text, image]) => (
+              <article className="step-card" key={num}>
+                <div className="step-number">STEP <b>{num}</b></div>
+                <figure className="step-photo"><img src={image} alt={`${title}のイメージ`} width="1448" height="1086" loading="lazy" /></figure>
+                <h3>{title}</h3><p>{text}</p>
+              </article>
+            ))}
+          </div>
+          <ReservationBlock />
         </div>
       </section>
 

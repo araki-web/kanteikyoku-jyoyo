@@ -313,8 +313,10 @@ function Hero() {
         <div className="shell condition-grid">
           <div>
             <SectionHeading>こんなお品物も<br /><em>諦める前に</em><br />ご相談ください！</SectionHeading>
-            <div className="concern-grid">{concerns.map((concern) => <span key={concern}>✓ {concern}</span>)}</div>
-            <div className="condition-worry-visual">
+            <div className="condition-mix-visual">
+              <figure className="condition-mix-items">
+                <img src={asset.homeItems} alt="ご自宅にあるバッグ、財布、時計、ジュエリーなどのお品物" width="1446" height="1087" loading="lazy" />
+              </figure>
               <img className="condition-worry-person" src={asset.worriedWoman} alt="お品物が売れるか悩んでいる女性" width="1024" height="1536" loading="lazy" />
               <div className="condition-questions" aria-label="よくあるご相談">
                 <span>ボロボロだけど大丈夫？</span>
@@ -322,9 +324,7 @@ function Hero() {
                 <span>こんな状態でも売れる？</span>
               </div>
             </div>
-            <figure className="condition-home-photo">
-              <img src={asset.homeItems} alt="ご自宅にあるバッグ、財布、時計、ジュエリーなどのお品物" width="1446" height="1087" loading="lazy" />
-            </figure>
+            <div className="concern-grid">{concerns.map((concern) => <span key={concern}>✓ {concern}</span>)}</div>
             <div className="condition-message">
               <p>そんなときこそ、</p>
               <strong>捨てる前にご相談ください</strong>

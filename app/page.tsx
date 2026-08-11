@@ -11,6 +11,10 @@ const asset = {
   jewelry01: "/images/jewelry-01.jpg",
   jewelry02: "/images/jewelry-02.jpg",
   gold: "/images/gold.jpg",
+  wallet: "/images/wallet.webp",
+  diamond: "/images/diamond.webp",
+  platinum: "/images/platinum.webp",
+  preciousMetals: "/images/precious-metals.webp",
 } as const;
 
 const contact = {
@@ -22,13 +26,13 @@ const contact = {
 
 const categories = [
   { name: "ブランドバッグ", image: asset.bag01 },
-  { name: "ブランド財布・小物", image: asset.bag02 },
+  { name: "ブランド財布・小物", image: asset.wallet, cutout: true },
   { name: "高級時計", image: asset.watch },
   { name: "ジュエリー", image: asset.jewelry01 },
-  { name: "ダイヤモンド", image: asset.jewelry02 },
+  { name: "ダイヤモンド", image: asset.diamond, cutout: true },
   { name: "金", image: asset.gold },
-  { name: "プラチナ", image: asset.jewelry02 },
-  { name: "その他貴金属", image: asset.gold },
+  { name: "プラチナ", image: asset.platinum, cutout: true },
+  { name: "その他貴金属", image: asset.preciousMetals, cutout: true },
 ] as const;
 
 const concerns = [
@@ -262,7 +266,7 @@ function Hero() {
           <SectionHeading eyebrow="＼ なんでも高価買取！ ／">こんなお品物、<br /><em>眠っていませんか？</em></SectionHeading>
           <div className="category-grid">
             {categories.map((category) => (
-              <article className="category-card" key={category.name}>
+              <article className={`category-card${"cutout" in category ? " category-card--cutout" : ""}`} key={category.name}>
                 <img src={category.image} alt={`${category.name}のイメージ`} width="1024" height="1024" loading="lazy" />
                 <h3>{category.name}</h3>
               </article>

@@ -853,6 +853,13 @@ em {
   transition: transform .35s ease;
 }
 
+.category-card--cutout { background: #fff; }
+
+.category-card--cutout img {
+  padding: 7px;
+  object-fit: contain;
+}
+
 .category-card:hover img { transform: scale(1.035); }
 
 .category-card h3 {

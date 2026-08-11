@@ -18,6 +18,7 @@ const asset = {
   step01: "/images/step-01.webp",
   step02: "/images/step-02.webp",
   step03: "/images/step-03.webp",
+  femaleStaff: "/images/female-staff.png",
 } as const;
 
 const contact = {
@@ -294,18 +295,29 @@ function Hero() {
               </article>
             ))}
           </div>
-          <div className="category-note"><p>ここに載っていないお品物でも、<br />買取できる可能性があります。</p><strong>「これって売れる？」<br />というお問い合わせだけでもOK！</strong></div>
+          <div className="category-note">
+            <img src={asset.femaleStaff} alt="ご相談を承る女性スタッフ" width="1536" height="1024" loading="lazy" />
+            <div><p>ここに載っていないお品物でも、<br />買取できる可能性があります。</p><strong>「これって売れる？」<br />というお問い合わせだけでもOK！</strong></div>
+          </div>
           <a className="single-line-cta" href={contact.lineHref}><Icon>●</Icon><span>LINEで写真を送って相談</span><b>›</b></a>
         </div>
       </section>
 
       <section className="condition-section section-pad">
         <div className="shell condition-grid">
-          <figure className="condition-photo"><img src={asset.bag02} alt="ご相談いただけるバッグのイメージ" width="1024" height="1024" loading="lazy" /><span>捨てる前に！</span></figure>
+          <div className="condition-products" aria-label="ご相談いただけるバッグ、時計、ジュエリーのイメージ">
+            <figure><img src={asset.bag02} alt="ブランドバッグ" width="1024" height="1024" loading="lazy" /></figure>
+            <figure><img src={asset.watch} alt="高級時計" width="683" height="1024" loading="lazy" /></figure>
+            <figure><img src={asset.jewelry01} alt="ジュエリー" width="1024" height="1024" loading="lazy" /></figure>
+            <p className="condition-bubble">捨てる前に<br />ご相談ください！</p>
+          </div>
           <div>
             <SectionHeading eyebrow="DON'T GIVE UP">こんなお品物も<br /><em>諦める前に</em><br />ご相談ください！</SectionHeading>
             <div className="concern-grid">{concerns.map((concern) => <span key={concern}>✓ {concern}</span>)}</div>
-            <div className="condition-copy"><b>「こんな状態でも売れる？」</b><p>そんな時こそ、捨てる前に一度ご相談ください。査定可能かどうか、スタッフが丁寧に確認いたします。</p></div>
+            <div className="condition-copy">
+              <img src={asset.femaleStaff} alt="査定についてご案内する女性スタッフ" width="1536" height="1024" loading="lazy" />
+              <div><b>「こんな状態でも売れる？」</b><p>そんな時こそ、捨てる前に一度ご相談ください。査定可能かどうか、スタッフが丁寧に確認いたします。</p></div>
+            </div>
           </div>
         </div>
       </section>

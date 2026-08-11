@@ -44,23 +44,28 @@ const concerns = [
 
 const consultationExamples = [
   {
-    area: "城陽市・30代女性イメージ",
+    person: "女性",
+    kind: "female",
     text: "昔使っていたブランドバッグ。クローゼットに眠ったままなので、この機会に一度見てほしい。",
   },
   {
-    area: "宇治市・50代男性イメージ",
+    person: "男性",
+    kind: "male",
     text: "使わなくなった腕時計。店まで持って行くのが面倒なので、自宅まで来てもらえると助かる。",
   },
   {
-    area: "八幡市・50代女性イメージ",
+    person: "女性",
+    kind: "female",
     text: "母から譲り受けたジュエリー。価値が分からないので、まず査定してほしい。",
   },
   {
-    area: "久御山町・40代女性イメージ",
+    person: "女性",
+    kind: "female",
     text: "金かどうか分からないアクセサリー。売れるものなのか確認したい。",
   },
   {
-    area: "京田辺市・40代男性イメージ",
+    person: "男性",
+    kind: "male",
     text: "箱をなくしてしまった時計でも査定できるか知りたい。",
   },
 ] as const;
@@ -215,7 +220,7 @@ function Hero() {
           </div>
           <figure className="store-photo gold-frame"><img src={asset.store} alt="質屋かんてい局 城陽店の店舗外観" width="1448" height="1086" loading="lazy" /></figure>
         </div>
-        <a className="why-link" href="#why"><span>でも、なぜOPEN前から<br />買取しているの？</span><b>その理由はこちら</b></a>
+        <a className="why-link" href="#why"><span>なぜOPEN前から<br />買取しているの？</span><b>その理由はこちら</b></a>
       </section>
 
       <section className="why-section section-pad" id="why">
@@ -333,7 +338,16 @@ function Hero() {
           <p className="example-disclaimer">※以下は実在の口コミではなく、ご相談イメージです</p>
           <div className="consultation-scroll">
             {consultationExamples.map((item, index) => (
-              <article className="consultation-card" key={item.area}><span>ご相談イメージ {String(index + 1).padStart(2, "0")}</span><h3>{item.area}</h3><p>{item.text}</p></article>
+              <article className="consultation-card" key={item.text}>
+                <div className="consultation-person" aria-label={`${item.person}のご相談イメージ`}>
+                  <span className={`person-icon ${item.kind}`} aria-hidden="true"><i /></span>
+                  <b>{item.person}</b>
+                </div>
+                <div className="consultation-bubble">
+                  <span>ご相談イメージ {String(index + 1).padStart(2, "0")}</span>
+                  <p>{item.text}</p>
+                </div>
+              </article>
             ))}
           </div>
           <p className="swipe-hint">← 横にスワイプしてご覧ください →</p>
@@ -344,7 +358,7 @@ function Hero() {
         <div className="shell staff-grid">
           <div className="staff-copy">
             <SectionHeading eyebrow="OUR STAFF">私たちが<br /><em>お伺いします！</em></SectionHeading>
-            <div className="staff-name"><small>出張買取スタッフ</small><strong>〇〇 〇〇</strong></div>
+            <div className="staff-name"><small>店舗責任者</small><strong>木村 航平</strong></div>
             <p>ブランド品を売るのが初めてという方にも、できるだけ分かりやすく丁寧にご説明します。売れるかどうか分からないお品物も、まずはお気軽にご相談ください。</p>
           </div>
           <div className="staff-visual"><figure><img src={asset.staff} alt="出張買取を担当するスタッフ" width="1448" height="1086" loading="lazy" /></figure><span className="bubble b1">ボロボロだけど<br />大丈夫？</span><span className="bubble b2">他のお店で<br />断られたんだけど…</span><span className="bubble b3">こんなものも<br />売れる？</span></div>
@@ -353,16 +367,10 @@ function Hero() {
       </section>
 
       <section className="area-section section-pad">
-        <div className="shell area-grid">
-          <div>
-            <SectionHeading eyebrow="VISIT AREA">城陽市を中心に<br /><em>京都南部へ出張！</em></SectionHeading>
-            <div className="area-list">{areas.map((area) => <span key={area}>{area}</span>)}</div>
-            <p className="area-note">上記以外のエリアも<br /><strong>お気軽にお問い合わせください。</strong><br /><small>※正式な営業対象地域に差し替えてください</small></p>
-          </div>
-          <div className="area-map" role="img" aria-label="城陽市を中心に京都南部へ広がる出張エリアのイメージ図">
-            <div className="map-ring r1" /><div className="map-ring r2" /><div className="map-ring r3" />
-            <span className="map-place p-kyoto">京都市</span><span className="map-place p-uji">宇治市</span><span className="map-place p-yawata">八幡市</span><span className="map-place p-joyo">城陽市<small>拠点</small></span><span className="map-place p-kyotanabe">京田辺市</span><span className="map-place p-kizugawa">木津川市</span><span className="map-place p-nara">奈良市</span>
-          </div>
+        <div className="shell area-content">
+          <SectionHeading eyebrow="VISIT AREA">城陽市を中心に<br /><em>京都南部へ出張！</em></SectionHeading>
+          <div className="area-list">{areas.map((area) => <span key={area}>{area}</span>)}</div>
+          <p className="area-note">上記以外のエリアも<br /><strong>お気軽にお問い合わせください。</strong><br /><small>※正式な営業対象地域に差し替えてください</small></p>
         </div>
       </section>
 

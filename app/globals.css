@@ -729,6 +729,16 @@ em {
   transform: skew(-5deg);
 }
 
+.section-heading .visit-subtitle {
+  display: block;
+  margin-bottom: 8px;
+  color: #4d4439;
+  font-size: clamp(16px, 4.8vw, 23px);
+  font-weight: 800;
+  letter-spacing: .04em;
+  line-height: 1.4;
+}
+
 .section-heading.light h2,
 .section-heading.light .eyebrow { color: #fff; }
 .section-heading.light em { color: var(--gold-light); }

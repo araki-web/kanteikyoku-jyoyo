@@ -239,12 +239,12 @@ function Hero() {
       <section className="open-section section-pad" id="open">
         <div className="shell open-grid">
           <div className="open-copy">
-            <SectionHeading eyebrow="KYOTO FIRST STORE">京都に初登場！<br />全国展開の<br /><em>「質屋かんてい局」</em>が<br />城陽市にOPEN！</SectionHeading>
+            <SectionHeading eyebrow="KYOTO FIRST STORE"><small className="section-subtitle">＼ 京都に初登場！ ／</small>全国展開の<br /><em>「質屋かんてい局」</em>が<br />城陽市にOPEN！</SectionHeading>
             <div className="open-date"><span>質屋かんてい局 城陽店</span><strong>2026.12.1 <small>TUE</small></strong><b>GRAND OPEN予定！</b></div>
           </div>
           <figure className="store-photo gold-frame"><img src={asset.store} alt="質屋かんてい局 城陽店の店舗外観" width="1448" height="1086" loading="lazy" /></figure>
         </div>
-        <a className="why-link" href="#why"><span>なぜ、今だけ<br />買取価格10%UPなの？</span><b>その理由はこちら</b></a>
+        <a className="why-link" href="#why"><span>なぜ、今だけ<br />買取価格10%UPなの？</span></a>
       </section>
 
       <section className="why-section section-pad" id="why">
@@ -263,7 +263,7 @@ function Hero() {
 
       <section className="steps-section section-pad">
         <div className="shell">
-          <SectionHeading eyebrow="VISIT PURCHASE"><small className="visit-subtitle">お店まで行かなくてOK！</small><em>自宅にいるだけで</em><br />ブランド品が売れる<br /><span>楽々 出張買取</span></SectionHeading>
+          <SectionHeading eyebrow="VISIT PURCHASE"><small className="section-subtitle">＼ お店まで行かなくてOK！ ／</small><em>自宅にいるだけで</em><br />ブランド品が売れる<br /><span>楽々 出張買取</span></SectionHeading>
           <div className="steps-grid">
             {[
               ["01", "お申込み", "電話またはLINEから出張買取をご予約ください。", "☎"],

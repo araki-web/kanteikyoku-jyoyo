@@ -729,7 +729,7 @@ em {
   transform: skew(-5deg);
 }
 
-.section-heading .visit-subtitle {
+.section-heading .section-subtitle {
   display: block;
   margin-bottom: 8px;
   color: #4d4439;
@@ -817,8 +817,7 @@ em {
   transform: translateX(-50%) rotate(45deg);
 }
 
-.why-link span { font-size: 14px; font-weight: 900; }
-.why-link b { color: var(--gold-light); font-size: 12px; }
+.why-link span { font-size: 20px; font-weight: 900; }
 
 .why-section {
   position: relative;

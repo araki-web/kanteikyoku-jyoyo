@@ -15,6 +15,9 @@ const asset = {
   diamond: "/images/diamond.webp",
   platinum: "/images/platinum.webp",
   preciousMetals: "/images/precious-metals.webp",
+  step01: "/images/step-01.webp",
+  step02: "/images/step-02.webp",
+  step03: "/images/step-03.webp",
 } as const;
 
 const contact = {
@@ -239,10 +242,10 @@ function Hero() {
       <section className="open-section section-pad" id="open">
         <div className="shell open-grid">
           <div className="open-copy">
-            <SectionHeading eyebrow="KYOTO FIRST STORE"><small className="section-subtitle">＼ 京都に初登場！ ／</small>全国展開の<br /><em>「質屋かんてい局」</em>が<br />城陽市にOPEN！</SectionHeading>
-            <div className="open-date"><span>質屋かんてい局 城陽店</span><strong>2026.12.1 <small>TUE</small></strong><b>GRAND OPEN予定！</b></div>
+            <SectionHeading eyebrow="KYOTO FIRST STORE"><small className="section-subtitle">＼ 京都に初登場！ ／</small><b className="open-one-line">全国展開の<em>「質屋かんてい局」</em>が</b>城陽市にOPEN！</SectionHeading>
           </div>
           <figure className="store-photo gold-frame"><img src={asset.store} alt="質屋かんてい局 城陽店の店舗外観" width="1448" height="1086" loading="lazy" /></figure>
+          <div className="open-date"><span>質屋かんてい局 城陽店</span><strong>2026.12.1 <small>TUE</small></strong><b>GRAND OPEN予定！</b></div>
         </div>
         <a className="why-link" href="#why"><span>なぜ、今だけ<br />買取価格10%UPなの？</span></a>
       </section>
@@ -252,8 +255,7 @@ function Hero() {
         <div className="shell why-grid">
           <div className="why-copy">
             <SectionHeading eyebrow="＼ OPENに向けて ／" light>ただいま <em>買取強化中！</em></SectionHeading>
-            <p>12月1日のグランドオープンに向けて、城陽店ではブランド品・時計・ジュエリーなどの買取を強化しています。</p>
-            <p>そこでOPEN前の今だけ、<strong>出張買取の買取価格を10%UP！</strong></p>
+            <p>12月1日の城陽店グランドオープンに向けて、<strong>OPEN前の今だけ、出張買取の買取価格を10%UP！</strong></p>
             <p>「いつか売ろう」と思っていたお品物がある方は、ぜひこの機会にご相談ください。</p>
           </div>
           <CampaignLockup />
@@ -266,13 +268,13 @@ function Hero() {
           <SectionHeading eyebrow="VISIT PURCHASE"><small className="section-subtitle">＼ お店まで行かなくてOK！ ／</small><em>自宅にいるだけで</em><br />ブランド品が売れる<br /><span>楽々 出張買取</span></SectionHeading>
           <div className="steps-grid">
             {[
-              ["01", "お申込み", "電話またはLINEから出張買取をご予約ください。", "☎"],
-              ["02", "ご自宅で査定", "かんてい局スタッフがご自宅までお伺い。ご希望の場所でお品物を査定します。", "⌂"],
-              ["03", "ご成約", "査定内容をご確認いただき、ご納得いただけましたらご成約。", "✓"],
-            ].map(([num, title, text, icon]) => (
+              ["01", "お申込み", "電話またはLINEから出張買取をご予約ください。", asset.step01],
+              ["02", "ご自宅で査定", "かんてい局スタッフがご自宅までお伺い。ご希望の場所でお品物を査定します。", asset.step02],
+              ["03", "ご成約", "査定内容をご確認いただき、ご納得いただけましたらご成約。", asset.step03],
+            ].map(([num, title, text, image]) => (
               <article className="step-card" key={num}>
                 <div className="step-number">STEP <b>{num}</b></div>
-                <div className="step-icon" aria-hidden="true">{icon}</div>
+                <figure className="step-photo"><img src={image} alt={`${title}のイメージ`} width="1448" height="1086" loading="lazy" /></figure>
                 <h3>{title}</h3><p>{text}</p>
               </article>
             ))}

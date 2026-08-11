@@ -976,31 +976,34 @@ em {
 
 .category-note {
   display: grid;
-  grid-template-columns: 136px 1fr;
+  grid-template-columns: minmax(0, 1fr) 130px;
   align-items: center;
-  gap: 16px;
+  gap: 4px;
   width: min(100%, 680px);
   margin: 28px auto 20px;
-  min-height: 166px;
-  padding: 12px 14px 0 0;
+  min-height: 214px;
+  padding: 16px 0 0 18px;
   overflow: hidden;
-  border: 1px solid #dcc88e;
-  border-radius: 12px;
-  background: rgba(255,255,255,.82);
+  border: 1px solid #e2d6c8;
+  background: #fff;
   box-shadow: 0 10px 28px rgba(65,42,28,.09);
   text-align: left;
 }
 
 .category-note > img {
-  width: 144px;
-  height: 164px;
+  grid-column: 2;
+  grid-row: 1;
+  width: 142px;
+  height: 204px;
   align-self: end;
   object-fit: contain;
-  object-position: center bottom;
+  object-position: right bottom;
   filter: drop-shadow(0 5px 6px rgba(51,31,11,.18));
 }
-.category-note p { font-size: 14px; }
-.category-note strong { display: block; margin-top: 8px; color: var(--red); font-size: 19px; line-height: 1.45; }
+.category-note > div { grid-column: 1; grid-row: 1; position: relative; z-index: 1; }
+.category-note p { color: var(--red); font-size: 13px; font-weight: 900; }
+.category-note strong { display: block; margin-top: 3px; color: var(--red); font-size: clamp(25px, 7vw, 38px); line-height: 1.12; }
+.category-note b { display: block; margin-top: 13px; font-size: 14px; line-height: 1.55; }
 
 .single-line-cta {
   position: relative;
@@ -1091,7 +1094,9 @@ em {
   min-height: 156px;
   padding: 12px 12px 0 0;
   overflow: hidden;
-  border: 2px solid var(--red);
+  border: 1px solid #e2d6c8;
+  background: #fff;
+  box-shadow: 0 10px 28px rgba(65,42,28,.09);
   text-align: left;
 }
 
@@ -1103,8 +1108,9 @@ em {
   object-position: center bottom;
   filter: drop-shadow(0 5px 6px rgba(51,31,11,.18));
 }
-.condition-copy b { color: var(--red); font-size: 18px; }
-.condition-copy p { margin-top: 7px; font-size: 14px; }
+.condition-copy b { color: var(--red); font-size: 20px; line-height: 1.35; }
+.condition-copy p { margin-top: 8px; font-size: 14px; font-weight: 700; line-height: 1.7; }
+.condition-copy p strong { font-weight: 1000; }
 
 .about-section {
   position: relative;

@@ -327,7 +327,7 @@ function Hero() {
         <div className="shell about-grid">
           <div className="about-title">
             <p>そもそも</p>
-            <h2>「かんてい局」<br />って？</h2>
+            <h2>「かんてい局」って？</h2>
             <img src={asset.logo} alt="質屋かんてい局" width="404" height="90" loading="lazy" />
           </div>
           <div className="about-copy">

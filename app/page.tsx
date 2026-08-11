@@ -310,23 +310,19 @@ function Hero() {
 
       <section className="condition-section section-pad">
         <div className="shell condition-grid">
-          <div className="condition-products" aria-label="ご相談いただけるバッグ、時計、ジュエリーのイメージ">
-            <figure><img src={asset.bag02} alt="ブランドバッグ" width="1024" height="1024" loading="lazy" /></figure>
-            <figure><img src={asset.watch} alt="高級時計" width="683" height="1024" loading="lazy" /></figure>
-            <figure><img src={asset.jewelry01} alt="ジュエリー" width="1024" height="1024" loading="lazy" /></figure>
-            <p className="condition-bubble">捨てる前に<br />ご相談ください！</p>
-          </div>
           <div>
             <SectionHeading>こんなお品物も<br /><em>諦める前に</em><br />ご相談ください！</SectionHeading>
             <div className="concern-grid">{concerns.map((concern) => <span key={concern}>✓ {concern}</span>)}</div>
-            <div className="condition-questions" aria-label="よくあるご相談">
-              <span>ボロボロだけど大丈夫？</span>
-              <span>他のお店で断られたんだけど…</span>
-              <span>こんな状態でも売れる？</span>
+            <div className="condition-photo-wrap">
+              <figure className="condition-home-photo">
+                <img src={asset.homeItems} alt="ご自宅にあるバッグ、財布、時計、ジュエリーなどのお品物" width="1446" height="1087" loading="lazy" />
+              </figure>
+              <div className="condition-questions" aria-label="よくあるご相談">
+                <span>ボロボロだけど大丈夫？</span>
+                <span>他のお店で断られたんだけど…</span>
+                <span>こんな状態でも売れる？</span>
+              </div>
             </div>
-            <figure className="condition-home-photo">
-              <img src={asset.homeItems} alt="ご自宅にあるバッグ、財布、時計、ジュエリーなどのお品物" width="1446" height="1087" loading="lazy" />
-            </figure>
             <div className="condition-message">
               <p>そんなときこそ、</p>
               <strong>捨てる前にご相談ください</strong>

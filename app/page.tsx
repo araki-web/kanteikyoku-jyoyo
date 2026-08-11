@@ -251,7 +251,7 @@ function Hero() {
         <div className="why-rays" aria-hidden="true" />
         <div className="shell why-grid">
           <div className="why-copy">
-            <SectionHeading eyebrow="＼ OPENに向けて ／" light>ただいま<br /><em>買取強化中！</em></SectionHeading>
+            <SectionHeading eyebrow="＼ OPENに向けて ／" light>ただいま <em>買取強化中！</em></SectionHeading>
             <p>12月1日のグランドオープンに向けて、城陽店ではブランド品・時計・ジュエリーなどの買取を強化しています。</p>
             <p>そこでOPEN前の今だけ、<strong>出張買取の買取価格を10%UP！</strong></p>
             <p>「いつか売ろう」と思っていたお品物がある方は、ぜひこの機会にご相談ください。</p>

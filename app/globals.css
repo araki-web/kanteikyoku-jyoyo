@@ -976,12 +976,14 @@ em {
 
 .category-note {
   display: grid;
-  grid-template-columns: 108px 1fr;
+  grid-template-columns: 136px 1fr;
   align-items: center;
   gap: 16px;
   width: min(100%, 680px);
   margin: 28px auto 20px;
-  padding: 12px;
+  min-height: 166px;
+  padding: 12px 14px 0 0;
+  overflow: hidden;
   border: 1px solid #dcc88e;
   border-radius: 12px;
   background: rgba(255,255,255,.82);
@@ -989,7 +991,14 @@ em {
   text-align: left;
 }
 
-.category-note > img { width: 108px; height: 132px; border-radius: 9px; object-fit: cover; object-position: 59% center; }
+.category-note > img {
+  width: 144px;
+  height: 164px;
+  align-self: end;
+  object-fit: contain;
+  object-position: center bottom;
+  filter: drop-shadow(0 5px 6px rgba(51,31,11,.18));
+}
 .category-note p { font-size: 14px; }
 .category-note strong { display: block; margin-top: 8px; color: var(--red); font-size: 19px; line-height: 1.45; }
 
@@ -1075,16 +1084,25 @@ em {
 
 .condition-copy {
   display: grid;
-  grid-template-columns: 94px 1fr;
+  grid-template-columns: 132px 1fr;
   align-items: center;
   gap: 14px;
   margin-top: 22px;
-  padding: 12px;
+  min-height: 156px;
+  padding: 12px 12px 0 0;
+  overflow: hidden;
   border: 2px solid var(--red);
   text-align: left;
 }
 
-.condition-copy > img { width: 94px; height: 118px; border-radius: 8px; object-fit: cover; object-position: 59% center; }
+.condition-copy > img {
+  width: 136px;
+  height: 154px;
+  align-self: end;
+  object-fit: contain;
+  object-position: center bottom;
+  filter: drop-shadow(0 5px 6px rgba(51,31,11,.18));
+}
 .condition-copy b { color: var(--red); font-size: 18px; }
 .condition-copy p { margin-top: 7px; font-size: 14px; }
 

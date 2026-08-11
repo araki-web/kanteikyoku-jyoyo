@@ -18,7 +18,8 @@ const asset = {
   step01: "/images/step-01.webp",
   step02: "/images/step-02.webp",
   step03: "/images/step-03.webp",
-  femaleStaff: "/images/female-staff.png",
+  femaleStaffPoint: "/images/female-staff-point.png",
+  femaleStaffPresent: "/images/female-staff-present.png",
 } as const;
 
 const contact = {
@@ -296,7 +297,7 @@ function Hero() {
             ))}
           </div>
           <div className="category-note">
-            <img src={asset.femaleStaff} alt="ご相談を承る女性スタッフ" width="1536" height="1024" loading="lazy" />
+            <img src={asset.femaleStaffPoint} alt="お問い合わせへ視線を誘導する女性スタッフ" width="1536" height="1024" loading="lazy" />
             <div><p>ここに載っていないお品物でも、<br />買取できる可能性があります。</p><strong>「これって売れる？」<br />というお問い合わせだけでもOK！</strong></div>
           </div>
           <a className="single-line-cta" href={contact.lineHref}><Icon>●</Icon><span>LINEで写真を送って相談</span><b>›</b></a>
@@ -315,7 +316,7 @@ function Hero() {
             <SectionHeading>こんなお品物も<br /><em>諦める前に</em><br />ご相談ください！</SectionHeading>
             <div className="concern-grid">{concerns.map((concern) => <span key={concern}>✓ {concern}</span>)}</div>
             <div className="condition-copy">
-              <img src={asset.femaleStaff} alt="査定についてご案内する女性スタッフ" width="1536" height="1024" loading="lazy" />
+              <img src={asset.femaleStaffPresent} alt="査定相談をご案内する女性スタッフ" width="1402" height="1122" loading="lazy" />
               <div><b>「こんな状態でも売れる？」</b><p>そんな時こそ、捨てる前に一度ご相談ください。査定可能かどうか、スタッフが丁寧に確認いたします。</p></div>
             </div>
           </div>

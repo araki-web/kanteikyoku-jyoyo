@@ -18,8 +18,8 @@ const asset = {
   step01: "/images/step-01.webp",
   step02: "/images/step-02.webp",
   step03: "/images/step-03.webp",
+  homeItems: "/images/home-items.webp",
   femaleStaffSurprised: "/images/female-staff-surprised.png",
-  femaleStaffPresent: "/images/female-staff-present.png",
 } as const;
 
 const contact = {
@@ -319,9 +319,18 @@ function Hero() {
           <div>
             <SectionHeading>こんなお品物も<br /><em>諦める前に</em><br />ご相談ください！</SectionHeading>
             <div className="concern-grid">{concerns.map((concern) => <span key={concern}>✓ {concern}</span>)}</div>
-            <div className="condition-copy">
-              <img src={asset.femaleStaffPresent} alt="査定相談をご案内する女性スタッフ" width="1402" height="1122" loading="lazy" />
-              <div><b>「こんな状態でも売れる？」</b><p>そんな時こそ、捨てる前に<br /><strong>一度ご相談ください。</strong><br /><br />査定可能かどうか、スタッフが丁寧に確認いたします。</p></div>
+            <div className="condition-questions" aria-label="よくあるご相談">
+              <span>ボロボロだけど大丈夫？</span>
+              <span>他のお店で断られたんだけど…</span>
+              <span>こんな状態でも売れる？</span>
+            </div>
+            <figure className="condition-home-photo">
+              <img src={asset.homeItems} alt="ご自宅にあるバッグ、財布、時計、ジュエリーなどのお品物" width="1446" height="1087" loading="lazy" />
+            </figure>
+            <div className="condition-message">
+              <p>そんなときこそ、</p>
+              <strong>捨てる前にご相談ください</strong>
+              <span>査定可能かどうか、スタッフが丁寧に確認いたします。</span>
             </div>
           </div>
         </div>
@@ -404,7 +413,7 @@ function Hero() {
             <div className="staff-name"><small>店舗責任者</small><strong>木村 航平</strong></div>
             <p>ブランド品を売るのが初めてという方にも、できるだけ分かりやすく丁寧にご説明します。売れるかどうか分からないお品物も、まずはお気軽にご相談ください。</p>
           </div>
-          <div className="staff-visual"><figure><img src={asset.staff} alt="出張買取を担当するスタッフ" width="1448" height="1086" loading="lazy" /></figure><span className="bubble b1">ボロボロだけど<br />大丈夫？</span><span className="bubble b2">他のお店で<br />断られたんだけど…</span><span className="bubble b3">こんなものも<br />売れる？</span></div>
+          <div className="staff-visual"><figure><img src={asset.staff} alt="出張買取を担当するスタッフ" width="1448" height="1086" loading="lazy" /></figure></div>
         </div>
         <div className="shell"><ReservationBlock /></div>
       </section>

@@ -166,7 +166,7 @@ function CampaignLockup({ small = false, hero = false }: { small?: boolean; hero
       <div className="campaign-lockup hero-campaign">
         <div className="campaign-ribbon">
           <span className="laurel-branch laurel-left" aria-hidden="true">{Array.from({ length: 7 }, (_, index) => <i key={index} />)}</span>
-          <b>OPENに向けて<br />買取強化中！</b>
+          <b>OPENに向けて買取強化中！</b>
           <span className="laurel-branch laurel-right" aria-hidden="true">{Array.from({ length: 7 }, (_, index) => <i key={index} />)}</span>
         </div>
         <div className="hero-offer">

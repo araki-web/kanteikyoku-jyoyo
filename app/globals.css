@@ -1297,16 +1297,22 @@ em {
 
 .example-disclaimer { margin: -20px 0 19px; color: var(--muted); font-size: 11px; text-align: center; }
 .consultation-scroll { display: grid; grid-auto-columns: 82%; grid-auto-flow: column; gap: 13px; overflow-x: auto; padding: 6px 16px 22px; margin-inline: -16px; scroll-snap-type: x mandatory; scrollbar-width: thin; }
-.consultation-card { display: grid; grid-template-columns: 66px 1fr; align-items: center; gap: 14px; min-height: 220px; padding: 14px 7px; scroll-snap-align: center; }
+.consultation-card { display: grid; grid-template-columns: 78px 1fr; align-items: center; gap: 14px; min-height: 220px; padding: 14px 7px; scroll-snap-align: center; }
 .consultation-person { display: grid; justify-items: center; gap: 7px; }
 .consultation-person > b { color: #413a34; font-size: 12px; }
-.person-icon { position: relative; display: block; width: 62px; height: 62px; overflow: hidden; border: 3px solid #fff; border-radius: 50%; background: #f3d9dc; box-shadow: 0 0 0 2px var(--red), 0 7px 16px rgba(73,29,25,.18); }
-.person-icon::before { position: absolute; z-index: 2; top: 15px; left: 50%; width: 17px; height: 20px; border-radius: 48% 48% 45% 45%; content: ""; background: #f3c7a5; transform: translateX(-50%); }
-.person-icon::after { position: absolute; z-index: 1; right: 9px; bottom: -8px; left: 9px; height: 30px; border-radius: 50% 50% 0 0; content: ""; background: var(--red); }
-.person-icon i { position: absolute; z-index: 1; top: 10px; left: 50%; width: 29px; height: 32px; border-radius: 50% 50% 45% 45%; background: #493128; transform: translateX(-50%); }
-.person-icon.male { background: #e6e1d2; box-shadow: 0 0 0 2px var(--gold-dark), 0 7px 16px rgba(73,29,25,.18); }
-.person-icon.male::after { background: #292725; }
-.person-icon.male i { top: 9px; width: 26px; height: 17px; border-radius: 55% 45% 25% 20%; }
+.person-icon { position: relative; display: block; width: 74px; height: 82px; overflow: hidden; border-radius: 14px; background: #fff; box-shadow: 0 5px 16px rgba(73,29,25,.12); }
+.person-icon::before { position: absolute; z-index: 2; top: 20px; left: 50%; width: 26px; height: 32px; border-radius: 48% 48% 46% 46%; content: ""; background: #f6d7bd; transform: translateX(-50%); }
+.person-icon::after { position: absolute; z-index: 3; right: 8px; bottom: -8px; left: 8px; height: 38px; border-radius: 50% 50% 0 0; content: ""; background: #d8a9af; }
+.person-icon i { position: absolute; z-index: 1; top: 10px; left: 50%; width: 48px; height: 48px; border-radius: 52% 48% 45% 45%; background: #7a635a; transform: translateX(-50%); }
+.person-icon.avatar-1::after { background: #d4aab1; }
+.person-icon.avatar-2::after { background: #7fa999; }
+.person-icon.avatar-2 i { top: 12px; width: 43px; height: 26px; border-radius: 58% 42% 32% 24%; background: #596267; transform: translateX(-50%) rotate(-7deg); }
+.person-icon.avatar-3::after { background: #d9b553; }
+.person-icon.avatar-3 i { width: 44px; height: 53px; border-radius: 48% 48% 40% 40%; background: #967a7e; }
+.person-icon.avatar-4::after { background: #a695b6; }
+.person-icon.avatar-4 i { width: 46px; height: 42px; border-radius: 58% 42% 52% 48%; background: #777276; }
+.person-icon.avatar-5::after { background: #66809f; }
+.person-icon.avatar-5 i { top: 12px; width: 43px; height: 25px; border-radius: 65% 35% 28% 18%; background: #656068; transform: translateX(-50%) rotate(5deg); }
 .consultation-bubble { position: relative; min-height: 164px; padding: 20px 17px; border: 1px solid #d8c8b8; border-radius: 13px; background: #fff; box-shadow: 0 10px 25px rgba(54,33,21,.12); }
 .consultation-bubble::before { position: absolute; top: 50%; left: -9px; width: 16px; height: 16px; border-bottom: 1px solid #d8c8b8; border-left: 1px solid #d8c8b8; content: ""; background: #fff; transform: translateY(-50%) rotate(45deg); }
 .consultation-bubble > span { position: relative; z-index: 1; display: inline-block; padding: 3px 8px; color: #fff; background: var(--red); font-size: 10px; font-weight: 900; }

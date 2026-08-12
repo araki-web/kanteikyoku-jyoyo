@@ -367,7 +367,7 @@ function Hero() {
             {consultationExamples.map((item, index) => (
               <article className="consultation-card" key={item.text}>
                 <div className="consultation-person" aria-label={`${item.person}のご相談イメージ`}>
-                  <span className={`person-icon ${item.kind}`} aria-hidden="true"><i /></span>
+                  <span className={`person-icon ${item.kind} avatar-${index + 1}`} aria-hidden="true"><i /></span>
                   <b>{item.person}</b>
                 </div>
                 <div className="consultation-bubble">

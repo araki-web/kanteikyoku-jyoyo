@@ -348,18 +348,18 @@ function Hero() {
           <div className="reasons-grid">
             <article className="reason-card reason-brand">
               <span>REASON <b>01</b></span>
-              <h3>そもそも<br />「かんてい局」って？</h3>
+              <h3>全国チェーンの実績と<br /><em>確かな査定力</em></h3>
               <img className="reason-brand-logo" src={asset.logo} alt="質屋かんてい局" width="404" height="90" loading="lazy" />
-              <p>全国展開する、<strong>質屋・リユースショップのチェーン</strong>です。ブランドバッグ、時計、ジュエリー、貴金属など幅広いお品物を取り扱います。</p>
+              <p>かんてい局は、全国に店舗を展開する<strong>質屋・リユースショップのチェーン</strong>。各地で培った豊富な取引実績と相場データを査定に活かしています。</p>
               <div className="reason-services"><span><b>買取</b>BUY</span><span><b>販売</b>SELL</span><span><b>質預かり</b>PAWN</span></div>
-              <p>全国チェーンの査定・販売ノウハウを活かし、一点ずつ価値を確認しながら査定します。</p>
+              <p>買取・販売・質預かりを通じて蓄積した専門知識で、ブランドバッグ、時計、ジュエリー、貴金属などの<strong>本来の価値を見極めます。</strong></p>
             </article>
             <article className="reason-card liberty">
               <span>REASON <b>02</b></span>
               <h3>運営しているのは<br /><em>株式会社Li-Lu</em>です。</h3>
               <figure className="reason-store"><img src={asset.store} alt="株式会社Li-Luが運営する城陽店の外観" width="1448" height="1086" loading="lazy" /></figure>
-              <p className="liberty-cm">親会社は<br /><strong>「リ、リ、リ、リバティ」</strong>の<br />リバティです！</p>
-              <div className="sales"><small>親会社グループ売上</small><strong><i>約</i>600<i>億円</i></strong><b>規模</b></div>
+              <p className="liberty-cm">親会社は<br /><strong>「リ、リ、リ、リバティ」</strong>でおなじみ！</p>
+              <div className="sales"><small>親会社リバティグループ売上</small><strong><i>約</i>600<i>億円</i></strong><b>規模</b></div>
               <p>城陽店の運営会社は株式会社Li-Luです。親会社の株式会社リバティは全国約40拠点を展開する自動車の総合店。自動車販売に加え、車検・修理・鈑金塗装・保険・カー用品まで、カーライフを幅広く支える専門企業です。</p>
             </article>
             <article className="reason-card campaign"><span>REASON <b>03</b></span><h3>そして今は…<br /><em>OPEN前だから<br />買取強化中！</em></h3><p>12月1日のOPENに向けて、現在買取を強化中。</p><CampaignLockup small /></article>

@@ -284,6 +284,7 @@ em {
   align-items: center;
   width: min(100%, 840px);
   margin-inline: auto;
+  padding-top: 12px;
 }
 
 .hero-copy {
@@ -468,10 +469,10 @@ em {
   top: auto;
   left: auto;
   display: grid;
-  grid-template-columns: 42px minmax(0, 1fr) 42px;
+  grid-template-columns: 32px minmax(0, 1fr) 32px;
   align-items: center;
   width: min(100%, 370px);
-  min-height: 64px;
+  min-height: 50px;
   margin-inline: auto;
   padding: 0 2px 7px;
   color: #e7c779;
@@ -496,22 +497,26 @@ em {
 
 .hero-offer {
   display: grid;
-  grid-template-columns: .7fr 1.55fr .82fr;
+  grid-template-columns: 66px 166px 80px;
   align-items: end;
+  justify-content: center;
   gap: 0;
+  width: 312px;
+  max-width: 100%;
+  margin-inline: auto;
 }
 
 .laurel-branch {
   position: relative;
   display: block;
-  width: 40px;
-  height: 56px;
+  width: 31px;
+  height: 43px;
 }
 
 .laurel-branch i {
   position: absolute;
-  width: 13px;
-  height: 6px;
+  width: 10px;
+  height: 5px;
   border-radius: 100% 0 100% 0;
   background: linear-gradient(135deg, #f3dc9c, #b88a38);
   box-shadow: 0 2px 5px rgba(0,0,0,.14);
@@ -520,13 +525,13 @@ em {
 .laurel-left i { transform: rotate(34deg); }
 .laurel-right { transform: scaleX(-1); }
 .laurel-right i { transform: rotate(34deg); }
-.laurel-branch i:nth-child(1) { bottom: 1px; left: 24px; }
-.laurel-branch i:nth-child(2) { bottom: 8px; left: 18px; transform: rotate(43deg); }
-.laurel-branch i:nth-child(3) { bottom: 16px; left: 12px; transform: rotate(54deg); }
-.laurel-branch i:nth-child(4) { bottom: 25px; left: 8px; transform: rotate(66deg); }
-.laurel-branch i:nth-child(5) { bottom: 34px; left: 6px; transform: rotate(78deg); }
-.laurel-branch i:nth-child(6) { bottom: 43px; left: 7px; transform: rotate(91deg); }
-.laurel-branch i:nth-child(7) { bottom: 50px; left: 11px; transform: rotate(105deg); }
+.laurel-branch i:nth-child(1) { bottom: 1px; left: 19px; }
+.laurel-branch i:nth-child(2) { bottom: 6px; left: 14px; transform: rotate(43deg); }
+.laurel-branch i:nth-child(3) { bottom: 12px; left: 9px; transform: rotate(54deg); }
+.laurel-branch i:nth-child(4) { bottom: 19px; left: 6px; transform: rotate(66deg); }
+.laurel-branch i:nth-child(5) { bottom: 26px; left: 5px; transform: rotate(78deg); }
+.laurel-branch i:nth-child(6) { bottom: 33px; left: 6px; transform: rotate(91deg); }
+.laurel-branch i:nth-child(7) { bottom: 38px; left: 9px; transform: rotate(105deg); }
 .laurel-right i:nth-child(2) { transform: rotate(43deg); }
 .laurel-right i:nth-child(3) { transform: rotate(54deg); }
 .laurel-right i:nth-child(4) { transform: rotate(66deg); }
@@ -573,8 +578,7 @@ em {
   gap: 2px;
   margin-top: 5px;
   padding: 5px 0 4px;
-  border: solid rgba(230,198,121,.76);
-  border-width: 1px 0;
+  border: 0;
   color: #fff;
   background: transparent;
   font-size: 22px;
@@ -651,13 +655,13 @@ em {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 9px;
+  gap: 13px;
   min-height: 48px;
   padding: 8px 14px;
   border-top: 1px solid rgba(255,235,165,.55);
   color: #fff;
   background: rgba(31, 0, 2, .72);
-  font-size: clamp(11px, 3.05vw, 13px);
+  font-size: clamp(10px, 2.9vw, 13px);
   letter-spacing: .01em;
   font-weight: 900;
   line-height: 1.35;
@@ -665,12 +669,19 @@ em {
 }
 
 .hero-trust i {
-  color: var(--gold-light);
-  font-size: 19px;
-  font-style: normal;
+  width: 1px;
+  height: 34px;
+  background: rgba(231,199,121,.65);
 }
 
 .hero-trust span { white-space: nowrap; }
+.hero-trust-store { display: flex; align-items: center; gap: 7px; }
+.hero-trust-store img { width: clamp(105px, 29vw, 150px); filter: brightness(0) invert(1); }
+.hero-trust-store b { padding-left: 7px; border-left: 1px solid rgba(255,255,255,.62); font-size: clamp(12px, 3.5vw, 17px); }
+.hero-trust-open { display: grid; justify-items: start; line-height: 1.05; }
+.hero-trust-open strong { color: #e7c779; font-size: clamp(15px, 4.1vw, 21px); letter-spacing: .04em; }
+.hero-trust-open small { font-size: .58em; }
+.hero-trust-open b { margin-top: 3px; font-size: clamp(9px, 2.5vw, 12px); letter-spacing: .08em; }
 
 .hero-cta {
   position: relative;

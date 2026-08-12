@@ -226,11 +226,6 @@ function Hero() {
       <section className="hero" aria-labelledby="hero-title">
         <div className="hero-topline"><span>全国展開の質屋・リユースチェーン</span><strong>京都初出店！</strong></div>
         <div className="hero-grid">
-          <div className="hero-branding">
-            <img src={asset.logo} alt="質屋かんてい局" width="404" height="90" />
-            <span>城陽店</span>
-            <p><b>2026.12.1 TUE</b> GRAND OPEN予定</p>
-          </div>
           <div className="hero-layout">
             <div className="hero-copy">
               <h1 id="hero-title">
@@ -243,7 +238,11 @@ function Hero() {
             </figure>
           </div>
         </div>
-        <div className="hero-trust"><span>全国チェーンのノウハウ</span><i>×</i><span>株式会社Li-Lu運営</span></div>
+        <div className="hero-trust">
+          <span className="hero-trust-store"><img src={asset.logo} alt="質屋かんてい局" width="404" height="90" /><b>城陽店</b></span>
+          <i aria-hidden="true" />
+          <span className="hero-trust-open"><strong>2026.12.1 <small>TUE</small></strong><b>GRAND OPEN予定</b></span>
+        </div>
       </section>
 
       <section className="hero-cta section-pad" aria-label="出張買取のご予約">

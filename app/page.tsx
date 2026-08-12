@@ -307,7 +307,7 @@ function Hero() {
             </div>
             <div className="condition-message">
               <p>そんなときこそ、</p>
-              <strong>捨てる前にご相談ください</strong>
+              <strong>捨てる前にご相談ください！！</strong>
               <span>査定可能かどうか、<br />スタッフが丁寧に確認いたします。</span>
             </div>
             <div className="concern-grid">{concerns.map((concern) => <span key={concern}>✓ {concern}</span>)}</div>

@@ -278,12 +278,12 @@ function Hero() {
             ))}
           </div>
           <div className="category-note">
-            <img src={asset.categoryWoman} alt="買取できる可能性をご案内する女性" width="1122" height="1402" loading="lazy" />
-            <div>
-              <p>ここに載っていないお品物でも、</p>
-              <strong>買取できる<br />可能性があります！</strong>
-              <b>「これって売れる？」<br />というお問い合わせだけでもOK！</b>
+            <p>ここに載っていないお品物でも、</p>
+            <div className="category-note-main">
+              <strong>買取できる<br />可能性が<br />あります！</strong>
+              <img src={asset.categoryWoman} alt="買取できる可能性をご案内する女性" width="1122" height="1402" loading="lazy" />
             </div>
+            <b>「これって売れる？」というお問い合わせ<br />だけでもOK！</b>
           </div>
           <a className="single-line-cta" href={contact.lineHref}><Icon>●</Icon><span>LINEで写真を送って相談</span><b>›</b></a>
         </div>
@@ -294,29 +294,28 @@ function Hero() {
           <div>
             <SectionHeading>こんなお品物も<br /><em>諦める前に</em><br />ご相談ください！</SectionHeading>
             <div className="condition-mix-visual">
-              <figure className="condition-mix-items">
+              <figure className="condition-mix-items condition-mix-items--full">
                 <img src={asset.homeItems} alt="ご自宅にあるバッグ、財布、時計、ジュエリーなどのお品物" width="1446" height="1087" loading="lazy" />
               </figure>
-              <img className="condition-worry-person" src={asset.worriedWoman} alt="お品物が売れるか悩んでいる女性" width="1024" height="1536" loading="lazy" />
               <div className="condition-questions" aria-label="よくあるご相談">
                 <span>ボロボロだけど大丈夫？</span>
                 <span>他のお店で断られたんだけど…</span>
                 <span>こんな状態でも売れる？</span>
               </div>
             </div>
-            <div className="concern-grid">{concerns.map((concern) => <span key={concern}>✓ {concern}</span>)}</div>
             <div className="condition-message">
               <p>そんなときこそ、</p>
               <strong>捨てる前にご相談ください</strong>
-              <span>査定可能かどうか、スタッフが丁寧に確認いたします。</span>
+              <span>査定可能かどうか、<br />スタッフが丁寧に確認いたします。</span>
             </div>
+            <div className="concern-grid">{concerns.map((concern) => <span key={concern}>✓ {concern}</span>)}</div>
           </div>
         </div>
       </section>
 
       <section className="steps-section section-pad">
         <div className="shell">
-          <SectionHeading><small className="section-subtitle">＼ お店まで行かなくてOK！ ／</small><em>自宅にいるだけで</em><br />ブランド品が売れる<br /><span>楽々 出張買取</span></SectionHeading>
+          <SectionHeading><span className="steps-title">楽々 出張買取</span><small className="section-subtitle">＼ お店まで行かなくてOK！ ／</small><em>自宅にいるだけで</em><br />ブランド品が売れる</SectionHeading>
           <div className="steps-grid">
             {[
               ["01", "お申込み", "電話またはLINEから出張買取をご予約ください。", asset.step01],

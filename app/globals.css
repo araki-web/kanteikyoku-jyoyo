@@ -975,35 +975,28 @@ em {
 }
 
 .category-note {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 158px;
-  align-items: start;
-  gap: 4px;
   width: min(100%, 680px);
   margin: 28px auto 20px;
-  min-height: 238px;
-  padding: 16px 0 0 18px;
+  padding: 17px 0 0;
   overflow: hidden;
   border: 1px solid #e2d6c8;
   background: #fff;
   box-shadow: 0 10px 28px rgba(65,42,28,.09);
-  text-align: left;
+  text-align: center;
 }
 
-.category-note > img {
-  grid-column: 2;
-  grid-row: 1;
-  width: 178px;
-  height: 238px;
-  align-self: start;
-  margin-left: -10px;
-  object-fit: cover;
-  object-position: center top;
+.category-note-main {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 48%;
+  align-items: end;
+  min-height: 225px;
+  padding-left: 18px;
+  text-align: left;
 }
-.category-note > div { grid-column: 1; grid-row: 1; position: relative; z-index: 1; }
-.category-note p { color: var(--red); font-size: 13px; font-weight: 900; }
-.category-note strong { display: block; margin-top: 3px; color: var(--red); font-size: clamp(25px, 7vw, 38px); line-height: 1.12; }
-.category-note b { display: block; margin-top: 13px; font-size: 14px; line-height: 1.55; }
+.category-note-main img { width: 100%; height: 225px; object-fit: cover; object-position: center top; }
+.category-note p { color: var(--red); font-size: clamp(16px, 4.5vw, 22px); font-weight: 900; }
+.category-note strong { display: block; padding-bottom: 15px; color: var(--red); font-size: clamp(30px, 8vw, 44px); line-height: 1.13; }
+.category-note > b { display: block; padding: 13px 15px 17px; border-top: 1px solid #eadfce; font-size: 17px; line-height: 1.5; }
 
 .single-line-cta {
   position: relative;
@@ -1070,6 +1063,8 @@ em {
   content: "";
 }
 .condition-mix-items img { width: 100%; height: 100%; object-fit: cover; object-position: 47% center; }
+.condition-mix-items--full { width: 100%; clip-path: none; }
+.condition-mix-items--full::after { display: none; }
 .condition-worry-person {
   position: absolute;
   bottom: -2px;
@@ -1113,12 +1108,22 @@ em {
 .condition-questions span:nth-child(3)::before { right: 22%; left: auto; }
 .condition-questions span:nth-child(3)::after { right: 15%; left: auto; }
 
-.condition-mix-visual + .concern-grid { margin-top: 26px; }
-
 .condition-message { padding: 22px 4px 0; text-align: center; }
 .condition-message p { font-size: 16px; font-weight: 900; }
 .condition-message strong { display: block; margin: 3px 0 16px; color: var(--red); font-size: clamp(25px, 7.2vw, 38px); line-height: 1.35; }
 .condition-message span { display: block; font-size: 14px; font-weight: 700; line-height: 1.75; }
+.condition-message + .concern-grid { margin-top: 26px; }
+
+.section-heading h2 .steps-title {
+  display: block;
+  margin: 0 0 12px;
+  padding: 4px 12px;
+  color: #fff;
+  background: var(--red);
+  font-size: clamp(28px, 8vw, 44px);
+  line-height: 1.3;
+  transform: none;
+}
 
 .about-section {
   position: relative;

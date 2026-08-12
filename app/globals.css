@@ -1318,22 +1318,17 @@ em {
 
 .example-disclaimer { margin: -20px 0 19px; color: var(--muted); font-size: 11px; text-align: center; }
 .consultation-scroll { display: grid; grid-auto-columns: 82%; grid-auto-flow: column; gap: 13px; overflow-x: auto; padding: 25px 16px 22px; margin-inline: -16px; scroll-snap-type: x mandatory; scrollbar-width: thin; }
-.consultation-card { position: relative; display: grid; justify-items: center; align-content: start; gap: 15px; min-height: 330px; padding: 50px 24px 25px; border: 1px solid #d8c8b8; border-radius: 14px; background: #fff; box-shadow: 0 10px 25px rgba(54,33,21,.12); scroll-snap-align: center; }
+.consultation-card { position: relative; display: grid; justify-items: center; align-content: start; gap: 10px; min-height: 0; padding: 45px 24px 18px; border: 1px solid #d8c8b8; border-radius: 14px; background: #fff; box-shadow: 0 10px 25px rgba(54,33,21,.12); scroll-snap-align: center; }
 .consultation-label { position: absolute; top: -20px; left: 50%; padding: 10px 18px; color: #fff; background: var(--red); font-size: 14px; font-weight: 900; white-space: nowrap; transform: translateX(-50%); }
 .consultation-person { display: grid; justify-items: center; }
-.person-icon { position: relative; display: block; width: 74px; height: 82px; overflow: hidden; border-radius: 14px; background: #fff; box-shadow: 0 5px 16px rgba(73,29,25,.12); }
-.person-icon::before { position: absolute; z-index: 2; top: 20px; left: 50%; width: 26px; height: 32px; border-radius: 48% 48% 46% 46%; content: ""; background: #f6d7bd; transform: translateX(-50%); }
-.person-icon::after { position: absolute; z-index: 3; right: 8px; bottom: -8px; left: 8px; height: 38px; border-radius: 50% 50% 0 0; content: ""; background: #d8a9af; }
-.person-icon i { position: absolute; z-index: 1; top: 10px; left: 50%; width: 48px; height: 48px; border-radius: 52% 48% 45% 45%; background: #7a635a; transform: translateX(-50%); }
-.person-icon.avatar-1::after { background: #d4aab1; }
-.person-icon.avatar-2::after { background: #7fa999; }
-.person-icon.avatar-2 i { top: 12px; width: 43px; height: 26px; border-radius: 58% 42% 32% 24%; background: #596267; transform: translateX(-50%) rotate(-7deg); }
-.person-icon.avatar-3::after { background: #d9b553; }
-.person-icon.avatar-3 i { width: 44px; height: 53px; border-radius: 48% 48% 40% 40%; background: #967a7e; }
-.person-icon.avatar-4::after { background: #a695b6; }
-.person-icon.avatar-4 i { width: 46px; height: 42px; border-radius: 58% 42% 52% 48%; background: #777276; }
-.person-icon.avatar-5::after { background: #66809f; }
-.person-icon.avatar-5 i { top: 12px; width: 43px; height: 25px; border-radius: 65% 35% 28% 18%; background: #656068; transform: translateX(-50%) rotate(5deg); }
+.person-icon { position: relative; display: block; width: 94px; height: 102px; overflow: hidden; background: transparent; }
+.person-icon::before { position: absolute; z-index: 2; top: 18px; left: 50%; width: 35px; height: 45px; border-radius: 48% 48% 44% 44%; content: ""; background: #363434; transform: translateX(-50%); }
+.person-icon::after { position: absolute; z-index: 1; right: 5px; bottom: -9px; left: 5px; height: 55px; border-radius: 45% 45% 0 0; content: ""; background: #363434; }
+.person-icon i { position: absolute; z-index: 3; top: 9px; left: 50%; width: 53px; height: 45px; border-radius: 53% 47% 42% 42%; background: #363434; transform: translateX(-50%); }
+.person-icon.avatar-2 i { top: 8px; width: 52px; height: 32px; border-radius: 65% 35% 28% 20%; transform: translateX(-50%) rotate(-7deg); }
+.person-icon.avatar-3 i { width: 57px; height: 58px; border-radius: 48% 48% 42% 42%; }
+.person-icon.avatar-4 i { width: 55px; height: 50px; border-radius: 58% 42% 52% 48%; }
+.person-icon.avatar-5 i { top: 7px; width: 54px; height: 33px; border-radius: 70% 30% 30% 18%; transform: translateX(-50%) rotate(6deg); }
 .consultation-card > p { color: #4d4742; font-size: 14px; line-height: 1.8; text-align: left; }
 .swipe-hint { margin-top: 10px; color: var(--muted); font-size: 11px; text-align: center; }
 

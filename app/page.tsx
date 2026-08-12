@@ -165,13 +165,17 @@ function CampaignLockup({ small = false, hero = false }: { small?: boolean; hero
     return (
       <div className="campaign-lockup hero-campaign">
         <div className="campaign-ribbon">OPENに向けて買取強化中！</div>
-        <div className="hero-offer">
-          <span className="hero-price-label" aria-label="買取価格"><i>買</i><i>取</i><i>価</i><i>格</i></span>
-          <div className="percent-line">
-            <span className="percent-number">10</span>
-            <span className="percent-unit"><b>%</b></span>
+        <div className="hero-offer-wrap">
+          <span className="hero-laurel hero-laurel-left" aria-hidden="true">❧</span>
+          <div className="hero-offer">
+            <span className="hero-price-label" aria-label="買取価格"><i>買</i><i>取</i><i>価</i><i>格</i></span>
+            <div className="percent-line">
+              <span className="percent-number">10</span>
+              <span className="percent-unit"><b>%</b></span>
+            </div>
+            <div className="offer-copy"><strong>UP</strong></div>
           </div>
-          <div className="offer-copy"><strong>UP</strong></div>
+          <span className="hero-laurel hero-laurel-right" aria-hidden="true">❧</span>
         </div>
         <div className="deadline"><span>OPEN前限定</span><strong>11/30</strong>まで</div>
       </div>
@@ -229,17 +233,14 @@ function Hero() {
           </div>
           <div className="hero-layout">
             <div className="hero-copy">
-              <p className="hero-kicker">＼ お店まで行かなくてOK！ ／</p>
               <h1 id="hero-title">
-                <span>ご自宅で、安心して売れる。</span>
                 <strong>出張買取</strong>
               </h1>
-              <p className="hero-lead">大切なお品物を、確かな目で。<br />専門スタッフがご自宅で丁寧に査定します。</p>
             </div>
+            <CampaignLockup hero />
             <figure className="hero-visual">
               <img src={asset.fvProducts} alt="ブランドバッグ、時計、ジュエリーなどの買取対象品" width="1280" height="1280" />
             </figure>
-            <CampaignLockup hero />
           </div>
         </div>
         <div className="hero-trust"><span>全国チェーンのノウハウ</span><i>×</i><span>株式会社Li-Lu運営</span></div>

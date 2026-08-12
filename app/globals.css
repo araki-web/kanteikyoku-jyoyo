@@ -1269,6 +1269,9 @@ em {
 .reason-liberty-logo { width: 100%; margin: 5px 0 16px; padding: 9px; background: #fff; object-fit: contain; }
 .reason-brand-logo { height: 72px; }
 .reason-liberty-logo { height: 66px; }
+.parent-company { margin-bottom: 16px; text-align: center; }
+.parent-company small { display: inline-block; padding: 3px 11px; color: #fff; background: #26211d; font-size: 11px; font-weight: 900; }
+.parent-company .reason-liberty-logo { margin-bottom: 0; }
 .reason-services { display: grid; grid-template-columns: repeat(3, 1fr); gap: 5px; margin-block: 16px; }
 .reason-services span { display: grid; min-height: 65px; place-content: center; border: 1px solid var(--gold-dark); color: var(--gold-dark); font: 700 8px/1.2 Arial, sans-serif; letter-spacing: .08em; text-align: center; }
 .reason-services b { display: block; margin-bottom: 5px; color: var(--ink); font-family: "Yu Gothic", sans-serif; font-size: 13px; letter-spacing: 0; }

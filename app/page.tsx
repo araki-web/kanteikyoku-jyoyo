@@ -236,7 +236,7 @@ function Hero() {
             <figure className="hero-product gold"><img src={asset.gold} alt="金・インゴットのイメージ" width="1024" height="1024" /></figure>
           </div>
         </div>
-        <div className="hero-trust"><span>全国チェーンのノウハウ</span><i>×</i><span>株式会社リバティ運営</span></div>
+        <div className="hero-trust"><span>全国チェーンのノウハウ</span><i>×</i><span>株式会社Li-Lu運営</span></div>
       </section>
 
       <section className="hero-cta section-pad" aria-label="出張買取のご予約">
@@ -337,7 +337,7 @@ function Hero() {
 
       <section className="reasons-section section-pad">
         <div className="shell">
-          <SectionHeading light><small className="section-subtitle">＼ どうして高く買えるの？ ／</small><span className="reasons-store-label">かんてい局 城陽店</span><em className="reasons-main-title">高価買取 <b>3</b>つの理由</em></SectionHeading>
+          <SectionHeading light><small className="section-subtitle">＼ どうして選ばれるの？ ／</small><span className="reasons-store-label">かんてい局 城陽店</span><em className="reasons-main-title">選ばれる <b>3</b>つの理由</em></SectionHeading>
           <div className="reasons-grid">
             <article className="reason-card reason-brand">
               <span>REASON <b>01</b></span>
@@ -349,11 +349,11 @@ function Hero() {
             </article>
             <article className="reason-card liberty">
               <span>REASON <b>02</b></span>
-              <h3>運営しているのは<br /><em>株式会社リバティ</em>です。</h3>
-              <img className="reason-liberty-logo" src={asset.libertyLogo} alt="株式会社リバティ" width="918" height="264" loading="lazy" />
-              <figure className="reason-store"><img src={asset.store} alt="株式会社リバティが運営する城陽店の外観" width="1448" height="1086" loading="lazy" /></figure>
-              <div className="sales"><small>グループ売上</small><strong>約600億円</strong><b>規模</b></div>
-              <p>城陽店を運営するのは、京都で自動車販売をスタートした株式会社リバティ。高額商品を扱ってきた企業として、ブランド品の買取でも安心してご相談いただける店舗を目指します。</p>
+              <h3>運営しているのは<br /><em>株式会社Li-Lu</em>です。</h3>
+              <div className="parent-company"><small>親会社</small><img className="reason-liberty-logo" src={asset.libertyLogo} alt="親会社 株式会社リバティ" width="918" height="264" loading="lazy" /></div>
+              <figure className="reason-store"><img src={asset.store} alt="株式会社Li-Luが運営する城陽店の外観" width="1448" height="1086" loading="lazy" /></figure>
+              <div className="sales"><small>親会社グループ売上</small><strong>約600億円</strong><b>規模</b></div>
+              <p>城陽店の運営会社は株式会社Li-Luです。親会社は、京都で自動車販売をスタートした株式会社リバティ。グループの信頼と高額商品を扱ってきた経験を活かし、安心してご相談いただける店舗を目指します。</p>
             </article>
             <article className="reason-card campaign"><span>REASON <b>03</b></span><h3>そして今は…<br /><em>OPEN前だから<br />買取強化中！</em></h3><p>12月1日のOPENに向けて、現在買取を強化中。</p><CampaignLockup small /></article>
           </div>
@@ -414,7 +414,7 @@ function Hero() {
           <div className="store-grid">
             <figure><img src={asset.store} alt="質屋かんてい局 城陽店 店舗外観" width="1448" height="1086" loading="lazy" /><figcaption>2026年12月1日（火）<b>GRAND OPEN予定！</b></figcaption></figure>
             <dl className="store-details">
-              <div><dt>住所</dt><dd>店舗住所を入力</dd></div><div><dt>営業時間</dt><dd>営業時間を入力</dd></div><div><dt>電話番号</dt><dd>電話番号を入力</dd></div><div><dt>駐車場</dt><dd>駐車場情報を入力</dd></div><div><dt>運営会社</dt><dd>株式会社リバティ</dd></div>
+              <div><dt>住所</dt><dd>店舗住所を入力</dd></div><div><dt>営業時間</dt><dd>営業時間を入力</dd></div><div><dt>電話番号</dt><dd>電話番号を入力</dd></div><div><dt>駐車場</dt><dd>駐車場情報を入力</dd></div><div><dt>運営会社</dt><dd>株式会社Li-Lu<br /><small>親会社：株式会社リバティ</small></dd></div>
               <div className="map-placeholder"><dt>MAP</dt><dd>正式な住所確定後、地図を設置</dd></div>
             </dl>
           </div>
@@ -457,7 +457,7 @@ function Footer() {
   return (
     <footer className="site-footer">
       <div className="shell footer-grid">
-        <div className="footer-brand"><img src={asset.logo} alt="質屋かんてい局" width="404" height="90" loading="lazy" /><strong>城陽店</strong><p>運営会社 株式会社リバティ</p></div>
+        <div className="footer-brand"><img src={asset.logo} alt="質屋かんてい局" width="404" height="90" loading="lazy" /><strong>城陽店</strong><p>運営会社 株式会社Li-Lu<br />親会社 株式会社リバティ</p></div>
         <div className="footer-info"><p>住所：店舗住所を入力</p><p>電話番号：電話番号を入力</p><p>古物商許可番号：必要表示を入力</p><span className="privacy-placeholder">プライバシーポリシー（URLを設定）</span></div>
       </div>
       <p className="copyright">© 2026 質屋かんてい局 城陽店</p>

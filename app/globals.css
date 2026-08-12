@@ -454,7 +454,7 @@ em {
   display: grid;
   grid-template-columns: repeat(2, 1em);
   grid-template-rows: repeat(2, 1em);
-  align-self: center;
+  align-self: end;
   justify-self: center;
   color: #111;
   font-size: 22px;
@@ -463,12 +463,13 @@ em {
   line-height: 1.08;
   text-align: center;
   writing-mode: horizontal-tb;
+  transform: translateY(-11px);
 }
 .hero-price-label i { font-style: normal; }
 
 .hero-campaign .percent-line { height: 128px; align-items: flex-end; line-height: 1; }
 .hero-campaign .percent-number { color: var(--red); background: none; filter: none; font-size: 126px; letter-spacing: .035em; line-height: 1; }
-.hero-campaign .percent-unit { margin: 0 0 0 1px; transform: translateY(-9px); }
+.hero-campaign .percent-unit { margin: 0 0 0 -3px; transform: translateY(-9px); }
 .hero-campaign .percent-unit b { color: var(--red); font-size: 49px; font-weight: 1000; }
 
 .offer-copy {
@@ -1146,7 +1147,7 @@ em {
 
 .condition-message { padding: 22px 4px 0; text-align: center; }
 .condition-message p { font-size: 16px; font-weight: 900; }
-.condition-message strong { display: block; margin: 3px 0 16px; color: var(--red); font-size: clamp(25px, 7.2vw, 38px); line-height: 1.35; }
+.condition-message strong { display: block; margin: 3px 0 16px; color: var(--red); font-size: clamp(21px, 5.8vw, 38px); line-height: 1.35; white-space: nowrap; }
 .condition-message span { display: block; font-size: 14px; font-weight: 700; line-height: 1.75; }
 .condition-message + .concern-grid { margin-top: 26px; }
 
@@ -1260,7 +1261,7 @@ em {
   padding: 27px 22px;
   border: 1px solid rgba(212,175,55,.65);
   color: #1a1510;
-  background: linear-gradient(145deg, #fffdf7, #ead8aa);
+  background: #fff;
   box-shadow: 0 15px 34px rgba(0,0,0,.3);
 }
 
@@ -1279,7 +1280,7 @@ em {
 .reason-card h3 em { color: var(--red); }
 .reason-store { overflow: hidden; margin-bottom: 14px; border: 3px solid #fff; box-shadow: 0 8px 18px rgba(62,40,18,.14); }
 .reason-store img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
-.reason-card.liberty { color: #1a1510; background: linear-gradient(145deg, #fffdf7, #ead8aa); }
+.reason-card.liberty { color: #1a1510; background: #fff; }
 .reason-card.liberty > span { color: var(--red); }
 .reason-card.liberty p { color: #4d4439; }
 .reason-card.liberty .liberty-cm { margin: 18px 0 10px; color: #1a1510; font-size: 16px; font-weight: 900; line-height: 1.55; text-align: center; }
@@ -1289,7 +1290,7 @@ em {
 .sales strong { display: inline-block; color: var(--red); font-size: 37px; transform: translateY(3px); }
 .sales strong i { font-size: .55em; font-style: normal; }
 .sales b { margin-left: 4px; font-size: 13px; }
-.reason-card.campaign { border-color: rgba(212,175,55,.65); background: linear-gradient(145deg, #fffdf7, #ead8aa); }
+.reason-card.campaign { border-color: rgba(212,175,55,.65); background: #fff; }
 .reason-card.campaign h3 em { color: var(--red); }
 .reason-card.campaign p { color: #4d4439; }
 .reason-card .campaign-lockup.small { width: 100%; margin-top: 22px; padding-top: 19px; }
@@ -1322,10 +1323,10 @@ em {
 
 .example-disclaimer { margin: -20px 0 19px; color: var(--muted); font-size: 11px; text-align: center; }
 .consultation-scroll { display: grid; grid-auto-columns: 82%; grid-auto-flow: column; gap: 13px; overflow-x: auto; padding: 6px 16px 22px; margin-inline: -16px; scroll-snap-type: x mandatory; scrollbar-width: thin; }
-.consultation-card { position: relative; display: grid; justify-items: center; align-content: start; gap: 14px; min-height: 0; padding: 28px 24px 20px; border: 1px solid #d8c8b8; border-radius: 12px; background: #fff; box-shadow: 0 10px 25px rgba(54,33,21,.12); scroll-snap-align: center; }
-.consultation-label { display: block; padding: 8px 25px; border: 2px solid var(--gold); border-radius: 999px; color: #111; background: #fff; font-size: 15px; font-weight: 900; white-space: nowrap; }
+.consultation-card { position: relative; display: grid; justify-items: center; align-content: start; gap: 9px; min-height: 0; padding: 18px 24px 13px; border: 1px solid #d8c8b8; border-radius: 12px; background: #fff; box-shadow: 0 10px 25px rgba(54,33,21,.12); scroll-snap-align: center; }
+.consultation-label { display: block; padding: 6px 25px; border: 2px solid var(--gold); border-radius: 999px; color: #111; background: #fff; font-size: 15px; font-weight: 900; white-space: nowrap; }
 .consultation-person { display: grid; justify-items: center; }
-.consultation-person img { display: block; width: 105px; height: 112px; object-fit: contain; }
+.consultation-person img { display: block; width: 98px; height: 100px; object-fit: contain; }
 .consultation-card > p { color: #4d4742; font-size: 14px; line-height: 1.8; text-align: left; }
 .swipe-hint { margin-top: 10px; color: var(--muted); font-size: 11px; text-align: center; }
 

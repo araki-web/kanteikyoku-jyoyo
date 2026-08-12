@@ -358,7 +358,7 @@ function Hero() {
               <span>REASON <b>02</b></span>
               <h3>運営しているのは<br /><em>株式会社Li-Lu</em>です。</h3>
               <figure className="reason-store"><img src={asset.store} alt="株式会社Li-Luが運営する城陽店の外観" width="1448" height="1086" loading="lazy" /></figure>
-              <p className="liberty-cm">親会社は<br /><strong>「リ、リ、リ、リバティ」</strong>でおなじみ！</p>
+              <p className="liberty-cm"><strong>「りりりりばてぃ」で</strong><br />おなじみ！</p>
               <div className="sales"><small>親会社リバティグループ売上</small><strong><i>約</i>600<i>億円</i></strong><b>規模</b></div>
               <p>城陽店の運営会社は株式会社Li-Luです。親会社の株式会社リバティは全国約40拠点を展開する自動車の総合店。自動車販売に加え、車検・修理・鈑金塗装・保険・カー用品まで、カーライフを幅広く支える専門企業です。</p>
             </article>

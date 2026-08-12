@@ -21,6 +21,13 @@ const asset = {
   homeItems: "/images/home-items.webp",
   worriedWoman: "/images/worried-woman.png",
   categoryWoman: "/images/category-woman.png",
+  consultationIcons: [
+    "/images/consultation-01.webp",
+    "/images/consultation-02.webp",
+    "/images/consultation-03.webp",
+    "/images/consultation-04.webp",
+    "/images/consultation-05.webp",
+  ],
 } as const;
 
 const contact = {
@@ -368,7 +375,7 @@ function Hero() {
               <article className="consultation-card" key={item.text}>
                 <span className="consultation-label">ご相談イメージ {String(index + 1).padStart(2, "0")}</span>
                 <div className="consultation-person" aria-label={`${item.person}のご相談イメージ`}>
-                  <span className={`person-icon ${item.kind} avatar-${index + 1}`} aria-hidden="true"><i /></span>
+                  <img src={asset.consultationIcons[index]} alt="" width="178" height="187" loading="lazy" />
                 </div>
                 <p>{item.text}</p>
               </article>

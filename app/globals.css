@@ -1314,10 +1314,10 @@ em {
 }
 
 .example-disclaimer { margin: -20px 0 19px; color: var(--muted); font-size: 11px; text-align: center; }
-.consultation-scroll { display: grid; grid-auto-columns: 82%; grid-auto-flow: column; gap: 13px; overflow-x: auto; padding: 6px 16px 22px; margin-inline: -16px; scroll-snap-type: x mandatory; scrollbar-width: thin; }
-.consultation-card { display: grid; grid-template-columns: 78px 1fr; align-items: center; gap: 14px; min-height: 220px; padding: 14px 7px; scroll-snap-align: center; }
-.consultation-person { display: grid; justify-items: center; gap: 7px; }
-.consultation-person > b { color: #413a34; font-size: 12px; }
+.consultation-scroll { display: grid; grid-auto-columns: 82%; grid-auto-flow: column; gap: 13px; overflow-x: auto; padding: 25px 16px 22px; margin-inline: -16px; scroll-snap-type: x mandatory; scrollbar-width: thin; }
+.consultation-card { position: relative; display: grid; justify-items: center; align-content: start; gap: 15px; min-height: 330px; padding: 50px 24px 25px; border: 1px solid #d8c8b8; border-radius: 14px; background: #fff; box-shadow: 0 10px 25px rgba(54,33,21,.12); scroll-snap-align: center; }
+.consultation-label { position: absolute; top: -20px; left: 50%; padding: 10px 18px; color: #fff; background: var(--red); font-size: 14px; font-weight: 900; white-space: nowrap; transform: translateX(-50%); }
+.consultation-person { display: grid; justify-items: center; }
 .person-icon { position: relative; display: block; width: 74px; height: 82px; overflow: hidden; border-radius: 14px; background: #fff; box-shadow: 0 5px 16px rgba(73,29,25,.12); }
 .person-icon::before { position: absolute; z-index: 2; top: 20px; left: 50%; width: 26px; height: 32px; border-radius: 48% 48% 46% 46%; content: ""; background: #f6d7bd; transform: translateX(-50%); }
 .person-icon::after { position: absolute; z-index: 3; right: 8px; bottom: -8px; left: 8px; height: 38px; border-radius: 50% 50% 0 0; content: ""; background: #d8a9af; }
@@ -1331,10 +1331,7 @@ em {
 .person-icon.avatar-4 i { width: 46px; height: 42px; border-radius: 58% 42% 52% 48%; background: #777276; }
 .person-icon.avatar-5::after { background: #66809f; }
 .person-icon.avatar-5 i { top: 12px; width: 43px; height: 25px; border-radius: 65% 35% 28% 18%; background: #656068; transform: translateX(-50%) rotate(5deg); }
-.consultation-bubble { position: relative; min-height: 164px; padding: 20px 17px; border: 1px solid #d8c8b8; border-radius: 13px; background: #fff; box-shadow: 0 10px 25px rgba(54,33,21,.12); }
-.consultation-bubble::before { position: absolute; top: 50%; left: -9px; width: 16px; height: 16px; border-bottom: 1px solid #d8c8b8; border-left: 1px solid #d8c8b8; content: ""; background: #fff; transform: translateY(-50%) rotate(45deg); }
-.consultation-bubble > span { position: relative; z-index: 1; display: inline-block; padding: 3px 8px; color: #fff; background: var(--red); font-size: 10px; font-weight: 900; }
-.consultation-bubble p { position: relative; z-index: 1; margin-top: 14px; color: #4d4742; font-size: 14px; line-height: 1.8; }
+.consultation-card > p { color: #4d4742; font-size: 14px; line-height: 1.8; text-align: left; }
 .swipe-hint { margin-top: 10px; color: var(--muted); font-size: 11px; text-align: center; }
 
 .staff-section { background: #fff; }

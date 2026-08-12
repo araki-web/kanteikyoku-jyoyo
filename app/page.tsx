@@ -367,14 +367,11 @@ function Hero() {
           <div className="consultation-scroll">
             {consultationExamples.map((item, index) => (
               <article className="consultation-card" key={item.text}>
+                <span className="consultation-label">ご相談イメージ {String(index + 1).padStart(2, "0")}</span>
                 <div className="consultation-person" aria-label={`${item.person}のご相談イメージ`}>
                   <span className={`person-icon ${item.kind} avatar-${index + 1}`} aria-hidden="true"><i /></span>
-                  <b>{item.person}</b>
                 </div>
-                <div className="consultation-bubble">
-                  <span>ご相談イメージ {String(index + 1).padStart(2, "0")}</span>
-                  <p>{item.text}</p>
-                </div>
+                <p>{item.text}</p>
               </article>
             ))}
           </div>

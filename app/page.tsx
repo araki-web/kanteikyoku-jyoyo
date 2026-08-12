@@ -164,18 +164,18 @@ function CampaignLockup({ small = false, hero = false }: { small?: boolean; hero
   if (hero) {
     return (
       <div className="campaign-lockup hero-campaign">
-        <div className="campaign-ribbon">OPENに向けて買取強化中！</div>
-        <div className="hero-offer-wrap">
-          <span className="hero-laurel hero-laurel-left" aria-hidden="true">❧</span>
-          <div className="hero-offer">
-            <span className="hero-price-label" aria-label="買取価格"><i>買</i><i>取</i><i>価</i><i>格</i></span>
-            <div className="percent-line">
-              <span className="percent-number">10</span>
-              <span className="percent-unit"><b>%</b></span>
-            </div>
-            <div className="offer-copy"><strong>UP</strong></div>
+        <div className="campaign-ribbon">
+          <span className="laurel-branch laurel-left" aria-hidden="true">{Array.from({ length: 7 }, (_, index) => <i key={index} />)}</span>
+          <b>OPENに向けて<br />買取強化中！</b>
+          <span className="laurel-branch laurel-right" aria-hidden="true">{Array.from({ length: 7 }, (_, index) => <i key={index} />)}</span>
+        </div>
+        <div className="hero-offer">
+          <span className="hero-price-label" aria-label="買取価格"><i>買</i><i>取</i><i>価</i><i>格</i></span>
+          <div className="percent-line">
+            <span className="percent-number">10</span>
+            <span className="percent-unit"><b>%</b></span>
           </div>
-          <span className="hero-laurel hero-laurel-right" aria-hidden="true">❧</span>
+          <div className="offer-copy"><strong>UP</strong></div>
         </div>
         <div className="deadline"><span>OPEN前限定</span><strong>11/30</strong>まで</div>
       </div>

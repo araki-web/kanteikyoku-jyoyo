@@ -1006,21 +1006,22 @@ em {
   min-width: 0;
   border: 1px solid #c9ad67;
   border-radius: 8px;
-  background: #211e1b;
+  background: #fff;
   box-shadow: 0 8px 20px rgba(48, 32, 17, .12);
 }
 
 .category-card img {
   width: 100%;
   aspect-ratio: 1;
-  object-fit: cover;
+  padding: 12%;
+  object-fit: contain;
   transition: transform .35s ease;
 }
 
 .category-card--cutout { background: #fff; }
 
 .category-card--cutout img {
-  padding: 7px;
+  padding: 14%;
   object-fit: contain;
 }
 

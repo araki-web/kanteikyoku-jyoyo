@@ -21,6 +21,7 @@ const asset = {
   homeItems: "/images/home-items.webp",
   worriedWoman: "/images/worried-woman.png",
   categoryWoman: "/images/category-woman.png",
+  fvProducts: "/images/fv-products.webp",
   consultationIcons: [
     "/images/consultation-01.webp",
     "/images/consultation-02.webp",
@@ -233,18 +234,12 @@ function Hero() {
                 <span>ご自宅で、安心して売れる。</span>
                 <strong>出張買取</strong>
               </h1>
-              <p className="hero-lead">ブランド品・時計・ジュエリーを、<br />専門スタッフがご自宅で丁寧に査定します。</p>
+              <p className="hero-lead">大切なお品物を、確かな目で。<br />専門スタッフがご自宅で丁寧に査定します。</p>
             </div>
+            <figure className="hero-visual">
+              <img src={asset.fvProducts} alt="ブランドバッグ、時計、ジュエリーなどの買取対象品" width="1280" height="1280" />
+            </figure>
             <CampaignLockup hero />
-          </div>
-          <div className="hero-products" aria-label="主な買取品目">
-            <p><span>主な買取品目</span>一点からでもご相談ください</p>
-            <div className="hero-product-row">
-              <figure className="hero-product bag"><img src={asset.bag01} alt="ブランドバッグのイメージ" width="1024" height="1024" /><figcaption>ブランドバッグ</figcaption></figure>
-              <figure className="hero-product watch"><img src={asset.watch} alt="高級腕時計のイメージ" width="683" height="1024" /><figcaption>高級時計</figcaption></figure>
-              <figure className="hero-product jewelry"><img src={asset.jewelry01} alt="ジュエリーのイメージ" width="1024" height="1024" /><figcaption>ジュエリー</figcaption></figure>
-              <figure className="hero-product gold"><img src={asset.gold} alt="金・インゴットのイメージ" width="1024" height="1024" /><figcaption>金・貴金属</figcaption></figure>
-            </div>
           </div>
         </div>
         <div className="hero-trust"><span>全国チェーンのノウハウ</span><i>×</i><span>株式会社Li-Lu運営</span></div>

@@ -155,8 +155,8 @@ em {
   overflow: hidden;
   color: #fff;
   background:
-    linear-gradient(180deg, rgba(255,255,255,.035), transparent 38%),
-    linear-gradient(145deg, #351016 0%, #561922 54%, #2a0b10 100%);
+    radial-gradient(ellipse at 50% 34%, rgba(175,124,55,.13), transparent 42%),
+    linear-gradient(145deg, #2d0d13 0%, #511822 54%, #25090e 100%);
   isolation: isolate;
 }
 
@@ -279,7 +279,8 @@ em {
   position: relative;
   z-index: 3;
   display: grid;
-  gap: 20px;
+  grid-template-columns: 1fr;
+  gap: 14px;
   align-items: center;
   width: min(100%, 840px);
   margin-inline: auto;
@@ -340,6 +341,35 @@ em {
   font-weight: 700;
   letter-spacing: .04em;
   line-height: 1.75;
+}
+
+.hero-visual {
+  position: relative;
+  z-index: 1;
+  align-self: end;
+  min-width: 0;
+  width: min(94%, 430px);
+  margin: -8px auto -18px;
+}
+
+.hero-visual::before {
+  position: absolute;
+  right: 9%;
+  bottom: 2%;
+  left: 8%;
+  z-index: -1;
+  height: 18%;
+  border-radius: 50%;
+  background: rgba(0,0,0,.28);
+  filter: blur(16px);
+  content: "";
+}
+
+.hero-visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 18px 18px rgba(0,0,0,.22));
 }
 
 .campaign-lockup {
@@ -423,6 +453,7 @@ em {
 
 .hero-campaign {
   width: min(100%, 360px);
+  align-self: center;
   margin: 0 auto;
   padding: 56px 16px 16px;
   border: 1px solid rgba(209,172,87,.82);
@@ -565,66 +596,6 @@ em {
   font-family: Impact, "Arial Black", sans-serif;
   font-size: 25px;
   letter-spacing: .02em;
-}
-
-.hero-products {
-  position: relative;
-  z-index: 2;
-  width: min(100%, 700px);
-  margin: 24px auto 0;
-  padding: 9px 10px 10px;
-  border: solid rgba(221,190,119,.68);
-  border-width: 1px 0;
-  background: rgba(255,250,241,.96);
-  box-shadow: 0 14px 34px rgba(18,0,2,.2);
-  color: #2d1915;
-}
-
-.hero-products > p {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  margin-bottom: 7px;
-  color: #6a514b;
-  font-size: 10px;
-  font-weight: 800;
-  letter-spacing: .05em;
-}
-
-.hero-products > p span {
-  color: #6b1821;
-  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
-  font-size: 12px;
-  font-weight: 900;
-}
-
-.hero-product-row {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 6px;
-}
-
-.hero-product {
-  position: relative;
-  min-width: 0;
-  text-align: center;
-}
-
-.hero-product img {
-  display: block;
-  width: 100%;
-  height: 64px;
-  object-fit: contain;
-  mix-blend-mode: multiply;
-}
-
-.hero-product figcaption {
-  margin-top: 2px;
-  color: #4c3731;
-  font-size: 9px;
-  font-weight: 800;
-  white-space: nowrap;
 }
 
 .hero-trust {
@@ -1500,7 +1471,7 @@ em {
 
 @media (min-width: 430px) {
   .hero-grid { padding-inline: 28px; }
-  .hero-product img { height: 72px; }
+  .hero-visual { margin-left: -28px; }
   .consultation-scroll { grid-auto-columns: 72%; }
 }
 
@@ -1528,19 +1499,16 @@ em {
   .hero-branding p b { font-size: 21px; }
   .hero-kicker { font-size: 15px; }
   .hero-kicker span { font-size: 18px; }
-  .hero-layout { grid-template-columns: 1fr 360px; gap: 42px; }
+  .hero-layout { grid-template-columns: 1.08fr .92fr; gap: 4px 24px; width: min(100%, 920px); }
   .hero-copy { text-align: left; }
+  .hero-copy { grid-column: 1; grid-row: 1; align-self: end; padding: 0 0 14px 12px; }
   .hero-kicker { font-size: 15px; }
   .hero h1 span { font-size: 30px; }
   .hero h1 strong { font-size: 78px; letter-spacing: .1em; }
   .hero-lead { font-size: 14px; }
   .campaign-lockup { width: 380px; max-width: 100%; }
-  .hero-products { margin-top: 34px; padding: 12px 18px 14px; }
-  .hero-products > p { margin-bottom: 9px; font-size: 12px; }
-  .hero-products > p span { font-size: 14px; }
-  .hero-product-row { gap: 14px; }
-  .hero-product img { height: 92px; }
-  .hero-product figcaption { font-size: 11px; }
+  .hero-visual { grid-column: 1; grid-row: 2; margin: -14px -55px -2px -58px; }
+  .hero-campaign { grid-column: 2; grid-row: 1 / span 2; margin: 0; }
   .hero-trust { min-height: 54px; font-size: 13px; }
   .cta-buttons { grid-template-columns: 1fr 1fr; }
   .cta-button { min-height: 90px; }
@@ -1598,12 +1566,11 @@ em {
 @media (min-width: 1024px) {
   .hero { min-height: 760px; }
   .hero-grid { min-height: 651px; }
-  .hero-layout { grid-template-columns: 1fr 380px; width: 920px; gap: 70px; }
+  .hero-layout { grid-template-columns: 1.14fr 380px; width: 980px; gap: 54px; }
   .hero-branding { margin-bottom: 26px; }
   .hero-copy { width: auto; margin-inline: 0; padding-top: 0; }
   .hero h1 strong { font-size: 88px; }
-  .hero-products { width: 780px; }
-  .hero-product img { height: 108px; }
+  .hero-visual { margin: -28px -86px -10px -72px; }
   .hero-trust { margin-top: 0; }
   .why-copy > p { margin-left: 0; font-size: 16px; }
   .category-grid { gap: 18px; }
@@ -1615,8 +1582,8 @@ em {
 }
 
 @media (min-width: 1280px) {
-  .hero-layout { width: 980px; }
-  .hero-products { width: 820px; }
+  .hero-layout { width: 1040px; }
+  .hero-visual { margin-right: -104px; margin-left: -92px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

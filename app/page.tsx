@@ -219,7 +219,6 @@ function Hero() {
   return (
     <main id="top">
       <section className="hero" aria-labelledby="hero-title">
-        <div className="hero-rays" aria-hidden="true" />
         <div className="hero-topline"><span>全国展開の質屋・リユースチェーン</span><strong>京都初出店！</strong></div>
         <div className="hero-grid">
           <div className="hero-branding">
@@ -227,20 +226,25 @@ function Hero() {
             <span>城陽店</span>
             <p><b>2026.12.1 TUE</b> GRAND OPEN予定</p>
           </div>
-          <div className="hero-copy">
-            <h1 id="hero-title">
-              <span>ご自宅で売れる</span>
-              <strong className="hero-service" aria-label="出張買取">
-                {["出", "張", "買", "取"].map((character) => <i aria-hidden="true" key={character}>{character}</i>)}
-              </strong>
-            </h1>
+          <div className="hero-layout">
+            <div className="hero-copy">
+              <p className="hero-kicker">＼ お店まで行かなくてOK！ ／</p>
+              <h1 id="hero-title">
+                <span>ご自宅で、安心して売れる。</span>
+                <strong>出張買取</strong>
+              </h1>
+              <p className="hero-lead">ブランド品・時計・ジュエリーを、<br />専門スタッフがご自宅で丁寧に査定します。</p>
+            </div>
             <CampaignLockup hero />
           </div>
           <div className="hero-products" aria-label="主な買取品目">
-            <figure className="hero-product bag"><img src={asset.bag01} alt="ブランドバッグのイメージ" width="1024" height="1024" /></figure>
-            <figure className="hero-product watch"><img src={asset.watch} alt="高級腕時計のイメージ" width="683" height="1024" /></figure>
-            <figure className="hero-product jewelry"><img src={asset.jewelry01} alt="ジュエリーのイメージ" width="1024" height="1024" /></figure>
-            <figure className="hero-product gold"><img src={asset.gold} alt="金・インゴットのイメージ" width="1024" height="1024" /></figure>
+            <p><span>主な買取品目</span>一点からでもご相談ください</p>
+            <div className="hero-product-row">
+              <figure className="hero-product bag"><img src={asset.bag01} alt="ブランドバッグのイメージ" width="1024" height="1024" /><figcaption>ブランドバッグ</figcaption></figure>
+              <figure className="hero-product watch"><img src={asset.watch} alt="高級腕時計のイメージ" width="683" height="1024" /><figcaption>高級時計</figcaption></figure>
+              <figure className="hero-product jewelry"><img src={asset.jewelry01} alt="ジュエリーのイメージ" width="1024" height="1024" /><figcaption>ジュエリー</figcaption></figure>
+              <figure className="hero-product gold"><img src={asset.gold} alt="金・インゴットのイメージ" width="1024" height="1024" /><figcaption>金・貴金属</figcaption></figure>
+            </div>
           </div>
         </div>
         <div className="hero-trust"><span>全国チェーンのノウハウ</span><i>×</i><span>株式会社Li-Lu運営</span></div>

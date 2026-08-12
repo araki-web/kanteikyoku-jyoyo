@@ -1,7 +1,7 @@
 :root {
-  --red: #dc0012;
-  --red-dark: #a9000c;
-  --red-deep: #740008;
+  --red: #174f7a;
+  --red-dark: #103b5f;
+  --red-deep: #092a46;
   --gold: #d4af37;
   --gold-light: #ffeaa1;
   --gold-dark: #8c6611;
@@ -135,7 +135,7 @@ em {
   flex: 0 0 96px;
   place-content: center;
   color: #fff;
-  background: linear-gradient(135deg, var(--red) 0%, #b0000c 100%);
+  background: linear-gradient(135deg, var(--red) 0%, var(--red-dark) 100%);
   text-align: center;
   line-height: 1.15;
 }
@@ -153,10 +153,10 @@ em {
   position: relative;
   min-height: 790px;
   overflow: hidden;
-  color: #fff;
+  color: #123c5d;
   background:
-    radial-gradient(ellipse at 50% 34%, rgba(175,124,55,.13), transparent 42%),
-    linear-gradient(145deg, #2d0d13 0%, #511822 54%, #25090e 100%);
+    radial-gradient(ellipse at 50% 32%, rgba(255,255,255,.98), transparent 43%),
+    linear-gradient(145deg, #f7fbff 0%, #eaf3f9 54%, #dfeef7 100%);
   isolation: isolate;
 }
 
@@ -170,11 +170,11 @@ em {
 
 .hero::before {
   inset: 0;
-  opacity: .1;
+  opacity: .09;
   background-image:
-    linear-gradient(45deg, transparent 45%, rgba(233,205,139,.72) 46% 48%, transparent 49%),
-    linear-gradient(-45deg, transparent 45%, rgba(233,205,139,.72) 46% 48%, transparent 49%),
-    radial-gradient(circle, transparent 37%, rgba(233,205,139,.56) 38% 40%, transparent 41%);
+    linear-gradient(45deg, transparent 45%, rgba(23,79,122,.62) 46% 48%, transparent 49%),
+    linear-gradient(-45deg, transparent 45%, rgba(23,79,122,.62) 46% 48%, transparent 49%),
+    radial-gradient(circle, transparent 37%, rgba(23,79,122,.48) 38% 40%, transparent 41%);
   background-position: 0 0, 0 0, 18px 18px;
   background-size: 72px 72px;
   mask-image: linear-gradient(to bottom, #000 0 72%, transparent 98%);
@@ -327,7 +327,7 @@ em {
 
 .hero h1 strong {
   display: block;
-  color: #fff;
+  color: #123f62;
   font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
   font-size: clamp(64px, 20vw, 96px);
   font-weight: 900;
@@ -385,7 +385,7 @@ em {
   background:
     linear-gradient(#fffef8, #fff8df) padding-box,
     linear-gradient(125deg, #6c4403, #ffe07a, #9e6d12, #fff0a7, #6c4403) border-box;
-  box-shadow: 0 13px 32px rgba(63, 0, 4, .32), inset 0 0 0 2px rgba(255,255,255,.8);
+  box-shadow: 0 13px 32px rgba(7, 39, 64, .25), inset 0 0 0 2px rgba(255,255,255,.8);
   text-align: center;
 }
 
@@ -397,8 +397,8 @@ em {
   padding: 5px 20px;
   transform: translateX(-50%);
   color: #fff;
-  background: linear-gradient(#ed0015, #b1000c);
-  box-shadow: 0 4px 0 #820008;
+  background: linear-gradient(#23648f, #103b5f);
+  box-shadow: 0 4px 0 #092a46;
   font-size: 15px;
   font-weight: 900;
   letter-spacing: .07em;
@@ -413,7 +413,7 @@ em {
   width: 22px;
   height: 19px;
   content: "";
-  background: #8f0009;
+  background: #0b3251;
 }
 
 .campaign-ribbon::before { left: -15px; clip-path: polygon(0 0,100% 0,100% 100%,0 75%,30% 50%); }
@@ -459,7 +459,7 @@ em {
   padding: 10px 0 6px;
   border: 0;
   border-radius: 0;
-  color: #fff;
+  color: #123f62;
   background: transparent;
   box-shadow: none;
 }
@@ -475,11 +475,11 @@ em {
   min-height: 50px;
   margin-inline: auto;
   padding: 0 2px 7px;
-  color: #e7c779;
+  color: #174f7a;
   background: transparent;
   box-shadow: none;
   clip-path: none;
-  border-bottom: 1px solid rgba(230,198,121,.76);
+  border-bottom: 0;
   font-size: clamp(13px, 3.8vw, 17px);
   font-weight: 1000;
   letter-spacing: .07em;
@@ -545,7 +545,7 @@ em {
   grid-template-rows: repeat(2, 1em);
   align-self: end;
   justify-self: center;
-  color: #fff;
+  color: #174f7a;
   font-size: 22px;
   font-weight: 1000;
   letter-spacing: .04em;
@@ -557,9 +557,9 @@ em {
 .hero-price-label i { font-style: normal; }
 
 .hero-campaign .percent-line { height: 116px; align-items: flex-end; line-height: 1; }
-.hero-campaign .percent-number { color: #e7c779; background: none; filter: drop-shadow(0 3px 10px rgba(0,0,0,.26)); font-size: 118px; letter-spacing: .015em; line-height: 1; }
+.hero-campaign .percent-number { color: #b58a2e; background: none; filter: drop-shadow(0 3px 10px rgba(43,70,91,.15)); font-size: 118px; letter-spacing: .015em; line-height: 1; }
 .hero-campaign .percent-unit { margin: 0 0 0 -3px; transform: translateY(-9px); }
-.hero-campaign .percent-unit b { color: #e7c779; font-size: 47px; font-weight: 1000; }
+.hero-campaign .percent-unit b { color: #b58a2e; font-size: 47px; font-weight: 1000; }
 
 .offer-copy {
   display: grid;
@@ -572,14 +572,15 @@ em {
 }
 
 .offer-copy span { width: 100%; font-size: 28px; white-space: nowrap; }
-.offer-copy strong { width: 100%; margin: 0 0 4px; color: #fff; font-size: 68px; font-weight: 1000; letter-spacing: -.04em; }
+.offer-copy strong { width: 100%; margin: 0 0 4px; color: #174f7a; font-size: 68px; font-weight: 1000; letter-spacing: -.04em; }
 
 .hero-campaign .deadline {
   gap: 2px;
   margin-top: 5px;
   padding: 5px 0 4px;
-  border: 0;
-  color: #fff;
+  border: solid rgba(181,138,46,.72);
+  border-width: 1px 0;
+  color: #174f7a;
   background: transparent;
   font-size: 22px;
   letter-spacing: .06em;
@@ -587,7 +588,7 @@ em {
 
 .hero-campaign .deadline span {
   padding: 0;
-  color: #fff;
+  color: #174f7a;
   background: transparent;
   font-size: 22px;
   letter-spacing: .06em;
@@ -595,7 +596,7 @@ em {
 
 .hero-campaign .deadline strong {
   margin-right: 0;
-  color: #e7c779;
+  color: #a97917;
   font-size: 36px;
   letter-spacing: .06em;
   transform: translateY(-4px);
@@ -660,7 +661,7 @@ em {
   padding: 8px 14px;
   border-top: 1px solid rgba(255,235,165,.55);
   color: #fff;
-  background: rgba(31, 0, 2, .72);
+  background: rgba(8, 42, 70, .93);
   font-size: clamp(10px, 2.9vw, 13px);
   letter-spacing: .01em;
   font-weight: 900;
@@ -718,7 +719,7 @@ em {
   padding: 10px 26px 10px 16px;
   border-radius: 10px;
   color: #fff;
-  box-shadow: 0 7px 0 rgba(0,0,0,.2), 0 13px 24px rgba(31,0,2,.18);
+  box-shadow: 0 7px 0 rgba(0,0,0,.2), 0 13px 24px rgba(8,42,70,.18);
   text-align: center;
   transition: transform .18s ease, filter .18s ease;
 }
@@ -749,7 +750,7 @@ em {
   box-shadow: 0 3px 0 rgba(0,0,0,.2);
 }
 
-.cta-button.phone { background: linear-gradient(135deg, #ed0014, #b9000d); }
+.cta-button.phone { background: linear-gradient(135deg, #236b99, #103b5f); }
 .cta-button.line { background: linear-gradient(135deg, #0cbd5c, #078c42); }
 
 .button-icon {
@@ -929,7 +930,7 @@ em {
   overflow: hidden;
   padding-top: 72px;
   color: #fff;
-  background: linear-gradient(145deg, #910008, #e10012 52%, #8c0008);
+  background: linear-gradient(145deg, #0d385a, #1d6797 52%, #082a46);
 }
 
 .why-section::before {
@@ -1416,7 +1417,7 @@ em {
   z-index: 0;
   overflow: hidden;
   color: #fff;
-  background: linear-gradient(145deg, #8c0008, #dd0012 50%, #730006);
+  background: linear-gradient(145deg, #0d385a, #1d6797 50%, #082a46);
 }
 
 .big-cta::before { position: absolute; inset: 14px; z-index: -1; border: 1px solid rgba(255,228,128,.6); content: ""; }
@@ -1521,7 +1522,7 @@ em {
   line-height: 1.05;
 }
 
-.mobile-sticky a:first-child { background: linear-gradient(135deg,#ed0014,#b4000c); }
+.mobile-sticky a:first-child { background: linear-gradient(135deg,#236b99,#103b5f); }
 .mobile-sticky a:last-child { background: linear-gradient(135deg,#0cbd5c,#078c42); }
 .mobile-sticky .button-icon { flex-basis: 32px; width: 32px; height: 32px; margin-right: 7px; font-size: 16px; }
 .mobile-sticky span:not(.button-icon) { font-size: 10px; }

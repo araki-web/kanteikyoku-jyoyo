@@ -420,15 +420,18 @@ em {
 
 .hero-campaign {
   width: min(100%, 358px);
-  padding: 48px 12px 14px;
-  border-radius: 28px;
+  padding: 66px 18px 20px;
+  border: 3px solid #efc769;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 13px 32px rgba(63, 0, 4, .26);
 }
 
 .hero-campaign .campaign-ribbon {
-  top: 14px;
-  width: calc(100% - 34px);
-  padding: 9px 24px;
-  background: #c90813;
+  top: 17px;
+  width: calc(100% - 48px);
+  padding: 10px 17px;
+  background: #ed0015;
   box-shadow: none;
   clip-path: polygon(0 0, 100% 0, 94% 50%, 100% 100%, 0 100%, 6% 50%);
   font-size: 17px;
@@ -442,15 +445,24 @@ em {
 
 .hero-offer {
   display: grid;
-  grid-template-columns: 1.4fr 1fr;
-  align-items: center;
-  gap: 2px;
+  grid-template-columns: .72fr 1.72fr .92fr;
+  align-items: end;
+  gap: 0;
 }
 
-.hero-campaign .percent-line { height: 154px; align-items: flex-end; line-height: 1; }
-.hero-campaign .percent-number { font-size: 150px; letter-spacing: -.01em; line-height: 1; }
-.hero-campaign .percent-unit { margin: 0 0 0 -3px; transform: translateY(-13px); }
-.hero-campaign .percent-unit b { color: #d4a916; font-size: 52px; font-weight: 1000; }
+.hero-price-label {
+  align-self: center;
+  color: #111;
+  font-size: 22px;
+  font-weight: 1000;
+  letter-spacing: .04em;
+  line-height: 1.08;
+}
+
+.hero-campaign .percent-line { height: 128px; align-items: flex-end; line-height: 1; }
+.hero-campaign .percent-number { color: #ed0015; background: none; filter: none; font-size: 126px; letter-spacing: -.04em; line-height: 1; }
+.hero-campaign .percent-unit { margin: 0 0 0 -4px; transform: translateY(-9px); }
+.hero-campaign .percent-unit b { color: #ed0015; font-size: 49px; font-weight: 1000; }
 
 .offer-copy {
   display: grid;
@@ -463,11 +475,14 @@ em {
 }
 
 .offer-copy span { width: 100%; font-size: 28px; white-space: nowrap; }
-.offer-copy strong { width: 100%; margin-top: 10px; font-size: 86px; font-weight: 1000; letter-spacing: -.04em; }
+.offer-copy strong { width: 100%; margin: 0 0 4px; color: #111; font-size: 76px; font-weight: 1000; letter-spacing: -.04em; }
 
 .hero-campaign .deadline {
-  gap: 4px;
-  border: 0;
+  gap: 2px;
+  margin-top: 5px;
+  padding: 10px 0 9px;
+  border: solid #e5bd60;
+  border-width: 1px 0;
   color: #111;
   background: transparent;
   font-size: 22px;
@@ -1055,7 +1070,7 @@ em {
 
 .condition-mix-visual {
   position: relative;
-  aspect-ratio: 3 / 4;
+  aspect-ratio: 4 / 3;
   min-height: 0;
   margin-top: 28px;
   overflow: hidden;
@@ -1527,7 +1542,7 @@ em {
   .category-grid { grid-template-columns: repeat(4, 1fr); gap: 15px; }
   .category-card h3 { font-size: 15px; }
   .condition-grid { grid-template-columns: 1fr; }
-  .condition-mix-visual { min-height: 520px; aspect-ratio: auto; }
+  .condition-mix-visual { min-height: 0; aspect-ratio: 4 / 3; }
   .concern-grid span { font-size: 13px; }
   .about-title { text-align: left; }
   .about-title img { margin-inline: 0; }

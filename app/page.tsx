@@ -165,7 +165,7 @@ function CampaignLockup({ small = false, hero = false }: { small?: boolean; hero
       <div className="campaign-lockup hero-campaign">
         <div className="campaign-ribbon">OPENに向けて買取強化中！</div>
         <div className="hero-offer">
-          <span className="hero-price-label">買取<br />価格</span>
+          <span className="hero-price-label" aria-label="買取価格"><i>買</i><i>取</i><i>価</i><i>格</i></span>
           <div className="percent-line">
             <span className="percent-number">10</span>
             <span className="percent-unit"><b>%</b></span>

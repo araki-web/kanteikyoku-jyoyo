@@ -250,7 +250,6 @@ function Hero() {
           <figure className="store-photo gold-frame"><img src={asset.store} alt="質屋かんてい局 城陽店の店舗外観" width="1448" height="1086" loading="lazy" /></figure>
           <div className="open-date"><span>質屋かんてい局 城陽店</span><strong>2026.12.1 <small>TUE</small></strong><b>GRAND OPEN予定！</b></div>
         </div>
-        <a className="why-link" href="#why"><span>なぜ、今だけ<br />買取価格10%UPなの？</span></a>
       </section>
 
       <section className="why-section section-pad" id="why">
@@ -280,10 +279,12 @@ function Hero() {
           <div className="category-note">
             <p>ここに載っていないお品物でも、</p>
             <div className="category-note-main">
-              <strong>買取できる<br />可能性が<br />あります！</strong>
+              <div className="category-note-copy">
+                <strong>買取できる<br />可能性が<br />あります！</strong>
+                <b>「これって売れる？」<br />というお問い合わせ<br />だけでもOK！</b>
+              </div>
               <img src={asset.categoryWoman} alt="買取できる可能性をご案内する女性" width="1122" height="1402" loading="lazy" />
             </div>
-            <b>「これって売れる？」というお問い合わせ<br />だけでもOK！</b>
           </div>
           <a className="single-line-cta" href={contact.lineHref}><Icon>●</Icon><span>LINEで写真を送って相談</span><b>›</b></a>
         </div>
@@ -335,7 +336,7 @@ function Hero() {
 
       <section className="reasons-section section-pad">
         <div className="shell">
-          <SectionHeading light><small className="section-subtitle">＼ どうして高く買えるの？ ／</small>かんてい局城陽店<br /><em>高価買取 3つの理由</em></SectionHeading>
+          <SectionHeading light><small className="section-subtitle">＼ どうして高く買えるの？ ／</small><span className="reasons-store-label">かんてい局 城陽店</span><em className="reasons-main-title">高価買取 <b>3</b>つの理由</em></SectionHeading>
           <div className="reasons-grid">
             <article className="reason-card reason-brand">
               <span>REASON <b>01</b></span>

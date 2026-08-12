@@ -885,7 +885,7 @@ em {
 
 .steps-grid {
   display: grid;
-  gap: 48px;
+  gap: 68px;
   margin-bottom: 42px;
 }
 
@@ -901,7 +901,7 @@ em {
 
 .step-card:not(:last-child)::after {
   position: absolute;
-  bottom: -31px;
+  bottom: -43px;
   left: 50%;
   z-index: 5;
   width: 24px;
@@ -1055,7 +1055,8 @@ em {
 
 .condition-mix-visual {
   position: relative;
-  min-height: 380px;
+  aspect-ratio: 3 / 4;
+  min-height: 0;
   margin-top: 28px;
   overflow: hidden;
   border: 1px solid #ead9b5;
@@ -1115,7 +1116,7 @@ em {
 }
 .condition-questions span::before { bottom: -13px; left: 22%; width: 13px; height: 13px; }
 .condition-questions span::after { bottom: -23px; left: 15%; width: 7px; height: 7px; }
-.condition-questions span:nth-child(1) { top: 6%; left: 2%; width: 43%; transform: rotate(-2deg); }
+.condition-questions span:nth-child(1) { top: 6%; right: 2%; width: 43%; transform: rotate(2deg); }
 .condition-questions span:nth-child(2) { top: 41%; left: 3%; width: 48%; transform: rotate(2deg); }
 .condition-questions span:nth-child(3) { right: 2%; bottom: 7%; width: 41%; transform: rotate(-1deg); }
 .condition-questions span:nth-child(3)::before { right: 22%; left: auto; }
@@ -1520,7 +1521,7 @@ em {
   .category-grid { grid-template-columns: repeat(4, 1fr); gap: 15px; }
   .category-card h3 { font-size: 15px; }
   .condition-grid { grid-template-columns: 1fr; }
-  .condition-mix-visual { min-height: 520px; }
+  .condition-mix-visual { min-height: 520px; aspect-ratio: auto; }
   .concern-grid span { font-size: 13px; }
   .about-title { text-align: left; }
   .about-title img { margin-inline: 0; }

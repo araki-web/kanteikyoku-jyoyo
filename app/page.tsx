@@ -358,8 +358,9 @@ function Hero() {
               <span>REASON <b>02</b></span>
               <h3>運営しているのは<br /><em>株式会社Li-Lu</em>です。</h3>
               <figure className="reason-store"><img src={asset.store} alt="株式会社Li-Luが運営する城陽店の外観" width="1448" height="1086" loading="lazy" /></figure>
+              <p className="liberty-cm">親会社は<br /><strong>「リ、リ、リ、リバティ」</strong>の<br />リバティです！</p>
               <div className="sales"><small>親会社グループ売上</small><strong><i>約</i>600<i>億円</i></strong><b>規模</b></div>
-              <p>城陽店の運営会社は株式会社Li-Luです。親会社は全国に約40拠点を展開し、自動車販売を中心に、車検（「車検の速太郎」加盟）や修理、鈑金塗装（カーコンビニ倶楽部加盟）、自動車保険代理業、カー用品販売なども提供する自動車販売の総合店、株式会社リバティ。<strong>「リ、リ、リ、リバティ」のCMでおなじみのリバティです！</strong></p>
+              <p>城陽店の運営会社は株式会社Li-Luです。親会社の株式会社リバティは全国約40拠点を展開する自動車の総合店。自動車販売に加え、車検・修理・鈑金塗装・保険・カー用品まで、カーライフを幅広く支える専門企業です。</p>
             </article>
             <article className="reason-card campaign"><span>REASON <b>03</b></span><h3>そして今は…<br /><em>OPEN前だから<br />買取強化中！</em></h3><p>12月1日のOPENに向けて、現在買取を強化中。</p><CampaignLockup small /></article>
           </div>

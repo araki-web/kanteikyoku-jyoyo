@@ -1278,8 +1278,10 @@ em {
 .reason-card.liberty { color: #1a1510; background: linear-gradient(145deg, #fffdf7, #ead8aa); }
 .reason-card.liberty > span { color: var(--red); }
 .reason-card.liberty p { color: #4d4439; }
+.reason-card.liberty .liberty-cm { margin: 18px 0 10px; color: #1a1510; font-size: 16px; font-weight: 900; line-height: 1.55; text-align: center; }
+.reason-card.liberty .liberty-cm strong { color: var(--red); font-size: 19px; }
 .sales { margin: 15px 0 24px; padding: 14px 10px 16px; border-top: 1px solid var(--gold-dark); border-bottom: 1px solid var(--gold-dark); text-align: center; line-height: 1.1; }
-.sales small { display: block; font-size: 11px; font-weight: 900; }
+.sales small { display: block; margin-bottom: 7px; font-size: 11px; font-weight: 900; }
 .sales strong { color: var(--red); font-size: 37px; }
 .sales strong i { font-size: .55em; font-style: normal; }
 .sales b { margin-left: 4px; font-size: 13px; }

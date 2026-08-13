@@ -1527,12 +1527,12 @@ em {
 }
 
 .final-copy { padding-inline: 18px; text-align: center; }
-.final-copy > p { font-size: 20px; font-weight: 900; line-height: 1.35; }
+.final-copy > p { color: #fff2cf; font-size: 25px; font-weight: 900; line-height: 1.35; white-space: nowrap; }
 .final-copy > p em { color: var(--gold-light); font-size: 37px; }
 .final-copy h2 { margin: 20px 0; font-size: 20px; line-height: 1.65; }
-.final-copy h2 span { color: var(--gold-light); font-size: 18px; }
+.final-copy h2 span { color: #fff; font-size: 18px; }
 .final-frame > .campaign-lockup { margin-block: 28px; }
-.final-reserve { padding-inline: 16px; text-align: center; }
+.final-reserve { margin-top: 24px; padding-inline: 16px; text-align: center; }
 .final-reserve > b { display: block; margin-bottom: 10px; }
 
 .site-footer {
@@ -1625,6 +1625,8 @@ em {
   .cta-buttons { grid-template-columns: 1fr 1fr; }
   .cta-button { min-height: 90px; }
   .cta-button strong { font-size: 22px; }
+  .reservation-block > p,
+  .final-reserve > b { font-size: 20px; }
   .section-heading h2 { font-size: 44px; }
   .about-title h2 { font-size: clamp(30px, 4vw, 46px); }
   .open-grid,

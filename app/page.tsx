@@ -304,7 +304,7 @@ function Hero() {
 
       <section className="steps-section section-pad">
         <div className="shell">
-          <SectionHeading><span className="steps-title">楽々 出張買取</span><small className="section-subtitle">＼ お店まで行かなくてOK！ ／</small><em>自宅にいるだけで</em><br />ブランド品が売れる</SectionHeading>
+          <SectionHeading><span className="steps-title">楽々 無料出張買取</span><small className="section-subtitle">＼ お店まで行かなくてOK！ ／</small><em>自宅にいるだけで</em><br />ブランド品が売れる</SectionHeading>
           <div className="steps-grid">
             {[
               ["01", "お申込み", "電話またはLINEから出張買取をご予約ください。", asset.step01],

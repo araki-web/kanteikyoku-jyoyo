@@ -245,9 +245,9 @@ function Hero() {
 
       <section className="why-section section-pad" id="why">
         <div className="why-rays" aria-hidden="true" />
+        <figure className="why-woman"><img src={asset.whyWoman} alt="買取強化中のご案内をする女性" width="1349" height="917" loading="lazy" /></figure>
         <div className="shell why-grid">
           <div className="why-copy">
-            <figure className="why-woman"><img src={asset.whyWoman} alt="買取強化中のご案内をする女性" width="1349" height="917" loading="lazy" /></figure>
             <SectionHeading eyebrow="＼ OPENに向けて ／" light>ただいま <em>買取強化中！</em></SectionHeading>
             <p>12月1日の城陽店グランドオープンに向けて、<strong>OPEN前の今だけ、出張買取の買取価格を10%UP！</strong></p>
             <p>「いつか売ろう」と思っていたお品物がある方は、ぜひこの機会にご相談ください。</p>

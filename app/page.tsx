@@ -22,6 +22,7 @@ const asset = {
   worriedWoman: "/images/worried-woman.png",
   categoryWoman: "/images/category-woman.png",
   fvProducts: "/images/fv-products.webp",
+  fvSp: "/images/fv-sp.webp",
   consultationIcons: [
     "/images/consultation-01.webp",
     "/images/consultation-02.webp",
@@ -224,25 +225,14 @@ function Hero() {
   return (
     <main id="top">
       <section className="hero" aria-labelledby="hero-title">
-        <div className="hero-topline"><span>全国展開の質屋・リユースチェーン</span><strong>京都初出店！</strong></div>
+        <div className="hero-topline"><strong>2026.12.1 <small>TUE</small></strong><span>GRAND OPEN予定！</span></div>
         <div className="hero-grid">
-          <div className="hero-layout">
-            <div className="hero-copy">
-              <h1 id="hero-title">
-                <strong>出張買取</strong>
-              </h1>
-            </div>
-            <CampaignLockup hero />
-            <figure className="hero-visual">
-              <img src={asset.fvProducts} alt="ブランドバッグ、時計、ジュエリーなどの買取対象品" width="1280" height="1280" />
-            </figure>
-          </div>
+          <h1 id="hero-title" className="sr-only">無料出張査定で高額買取</h1>
+          <picture className="hero-fv-image">
+            <img src={asset.fvSp} alt="無料出張査定・高額買取。OPEN前限定で買取価格10%UP、11月30日まで" width="750" height="1066" />
+          </picture>
         </div>
-        <div className="hero-trust">
-          <span className="hero-trust-store"><img src={asset.logo} alt="質屋かんてい局" width="404" height="90" /><b>城陽店</b></span>
-          <i aria-hidden="true" />
-          <span className="hero-trust-open"><strong>2026.12.1 <small>TUE</small></strong><b>GRAND OPEN予定</b></span>
-        </div>
+        <div className="hero-trust"><span>全国展開の質屋・リユースチェーン</span><i aria-hidden="true" /><strong>京都初出店！</strong></div>
       </section>
 
       <section className="hero-cta section-pad" aria-label="出張買取のご予約">

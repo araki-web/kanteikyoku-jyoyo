@@ -241,8 +241,9 @@ em {
 }
 
 .hero-topline strong small { font-size: .5em; }
+.hero-topline strong em { color: inherit; font-size: .72em; font-style: normal; }
 .hero-topline strong span { display: inline; padding: 0; font-size: 1em; }
-.hero-topline > b { color: #c60016; font-size: clamp(16px, 4.5vw, 23px); font-weight: 1000; letter-spacing: .08em; line-height: 1.2; }
+.hero-topline > b { color: #c60016; font-size: clamp(16px, 4.5vw, 23px); font-weight: 1000; letter-spacing: .08em; line-height: 1.2; transform: translateY(-5px); }
 
 .hero-grid {
   position: relative;
@@ -1599,7 +1600,8 @@ em {
   .hero-topline { min-height: 72px; gap: 18px; }
   .hero-topline strong span { font-size: 1em; }
   .hero-topline strong { font-size: 34px; }
-  .hero-grid { width: min(100%, 700px); min-height: 0; padding: 0; }
+  .hero-grid { width: min(100%, 1000px); min-height: 0; padding: 0; }
+  .hero-fv-image img { aspect-ratio: 1000 / 556; object-fit: cover; }
   .hero-branding img { width: 210px; }
   .hero-branding > span { font-size: 21px; }
   .hero-branding p { font-size: 14px; }

@@ -23,6 +23,7 @@ const asset = {
   categoryWoman: "/images/category-woman.png",
   fvProducts: "/images/fv-products.webp",
   fvSp: "/images/fv-sp.webp",
+  fvPc: "/images/fv-pc.webp",
   campaign10Up: "/images/campaign-10up.webp",
   consultationIcons: [
     "/images/consultation-01.webp",
@@ -216,10 +217,11 @@ function Hero() {
   return (
     <main id="top">
       <section className="hero" aria-labelledby="hero-title">
-        <div className="hero-topline"><strong><span>2026.12.1</span> <small>TUE</small></strong><b>GRAND OPEN予定！</b></div>
+        <div className="hero-topline"><strong><em>2026</em><span>.12.1</span> <small>TUE</small></strong><b>GRAND OPEN予定！</b></div>
         <div className="hero-grid">
           <h1 id="hero-title" className="sr-only">無料出張査定で高額買取</h1>
           <picture className="hero-fv-image">
+            <source media="(min-width: 700px)" srcSet={asset.fvPc} />
             <img src={asset.fvSp} alt="無料出張査定・高額買取。OPEN前限定で買取価格10%UP、11月30日まで" width="750" height="1066" />
           </picture>
         </div>

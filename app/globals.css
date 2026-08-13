@@ -208,11 +208,11 @@ em {
 .hero-topline {
   position: relative;
   z-index: 4;
-  display: flex;
+  display: grid;
   align-items: stretch;
   justify-content: center;
   min-height: 58px;
-  gap: 10px;
+  gap: 0;
   color: #123f62;
   background: linear-gradient(90deg, #a06d09, #ffe77c 24%, #fff4bd 50%, #ffe77c 76%, #a06d09);
   font-weight: 900;
@@ -228,19 +228,16 @@ em {
   padding: 8px 2px;
 }
 
-.hero-topline span {
-  font-size: clamp(13px, 3.6vw, 18px);
-  letter-spacing: .06em;
-}
-
 .hero-topline strong {
   color: #123f62;
   background: transparent;
-  font-size: clamp(21px, 6vw, 31px);
+  font-size: clamp(23px, 6.4vw, 34px);
   letter-spacing: .04em;
 }
 
 .hero-topline strong small { font-size: .5em; }
+.hero-topline strong span { display: inline; padding: 0; font-size: 1em; }
+.hero-topline > b { color: #c60016; font-size: clamp(16px, 4.5vw, 23px); font-weight: 1000; letter-spacing: .08em; line-height: 1.2; }
 
 .hero-grid {
   position: relative;
@@ -407,6 +404,17 @@ em {
   box-shadow: 0 13px 32px rgba(7, 39, 64, .25), inset 0 0 0 2px rgba(255,255,255,.8);
   text-align: center;
 }
+
+.campaign-image {
+  width: min(100%, 440px);
+  margin: 28px auto 0;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 14px 32px rgba(35,0,4,.24);
+}
+
+.campaign-image img { width: 100%; height: auto; }
+.campaign-image.small { width: 100%; margin-top: 20px; box-shadow: none; }
 
 .campaign-ribbon {
   position: absolute;
@@ -950,7 +958,7 @@ em {
   overflow: hidden;
   padding-top: 72px;
   color: #fff;
-  background: linear-gradient(145deg, #0d385a, #1d6797 52%, #082a46);
+  background: linear-gradient(145deg, #910008, #e10012 52%, #8c0008);
 }
 
 .why-section::before {
@@ -1437,7 +1445,7 @@ em {
   z-index: 0;
   overflow: hidden;
   color: #fff;
-  background: linear-gradient(145deg, #0d385a, #1d6797 50%, #082a46);
+  background: linear-gradient(145deg, #8c0008, #dd0012 50%, #730006);
 }
 
 .big-cta::before { position: absolute; inset: 14px; z-index: -1; border: 1px solid rgba(255,228,128,.6); content: ""; }
@@ -1569,7 +1577,7 @@ em {
   .section-pad { padding-block: 96px; }
   .hero { min-height: 0; }
   .hero-topline { min-height: 72px; gap: 18px; }
-  .hero-topline span { font-size: 20px; }
+  .hero-topline strong span { font-size: 1em; }
   .hero-topline strong { font-size: 34px; }
   .hero-grid { width: min(100%, 700px); min-height: 0; padding: 0; }
   .hero-branding img { width: 210px; }

@@ -23,6 +23,7 @@ const asset = {
   categoryWoman: "/images/category-woman.png",
   fvProducts: "/images/fv-products.webp",
   fvSp: "/images/fv-sp.webp",
+  campaign10Up: "/images/campaign-10up.webp",
   consultationIcons: [
     "/images/consultation-01.webp",
     "/images/consultation-02.webp",
@@ -183,17 +184,7 @@ function CampaignLockup({ small = false, hero = false }: { small?: boolean; hero
     );
   }
 
-  return (
-    <div className={`campaign-lockup${small ? " small" : ""}`}>
-      <div className="campaign-ribbon">OPEN前限定</div>
-      <p className="campaign-label">出張買取なら <b>買取価格</b></p>
-      <div className="percent-line">
-        <span className="percent-number">10</span>
-        <span className="percent-unit"><b>%</b><strong>UP</strong></span>
-      </div>
-      <div className="deadline"><span>期間限定</span><strong>11/30</strong>まで</div>
-    </div>
-  );
+  return <figure className={`campaign-image${small ? " small" : ""}`}><img src={asset.campaign10Up} alt="OPENに向けて買取強化中。買取価格10%UP、OPEN前限定11月30日まで" width="665" height="390" loading="lazy" /></figure>;
 }
 
 function ReservationBlock({ dark = false }: { dark?: boolean }) {
@@ -225,7 +216,7 @@ function Hero() {
   return (
     <main id="top">
       <section className="hero" aria-labelledby="hero-title">
-        <div className="hero-topline"><strong>2026.12.1 <small>TUE</small></strong><span>GRAND OPEN予定！</span></div>
+        <div className="hero-topline"><strong><span>2026.12.1</span> <small>TUE</small></strong><b>GRAND OPEN予定！</b></div>
         <div className="hero-grid">
           <h1 id="hero-title" className="sr-only">無料出張査定で高額買取</h1>
           <picture className="hero-fv-image">

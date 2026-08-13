@@ -976,6 +976,16 @@ em {
   background-image: repeating-linear-gradient(-45deg, transparent 0 9px, rgba(255,255,255,.22) 10px 11px);
 }
 
+.why-woman {
+  position: relative;
+  z-index: 1;
+  width: min(92%, 360px);
+  margin: -48px auto 2px;
+  filter: drop-shadow(0 10px 14px rgba(70, 0, 0, .2));
+}
+
+.why-woman img { display: block; width: 100%; height: auto; }
+
 .why-copy > p {
   max-width: 610px;
   margin: 0 auto 13px;
@@ -1648,6 +1658,7 @@ em {
   .open-date { margin-bottom: 0; }
   .why-copy .section-heading { text-align: left; }
   .why-copy .heading-rule { margin-left: 0; }
+  .why-woman { width: min(100%, 330px); margin: -54px auto 4px; }
   .why-grid > .campaign-lockup { margin-top: 0; }
   .steps-grid { grid-template-columns: repeat(3, 1fr); gap: 18px; }
   .step-card:not(:last-child)::after { right: -14px; bottom: 50%; left: auto; transform: translateY(50%) rotate(-45deg); }

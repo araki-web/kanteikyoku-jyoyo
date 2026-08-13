@@ -269,15 +269,11 @@ function Hero() {
             ))}
           </div>
           <div className="category-note">
-            <p>ここに載っていないお品物でも、</p>
-            <div className="category-note-main">
-              <div className="category-note-copy">
-                <strong>買取できる<br />可能性が<br />あります！</strong>
-                <b>「これって売れる？」<br />というお問い合わせ<br />だけでもOK！</b>
-              </div>
-              <img src={asset.categoryWoman} alt="買取できる可能性をご案内する女性" width="1122" height="1402" loading="lazy" />
-            </div>
+            <p>ここに載っていないお品物でも…</p>
+            <strong>買取できる<br /><span>＼ 可能性があります ／</span></strong>
+            <img src={asset.categoryWoman} alt="買取できる可能性をご案内する女性" width="1122" height="1402" loading="lazy" />
           </div>
+          <p className="category-inquiry">「これって売れる？」という<br />お問い合わせだけでもOK！</p>
           <a className="single-line-cta" href={contact.lineHref}><Icon>●</Icon><span>LINEで写真を送って相談</span><b>›</b></a>
         </div>
       </section>

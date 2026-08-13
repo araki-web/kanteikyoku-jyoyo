@@ -1599,7 +1599,7 @@ em {
   .header-cta span { font-size: 12px; }
   .header-cta strong { font-size: 20px; }
   .section-pad { padding-block: 96px; }
-  .hero { min-height: 0; }
+  .hero { min-height: 0; background: #f3f2ee; }
   .hero-topline { min-height: 72px; gap: 18px; }
   .hero-topline strong span { font-size: 1em; }
   .hero-topline strong { font-size: 34px; }

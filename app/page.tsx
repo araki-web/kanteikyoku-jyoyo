@@ -23,7 +23,7 @@ const asset = {
   categoryWoman: "/images/category-woman.png",
   fvProducts: "/images/fv-products.webp",
   fvSp: "/images/fv-sp.webp",
-  fvPc: "/images/fv-pc.webp",
+  fvPc: "/images/fv-pc.png",
   campaign10Up: "/images/campaign-10up.webp",
   consultationIcons: [
     "/images/consultation-01.webp",
@@ -283,7 +283,7 @@ function Hero() {
       <section className="condition-section section-pad">
         <div className="shell condition-grid">
           <div>
-            <SectionHeading>こんなお品物も<br /><em>諦める前に</em><br />ご相談ください！</SectionHeading>
+            <SectionHeading>こんなお品物も<br /><b className="condition-heading-line"><em>諦める前に</em><i className="condition-heading-break"><br /></i>ご相談ください！</b></SectionHeading>
             <div className="condition-mix-visual">
               <figure className="condition-mix-items condition-mix-items--full">
                 <img src={asset.homeItems} alt="ご自宅にあるバッグ、財布、時計、ジュエリーなどのお品物" width="1446" height="1087" loading="lazy" />
@@ -314,7 +314,7 @@ function Hero() {
               ["03", "ご成約", "査定内容をご確認いただき、ご納得いただけましたらご成約。", asset.step03],
             ].map(([num, title, text, image]) => (
               <article className="step-card" key={num}>
-                <div className="step-number">STEP <b>{num}</b></div>
+                <div className="step-number"><span>STEP</span> <b>{num}</b></div>
                 <figure className="step-photo"><img src={image} alt={`${title}のイメージ`} width="1448" height="1086" loading="lazy" /></figure>
                 <h3>{title}</h3><p>{text}</p>
               </article>

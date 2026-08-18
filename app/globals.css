@@ -1084,7 +1084,9 @@ em {
 
 .categories-section {
   background-color: #fbf6e9;
-  background-image: url("/images/category-pattern.png");
+  background-image:
+    linear-gradient(rgba(255,255,255,.48), rgba(255,255,255,.48)),
+    url("/images/category-pattern.png");
   background-position: center top;
   background-repeat: repeat;
   background-size: 836px auto;

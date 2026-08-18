@@ -1419,6 +1419,7 @@ em {
 .reason-card h3 em { color: var(--red); }
 .reason-store { overflow: hidden; margin-bottom: 14px; border: 3px solid #fff; box-shadow: 0 8px 18px rgba(62,40,18,.14); }
 .reason-store img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+.reason-product-image img { padding: 2%; object-fit: contain; background: #fff; }
 .reason-card.liberty { color: #1a1510; background: #fff; }
 .reason-card.liberty > span { color: var(--red); }
 .reason-card.liberty p { color: #4d4439; }

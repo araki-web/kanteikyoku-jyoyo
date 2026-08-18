@@ -1430,6 +1430,8 @@ em {
 .reason-card.campaign { border-color: rgba(212,175,55,.65); background: #fff; }
 .reason-card.campaign h3 em { color: var(--red); }
 .reason-card.campaign p { color: #4d4439; }
+.reason-card .campaign-image.small { overflow: hidden; margin: 20px 0 0; border: 3px solid #fff; box-shadow: 0 8px 18px rgba(62,40,18,.14); }
+.reason-card .campaign-image.small img { width: 100%; aspect-ratio: 16 / 9; object-fit: contain; background: #fff; }
 .reason-card .campaign-lockup.small { width: 100%; margin-top: 22px; padding-top: 19px; }
 .campaign-lockup.small .percent-line { height: 81px; }
 .campaign-lockup.small .percent-number { font-size: 94px; }

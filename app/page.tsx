@@ -278,7 +278,7 @@ function Hero() {
           <div className="category-note">
             <picture>
               <source media="(min-width: 768px)" srcSet={asset.categoryPossibilityPc} />
-              <img src={asset.categoryPossibilitySp} alt="買取できる可能性があります。女性スタッフがご案内します" width="750" height="585" loading="lazy" />
+              <img src={asset.categoryPossibilitySp} alt="買取できる可能性があります。女性スタッフがご案内します" width="750" height="354" loading="lazy" />
             </picture>
           </div>
           <a className="single-line-cta" href={contact.lineHref}><LineIcon /><span>LINEで写真を送って相談</span><b>›</b></a>

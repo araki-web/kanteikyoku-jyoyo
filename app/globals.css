@@ -143,12 +143,12 @@ em {
 
 .header-cta {
   display: flex;
-  flex: 0 0 96px;
+  flex: 0 0 118px;
   align-items: center;
   justify-content: center;
   gap: 5px;
   color: #fff;
-  background: linear-gradient(135deg, var(--red) 0%, var(--red-dark) 100%);
+  background: linear-gradient(135deg, #e00017 0%, #9e000d 100%);
   text-align: center;
   line-height: 1.15;
 }
@@ -163,6 +163,7 @@ em {
 
 .header-cta strong {
   font-size: 17px;
+  white-space: nowrap;
 }
 
 .hero {
@@ -937,7 +938,7 @@ em {
 .open-date span { font-size: 14px; font-weight: 900; }
 .open-date strong { display: block; margin-block: 2px; font-family: Impact, "Arial Black", sans-serif; font-size: 39px; letter-spacing: .03em; line-height: 1; }
 .open-date strong small { font-size: 15px; }
-.open-date b { color: var(--red); font-size: 19px; }
+.open-date b { color: #c60016; font-size: 19px; }
 
 .why-link {
   position: relative;
@@ -1147,7 +1148,7 @@ em {
 
 .category-note > img { display: block; width: min(78%, 360px); height: auto; margin: 20px auto 0; }
 .category-note p { color: #111; font-size: clamp(17px, 4.5vw, 23px); font-weight: 900; }
-.category-note strong { display: block; margin-top: 13px; color: var(--red); font-size: clamp(32px, 8vw, 46px); line-height: 1.15; }
+.category-note strong { display: block; margin-top: 13px; color: #c60016; font-size: clamp(32px, 8vw, 46px); line-height: 1.15; }
 .category-note strong span { display: inline-block; white-space: nowrap; font-size: .88em; letter-spacing: -.06em; }
 .category-inquiry { margin: 8px auto 13px; font-size: clamp(17px, 4.5vw, 22px); font-weight: 900; line-height: 1.55; text-align: center; }
 
@@ -1266,7 +1267,7 @@ em {
 
 .condition-message { padding: 22px 4px 0; text-align: center; }
 .condition-message p { font-size: 16px; font-weight: 900; }
-.condition-message strong { display: block; margin: 3px 0 16px; color: var(--red); font-size: clamp(21px, 5.8vw, 38px); line-height: 1.35; white-space: nowrap; }
+.condition-message strong { display: block; margin: 3px 0 16px; color: #c60016; font-size: clamp(21px, 5.8vw, 38px); line-height: 1.35; white-space: nowrap; }
 .condition-message span { display: block; font-size: 14px; font-weight: 700; line-height: 1.75; }
 .condition-message + .concern-grid { margin-top: 26px; }
 

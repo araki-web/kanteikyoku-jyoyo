@@ -393,7 +393,6 @@ function Hero() {
           <div className="big-cta-copy"><p>＼ 11月30日まで ／</p><h2>OPEN前限定！<br /><span>「売ろうかな？」</span><br />と思った今がチャンス！</h2><strong>まずは質問だけでもOK！</strong></div>
           <CampaignLockup />
         </div>
-        <div className="shell"><ReservationBlock dark /></div>
       </section>
 
       <section className="store-section section-pad" id="store-info">

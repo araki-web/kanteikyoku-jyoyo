@@ -27,6 +27,7 @@ const asset = {
   whyWoman: "/images/why-woman.webp",
   campaign10Up: "/images/campaign-10up.webp",
   lineIcon: "/images/line-icon.png",
+  phoneIcon: "/images/phone-icon.png",
   consultationIcons: [
     "/images/consultation-01.webp",
     "/images/consultation-02.webp",
@@ -120,7 +121,7 @@ const faqs = [
   ["出張買取には何が必要ですか？", "※本人確認書類など、正式に必要なものを入力してください。"],
 ] as const;
 
-function PhoneIcon() { return <span className="button-icon phone-receiver" aria-hidden="true" />; }
+function PhoneIcon() { return <span className="button-icon phone-receiver" aria-hidden="true"><img src={asset.phoneIcon} alt="" /></span>; }
 function LineIcon() { return <span className="button-icon line-mark" aria-hidden="true"><img src={asset.lineIcon} alt="" /></span>; }
 
 function CTAButtons({ compact = false }: { compact?: boolean }) {
@@ -208,7 +209,7 @@ function Header() {
           <span>城陽店</span>
         </a>
         <div className="header-open"><b>京都初出店</b><span>12.1 OPEN予定</span></div>
-        <a className="header-cta" href="#reserve"><span className="header-phone-icon" aria-hidden="true" /><span className="header-cta-copy"><span>出張買取</span><strong>予約する</strong></span></a>
+        <a className="header-cta" href="#reserve"><PhoneIcon /><span className="header-cta-copy"><span>出張買取</span><strong>予約する</strong></span></a>
       </div>
     </header>
   );

@@ -1174,7 +1174,7 @@ em {
 .single-line-cta b { display: none; }
 
 .condition-section {
-  background: #f1f3ee;
+  background: #e9ecea;
 }
 .condition-heading-line { display: inline; font-weight: inherit; }
 .condition-heading-break { font-style: normal; }
@@ -1461,7 +1461,7 @@ em {
 
 .consultation-section {
   overflow: hidden;
-  background: #f1f3ee;
+  background: #e9ecea;
 }
 
 .example-disclaimer { margin: -20px 0 19px; color: var(--muted); font-size: 11px; text-align: center; }

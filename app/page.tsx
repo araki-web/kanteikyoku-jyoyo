@@ -21,6 +21,8 @@ const asset = {
   homeItems: "/images/home-items.webp",
   worriedWoman: "/images/worried-woman.png",
   categoryWoman: "/images/category-woman.png",
+  categoryPossibilityPc: "/images/category-possibility-pc.png",
+  categoryPossibilitySp: "/images/category-possibility-sp.png",
   fvProducts: "/images/fv-products.webp",
   fvSp: "/images/fv-sp.webp",
   fvPc: "/images/fv-pc.png",
@@ -275,8 +277,10 @@ function Hero() {
           </div>
           <div className="category-note">
             <p>ここに載っていないお品物でも…</p>
-            <strong>買取できる<br /><span>＼ 可能性があります ／</span></strong>
-            <img src={asset.categoryWoman} alt="買取できる可能性をご案内する女性" width="1122" height="1402" loading="lazy" />
+            <picture>
+              <source media="(min-width: 768px)" srcSet={asset.categoryPossibilityPc} />
+              <img src={asset.categoryPossibilitySp} alt="買取できる可能性があります。女性スタッフがご案内します" width="750" height="585" loading="lazy" />
+            </picture>
           </div>
           <p className="category-inquiry">「これって売れる？」という<br />お問い合わせだけでもOK！</p>
           <a className="single-line-cta" href={contact.lineHref}><LineIcon /><span>LINEで写真を送って相談</span><b>›</b></a>

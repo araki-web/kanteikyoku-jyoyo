@@ -1150,10 +1150,9 @@ em {
   text-align: center;
 }
 
-.category-note > img { display: block; width: min(78%, 360px); height: auto; margin: 20px auto 0; }
+.category-note picture { display: block; margin-top: 14px; }
+.category-note picture img { display: block; width: 100%; height: auto; margin-inline: auto; }
 .category-note p { color: #111; font-size: clamp(17px, 4.5vw, 23px); font-weight: 900; }
-.category-note strong { display: block; margin-top: 13px; color: #c60016; font-size: clamp(32px, 8vw, 46px); line-height: 1.15; }
-.category-note strong span { display: inline-block; white-space: nowrap; font-size: .88em; letter-spacing: -.06em; }
 .category-inquiry { margin: 8px auto 13px; font-size: clamp(17px, 4.5vw, 22px); font-weight: 900; line-height: 1.55; text-align: center; }
 
 .single-line-cta {

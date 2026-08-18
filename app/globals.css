@@ -142,14 +142,29 @@ em {
 }
 
 .header-cta {
-  display: grid;
+  display: flex;
   flex: 0 0 96px;
-  place-content: center;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
   color: #fff;
   background: linear-gradient(135deg, var(--red) 0%, var(--red-dark) 100%);
   text-align: center;
   line-height: 1.15;
 }
+
+.header-cta-copy { display: grid; text-align: center; }
+.header-phone-icon,
+.phone-receiver::before {
+  width: 22px;
+  height: 11px;
+  border: 5px solid currentColor;
+  border-top: 0;
+  border-radius: 0 0 18px 18px;
+  content: "";
+  transform: rotate(-45deg);
+}
+.header-phone-icon { flex: 0 0 auto; color: #fff; }
 
 .header-cta span {
   font-size: 11px;
@@ -784,7 +799,7 @@ em {
   box-shadow: 0 3px 0 rgba(0,0,0,.2);
 }
 
-.cta-button.phone { background: linear-gradient(135deg, #236b99, #103b5f); }
+.cta-button.phone { background: linear-gradient(135deg, #e00017, #9e000d); }
 .cta-button.line { background: linear-gradient(135deg, #0cbd5c, #078c42); }
 
 .button-icon {
@@ -800,6 +815,11 @@ em {
   font-weight: 900;
   line-height: 1;
 }
+
+.phone-receiver { border: 0; }
+.phone-receiver::before { display: block; color: #fff; }
+.line-mark { overflow: hidden; border-color: #fff; background: #fff; }
+.line-mark img { display: block; width: 100%; height: 100%; object-fit: contain; }
 
 .cta-button span:not(.button-icon) {
   display: grid;
@@ -1584,7 +1604,7 @@ em {
   line-height: 1.05;
 }
 
-.mobile-sticky a:first-child { background: linear-gradient(135deg,#236b99,#103b5f); }
+.mobile-sticky a:first-child { background: linear-gradient(135deg,#e00017,#9e000d); }
 .mobile-sticky a:last-child { background: linear-gradient(135deg,#0cbd5c,#078c42); }
 .mobile-sticky .button-icon { flex-basis: 32px; width: 32px; height: 32px; margin-right: 7px; font-size: 16px; }
 .mobile-sticky span:not(.button-icon) { font-size: 10px; }

@@ -26,6 +26,7 @@ const asset = {
   fvPc: "/images/fv-pc.png",
   whyWoman: "/images/why-woman.webp",
   campaign10Up: "/images/campaign-10up.webp",
+  lineIcon: "/images/line-icon.png",
   consultationIcons: [
     "/images/consultation-01.webp",
     "/images/consultation-02.webp",
@@ -119,15 +120,14 @@ const faqs = [
   ["出張買取には何が必要ですか？", "※本人確認書類など、正式に必要なものを入力してください。"],
 ] as const;
 
-function Icon({ children }: { children: React.ReactNode }) {
-  return <span className="button-icon" aria-hidden="true">{children}</span>;
-}
+function PhoneIcon() { return <span className="button-icon phone-receiver" aria-hidden="true" />; }
+function LineIcon() { return <span className="button-icon line-mark" aria-hidden="true"><img src={asset.lineIcon} alt="" /></span>; }
 
 function CTAButtons({ compact = false }: { compact?: boolean }) {
   return (
     <div className={compact ? "cta-buttons compact" : "cta-buttons"}>
       <a className="cta-button phone" href={contact.phoneHref}>
-        <Icon>☎</Icon>
+        <PhoneIcon />
         <span>
           <small>電話で出張買取を予約</small>
           <strong>{contact.phoneDisplay}</strong>
@@ -135,7 +135,7 @@ function CTAButtons({ compact = false }: { compact?: boolean }) {
         </span>
       </a>
       <a className="cta-button line" href={contact.lineHref}>
-        <Icon>●</Icon>
+        <LineIcon />
         <span>
           <small>LINEでカンタン</small>
           <strong>出張買取を予約</strong>
@@ -208,7 +208,7 @@ function Header() {
           <span>城陽店</span>
         </a>
         <div className="header-open"><b>京都初出店</b><span>12.1 OPEN予定</span></div>
-        <a className="header-cta" href="#reserve"><span>出張買取</span><strong>予約する</strong></a>
+        <a className="header-cta" href="#reserve"><span className="header-phone-icon" aria-hidden="true" /><span className="header-cta-copy"><span>出張買取</span><strong>予約する</strong></span></a>
       </div>
     </header>
   );
@@ -274,7 +274,7 @@ function Hero() {
             <img src={asset.categoryWoman} alt="買取できる可能性をご案内する女性" width="1122" height="1402" loading="lazy" />
           </div>
           <p className="category-inquiry">「これって売れる？」という<br />お問い合わせだけでもOK！</p>
-          <a className="single-line-cta" href={contact.lineHref}><Icon>●</Icon><span>LINEで写真を送って相談</span><b>›</b></a>
+          <a className="single-line-cta" href={contact.lineHref}><LineIcon /><span>LINEで写真を送って相談</span><b>›</b></a>
         </div>
       </section>
 
@@ -434,8 +434,8 @@ function Hero() {
 function MobileStickyCTA() {
   return (
     <nav className="mobile-sticky" aria-label="出張買取のご予約">
-      <a href={contact.phoneHref}><Icon>☎</Icon><span>電話で<br /><b>予約</b></span></a>
-      <a href={contact.lineHref}><Icon>●</Icon><span>LINEで<br /><b>予約</b></span></a>
+      <a href={contact.phoneHref}><PhoneIcon /><span>電話で<br /><b>予約</b></span></a>
+      <a href={contact.lineHref}><LineIcon /><span>LINEで<br /><b>予約</b></span></a>
     </nav>
   );
 }

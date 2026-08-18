@@ -25,7 +25,7 @@ const asset = {
   categoryPossibilitySp: "/images/category-possibility-sp.png",
   fvProducts: "/images/fv-products.webp",
   fvSp: "/images/fv-sp.webp",
-  fvPc: "/images/fv-pc.png",
+  fvPc: "/images/fv-pc.webp",
   whyWoman: "/images/why-woman.webp",
   campaign10Up: "/images/campaign-10up.webp",
   lineIcon: "/images/line-icon.png",
@@ -231,7 +231,7 @@ function Hero() {
           <h1 id="hero-title" className="sr-only">無料出張査定で高額買取</h1>
           <picture className="hero-fv-image">
             <source media="(min-width: 700px)" srcSet={asset.fvPc} />
-            <img src={asset.fvSp} alt="無料出張査定・高額買取。OPEN前限定で買取価格10%UP、11月30日まで" width="750" height="1066" />
+            <img src={asset.fvSp} alt="無料出張査定・高額買取。OPEN前限定で買取価格10%UP、11月30日まで" width="750" height="1041" />
           </picture>
         </div>
         <div className="hero-trust"><span>全国展開の質屋・リユースチェーン</span><i aria-hidden="true" /><strong>京都初出店！</strong></div>

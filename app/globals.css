@@ -1177,7 +1177,7 @@ em {
 .single-line-cta b { display: none; }
 
 .condition-section {
-  background: #f8fae9;
+  background: #f1f3ee;
 }
 .condition-heading-line { display: inline; font-weight: inherit; }
 .condition-heading-break { font-style: normal; }
@@ -1197,10 +1197,10 @@ em {
   align-items: center;
   min-height: 48px;
   padding: 8px 9px;
-  border: 1px solid #dde4b9;
-  border-left: 4px solid #c7d35b;
+  border: 1px solid #d5dad0;
+  border-left: 4px solid #aeb992;
   border-radius: 6px;
-  background: #f1f5d7;
+  background: #e8ece3;
   box-shadow: 0 3px 10px rgba(83, 96, 35, .06);
   font-size: 12px;
   font-weight: 800;

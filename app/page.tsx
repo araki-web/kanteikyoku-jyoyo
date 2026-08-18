@@ -30,6 +30,9 @@ const asset = {
   phoneIcon: "/images/phone-icon.png",
   reason02: "/images/reason-02.webp",
   reason03: "/images/reason-03.webp",
+  concernA: "/images/concern-a.png",
+  concernB: "/images/concern-b.png",
+  concernC: "/images/concern-c.png",
   consultationIcons: [
     "/images/consultation-01.webp",
     "/images/consultation-02.webp",
@@ -284,15 +287,10 @@ function Hero() {
         <div className="shell condition-grid">
           <div>
             <SectionHeading>こんなお品物も<br /><b className="condition-heading-line"><em>諦める前に</em><i className="condition-heading-break"><br /></i>ご相談ください！</b></SectionHeading>
-            <div className="condition-mix-visual">
-              <figure className="condition-mix-items condition-mix-items--full">
-                <img src={asset.homeItems} alt="ご自宅にあるバッグ、財布、時計、ジュエリーなどのお品物" width="1446" height="1087" loading="lazy" />
-              </figure>
-              <div className="condition-questions" aria-label="よくあるご相談">
-                <span>ボロボロだけど大丈夫？</span>
-                <span>他のお店で断られたんだけど…</span>
-                <span>こんな状態でも売れる？</span>
-              </div>
+            <div className="condition-concern-images" aria-label="よくあるご相談">
+              <img src={asset.concernA} alt="ボロボロだけど大丈夫？" width="634" height="217" loading="lazy" />
+              <img src={asset.concernB} alt="他のお店で断られたんだけど…" width="634" height="217" loading="lazy" />
+              <img src={asset.concernC} alt="こんな状態でも売れる？" width="634" height="217" loading="lazy" />
             </div>
             <div className="condition-message">
               <p>そんなときこそ、</p>
@@ -344,7 +342,7 @@ function Hero() {
               <div className="sales"><small>親会社リバティグループ売上</small><strong><i>約</i>600<i>億円</i></strong><b>規模</b></div>
               <p>城陽店の運営会社は株式会社Li-Luです。親会社である株式会社リバティは、全国約40拠点を展開する自動車販売企業。長年培ってきた実績と企業基盤を背景に、地域のお客様に安心してご利用いただけるサービスを提供しています。</p>
             </article>
-            <article className="reason-card campaign"><span>REASON <b>03</b></span><h3>12月のOPENに向けて<br /><em>現在買取強化中！</em></h3><figure className="reason-store reason-product-image"><img src={asset.reason03} alt="買取強化中のブランドバッグ、時計、ジュエリー" width="1254" height="1254" loading="lazy" /></figure><p>12月のOPENに向けて、現在買取を強化中。</p></article>
+            <article className="reason-card campaign"><span>REASON <b>03</b></span><h3>12月のOPENに向けて<br /><em>現在買取強化中！</em></h3><figure className="reason-store reason-product-image"><img src={asset.reason03} alt="買取強化中のブランドバッグ、時計、ジュエリー" width="1254" height="1254" loading="lazy" /></figure><p>12月1日の城陽店OPENに向けて、現在買取を強化中。買取価格10%UPは11月末日まで！</p></article>
           </div>
         </div>
       </section>

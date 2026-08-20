@@ -1519,10 +1519,12 @@ em {
 .staff-card figure img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; }
 .staff-card--temporary figure { background: linear-gradient(145deg, #fffdf7, #efe2c7); }
 .staff-card--temporary figure img { object-fit: contain; transform: scale(1.34); transform-origin: center 28%; }
-.staff-name { display: grid; width: 100%; margin-bottom: 14px; padding: 10px 12px; border-top: 1px solid var(--gold); border-bottom: 1px solid var(--gold); background: var(--cream); }
-.staff-name small { color: var(--muted); font-size: 11px; }
-.staff-name strong { font-size: 22px; }
+.staff-name { display: grid; justify-items: center; width: 100%; margin-bottom: 18px; padding: 0 12px 14px; background: transparent; }
+.staff-name::after { width: 54px; height: 2px; margin-top: 11px; content: ""; background: linear-gradient(90deg, transparent, var(--gold-dark), transparent); }
+.staff-name small { display: inline-flex; min-height: 25px; align-items: center; padding: 4px 14px; border-radius: 999px; color: #fff; background: linear-gradient(135deg, #765005, #bd8b1d); font-size: 10px; font-weight: 900; letter-spacing: .08em; }
+.staff-name strong { margin-top: 8px; color: var(--ink); font-size: 23px; line-height: 1.25; }
 .staff-card > p { color: #4d4742; font-size: 13px; line-height: 1.8; text-align: left; }
+.staff-intro + .shell { margin-top: clamp(54px, 8vw, 84px); padding-top: clamp(30px, 5vw, 46px); border-top: 1px solid rgba(118,80,5,.28); }
 
 .area-section { background: linear-gradient(180deg, #f8f2e6, #fff); }
 .area-content { max-width: 880px; }

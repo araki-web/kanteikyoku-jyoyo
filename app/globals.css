@@ -1737,6 +1737,34 @@ em {
   .store-grid { align-items: start; }
   .final-frame { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 54px; padding: 0 40px; }
   .final-frame > .campaign-terms { grid-column: 1 / -1; }
+  .why-section > .why-grid,
+  .big-cta > .campaign-repeat-grid,
+  .final-cta > .final-frame {
+    display: block;
+    width: min(calc(100% - 64px), 960px);
+  }
+  .final-cta > .final-frame { padding-inline: 0; }
+  .why-section .why-copy .section-heading,
+  .big-cta .why-copy .section-heading,
+  .final-cta .why-copy .section-heading { text-align: center; }
+  .why-section .why-copy .campaign-period,
+  .big-cta .why-copy .campaign-period,
+  .final-cta .why-copy .campaign-period { margin-inline: auto; }
+  .why-section .campaign-offer,
+  .big-cta .campaign-offer,
+  .final-cta .campaign-offer {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: center;
+    gap: 64px;
+    margin-top: 40px;
+  }
+  .why-section .campaign-message,
+  .big-cta .campaign-message,
+  .final-cta .campaign-message {
+    margin: 0;
+    text-align: left;
+  }
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .footer-info { text-align: right; }
   .mobile-sticky { display: none; }

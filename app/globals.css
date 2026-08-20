@@ -1343,8 +1343,7 @@ em {
   background: radial-gradient(circle at 18% 22%, #3b352f, transparent 28%), linear-gradient(135deg, #0d0d0d, #24211e 55%, #090909);
 }
 
-.about-section::before,
-.reasons-section::before {
+.about-section::before {
   position: absolute;
   inset: 12px;
   border: 1px solid rgba(212,175,55,.48);

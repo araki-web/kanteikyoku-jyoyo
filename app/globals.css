@@ -728,9 +728,13 @@ em {
 .hero-cta {
   position: relative;
   padding-block: 38px 44px;
-  background:
-    linear-gradient(90deg, rgba(212,175,55,.1) 1px, transparent 1px) 0 0 / 24px 24px,
-    #fff;
+  background-color: #fbf8f0;
+  background-image:
+    linear-gradient(rgba(255,255,255,.78), rgba(255,255,255,.78)),
+    url("/images/category-pattern.png");
+  background-position: center top;
+  background-repeat: repeat;
+  background-size: 836px auto;
 }
 
 .reservation-block {

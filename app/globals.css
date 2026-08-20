@@ -989,17 +989,33 @@ em {
 
 .why-section > .why-grid { padding-top: 42px; }
 
-.why-copy > p {
-  max-width: 610px;
+.campaign-period {
+  display: table;
   margin: 0 auto 13px;
-  font-size: clamp(19px, 5vw, 25px);
+  padding: 5px 18px;
+  border-top: 1px solid rgba(255,255,255,.7);
+  border-bottom: 1px solid rgba(255,255,255,.7);
+  color: #fff4c7;
+  font-size: clamp(18px, 4.8vw, 24px);
+  font-weight: 1000;
+  letter-spacing: .06em;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.campaign-offer > .campaign-image { margin-top: 0; }
+
+.campaign-message {
+  max-width: 610px;
+  margin: 18px auto 0;
+  font-size: clamp(18px, 4.7vw, 23px);
   font-weight: 800;
-  line-height: 1.65;
+  line-height: 1.6;
   text-align: center;
   text-shadow: 0 2px 5px rgba(55, 31, 0, .28);
 }
 
-.why-copy > p strong { color: #fff1ad; font-size: 1.45em; font-weight: 1000; }
+.campaign-message strong { color: #fff1ad; font-size: 1.2em; font-weight: 1000; }
 
 .why-grid > .campaign-lockup { margin-top: 38px; }
 
@@ -1485,7 +1501,7 @@ em {
   z-index: 0;
   overflow: hidden;
   color: #fff;
-  background: linear-gradient(145deg, #8c0008, #dd0012 50%, #730006);
+  background: linear-gradient(145deg, #910008, #e10012 52%, #8c0008);
 }
 
 .big-cta::before { display: none; }
@@ -1666,6 +1682,7 @@ em {
   .open-date { margin-bottom: 0; }
   .why-copy .section-heading { text-align: left; }
   .why-copy .heading-rule { margin-left: 0; }
+  .why-copy .campaign-period { margin-left: 0; }
   .why-section { padding-top: 0; }
   .why-section > .why-grid { padding-top: 54px; }
   .why-grid > .campaign-lockup { margin-top: 0; }

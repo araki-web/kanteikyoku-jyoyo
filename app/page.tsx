@@ -254,9 +254,12 @@ function Hero() {
         <div className="shell why-grid">
           <div className="why-copy">
             <SectionHeading eyebrow="＼ OPENに向けて ／" light>ただいま <em>買取強化中！</em></SectionHeading>
-            <p><strong>「いつか売ろう」</strong>と思っていた<br />お品物がある方は、<br />ぜひこの機会にご相談ください。</p>
+            <p className="campaign-period">11月30日まで</p>
           </div>
-          <CampaignLockup />
+          <div className="campaign-offer">
+            <CampaignLockup />
+            <p className="campaign-message"><strong>「いつか売ろう」</strong>と思っていた<br />お品物がある方は、<br />ぜひこの機会にご相談ください。</p>
+          </div>
         </div>
         <div className="campaign-terms">※キャンペーンの対象商品・上限金額・対象外品・その他適用条件を入力</div>
       </section>
@@ -386,10 +389,15 @@ function Hero() {
       </section>
 
       <section className="big-cta section-pad">
-        <div className="big-cta-rays" aria-hidden="true" />
-        <div className="shell big-cta-grid">
-          <div className="big-cta-copy"><p>＼ 11月30日まで ／</p><h2>OPEN前限定！<br /><span>「売ろうかな？」</span><br />と思った今がチャンス！</h2><strong>まずは質問だけでもOK！</strong></div>
-          <CampaignLockup />
+        <div className="shell why-grid campaign-repeat-grid">
+          <div className="why-copy">
+            <SectionHeading eyebrow="＼ OPENに向けて ／" light>ただいま <em>買取強化中！</em></SectionHeading>
+            <p className="campaign-period">11月30日まで</p>
+          </div>
+          <div className="campaign-offer">
+            <CampaignLockup />
+            <p className="campaign-message"><strong>「売ろうかな？」</strong>と思った<br />今がチャンス！</p>
+          </div>
         </div>
       </section>
 

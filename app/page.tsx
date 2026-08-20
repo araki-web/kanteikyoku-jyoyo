@@ -427,8 +427,14 @@ function Hero() {
 
       <section className="final-cta section-pad">
         <div className="final-frame shell">
-          <div className="final-copy"><p>OPEN前の今だけ！</p><h2><span className="final-copy-pair">お家に眠っている<br /><b className="final-items">バッグ・時計・ジュエリー・貴金属</b></span><span className="final-copy-pair">この機会に一度<br />査定してみませんか？</span></h2></div>
-          <CampaignLockup />
+          <div className="why-copy">
+            <SectionHeading eyebrow="＼ OPENに向けて ／" light>ただいま <em>買取強化中！</em></SectionHeading>
+            <p className="campaign-period">11月30日まで</p>
+          </div>
+          <div className="campaign-offer">
+            <CampaignLockup />
+            <p className="campaign-message">お家に眠っている<br /><strong className="campaign-products">バッグ・時計・ジュエリー・貴金属</strong><br />この機会に一度<br />査定してみませんか？</p>
+          </div>
           <div className="final-reserve"><b>＼ 予約はカンタン ／</b><CTAButtons /></div>
           <div className="campaign-terms">※キャンペーン適用条件を入力</div>
         </div>

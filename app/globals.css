@@ -978,7 +978,9 @@ em {
   background: linear-gradient(145deg, #910008, #e10012 52%, #8c0008);
 }
 
-.why-section::before {
+.why-section::before,
+.big-cta::before,
+.final-cta::before {
   position: absolute;
   inset: 0;
   z-index: -1;
@@ -1021,6 +1023,7 @@ em {
 }
 
 .campaign-message strong { color: #fff1ad; font-size: 1.2em; font-weight: 1000; }
+.campaign-message .campaign-products { display: inline-block; font-size: clamp(14px, 4vw, 18px); white-space: nowrap; }
 
 .why-grid > .campaign-lockup { margin-top: 38px; }
 
@@ -1509,7 +1512,6 @@ em {
   background: linear-gradient(145deg, #910008, #e10012 52%, #8c0008);
 }
 
-.big-cta::before { display: none; }
 .big-cta-grid { position: relative; display: grid; gap: 20px; }
 .big-cta-copy { text-align: center; }
 .big-cta-copy > p { display: inline-block; padding: 4px 15px; color: #17120a; background: var(--gold-light); font-size: 14px; font-weight: 900; }
@@ -1550,17 +1552,19 @@ em {
 .faq-answer p { color: #49433d; font-size: 13px; line-height: 1.75; }
 
 .final-cta {
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
   color: #fff;
-  background: #111;
+  background: linear-gradient(145deg, #910008, #e10012 52%, #8c0008);
 }
 
 .final-frame {
   position: relative;
-  padding-block: 45px;
+  z-index: 1;
+  padding-block: 0;
   border: 0;
-  background:
-    radial-gradient(circle at 18% 15%, rgba(212,175,55,.17), transparent 24%),
-    linear-gradient(140deg, #231f1b, #0d0d0d);
+  background: transparent;
 }
 
 .final-copy { padding-inline: 18px; text-align: center; }
@@ -1714,7 +1718,7 @@ em {
   .big-cta-copy { text-align: left; }
   .big-cta-copy h2 { font-size: 34px; }
   .store-grid { align-items: start; }
-  .final-frame { display: grid; grid-template-columns: 1fr 1fr; align-items: center; padding: 58px 40px; }
+  .final-frame { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 54px; padding: 0 40px; }
   .final-reserve,
   .final-frame > .campaign-terms { grid-column: 1 / -1; }
   .footer-grid { grid-template-columns: 1fr 1fr; }

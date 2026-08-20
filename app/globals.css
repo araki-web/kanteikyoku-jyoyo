@@ -1217,11 +1217,12 @@ em {
   align-items: center;
   min-height: 48px;
   padding: 8px 9px;
-  border: 1px solid #d5dad0;
-  border-left: 4px solid #aeb992;
+  border: 1px solid #d5e0e8;
+  border-left: 4px solid #174f7a;
   border-radius: 6px;
+  color: #1d2730;
   background: #fff;
-  box-shadow: 0 3px 10px rgba(83, 96, 35, .06);
+  box-shadow: 0 3px 10px rgba(23, 79, 122, .1);
   font-size: 12px;
   font-weight: 800;
   line-height: 1.35;

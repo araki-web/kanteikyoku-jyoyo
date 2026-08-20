@@ -1500,12 +1500,14 @@ em {
 .reason-liberty-logo { width: 100%; margin: 5px 0 16px; padding: 9px; background: #fff; object-fit: contain; }
 .reason-brand-logo { height: 72px; }
 .reason-liberty-logo { height: 66px; }
-.reason-services { display: grid; grid-template-columns: repeat(3, 1fr); gap: 5px; margin-block: 16px; }
-.reason-services span { display: grid; min-height: 65px; place-content: center; border: 1px solid var(--gold-dark); color: var(--gold-dark); font: 700 8px/1.2 Arial, sans-serif; letter-spacing: .08em; text-align: center; }
+.reason-services { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin: 14px 0 18px; }
+.reason-services span { display: grid; aspect-ratio: 1; place-content: center; border: 2px solid var(--gold-dark); border-radius: 50%; color: var(--gold-dark); background: radial-gradient(circle at 36% 28%, #fffdf7, #f4e6bf 70%, #d8b665); font: 800 8px/1.2 Arial, sans-serif; letter-spacing: .08em; text-align: center; box-shadow: 0 5px 12px rgba(87,57,8,.14); }
 .reason-services b { display: block; margin-bottom: 5px; color: var(--ink); font-family: "Yu Gothic", sans-serif; font-size: 13px; letter-spacing: 0; }
 .reason-card h3 em { color: var(--red); }
 .reason-store { overflow: hidden; margin-bottom: 14px; border: 3px solid #fff; box-shadow: 0 8px 18px rgba(62,40,18,.14); }
 .reason-store img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+.reason-card.liberty .reason-store img,
+.reason-card.campaign .reason-store img { aspect-ratio: 4 / 3; }
 .reason-brand .reason-store img { object-position: 58% 50%; transform: scale(1.48); }
 .reason-product-image { background: radial-gradient(circle at 50% 38%, #fffdf7 0 34%, #f3e6c7 70%, #d8b96d 100%); }
 .reason-product-image img { padding: 0; object-fit: contain; background: transparent; transform: scale(1.55); transform-origin: center 58%; }

@@ -1524,7 +1524,7 @@ em {
 .staff-name strong { font-size: 24px; }
 .staff-copy > p { font-size: 14px; }
 .staff-visual { position: relative; margin-block: 22px 34px; }
-.staff-visual figure { position: relative; width: min(100%, 420px); aspect-ratio: 1; margin-inline: auto; overflow: hidden; padding: 5px; border-radius: 50%; background: linear-gradient(135deg, #77510d, #ffeaa0, #85600d); box-shadow: var(--shadow); }
+.staff-visual figure { position: relative; width: min(78%, 290px); aspect-ratio: 1; margin-inline: auto; overflow: hidden; padding: 5px; border-radius: 50%; background: linear-gradient(135deg, #77510d, #ffeaa0, #85600d); box-shadow: var(--shadow); }
 .staff-visual figure img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; }
 
 .area-section { background: linear-gradient(180deg, #f8f2e6, #fff); }
@@ -1776,6 +1776,7 @@ em {
   .reason-card h3 { font-size: 25px; }
   .reason-card p { font-size: 14px; }
   .staff-visual { margin-right: 20px; }
+  .staff-visual figure { width: min(100%, 320px); }
   .area-list { justify-content: flex-start; }
   .area-note { text-align: left; }
 }

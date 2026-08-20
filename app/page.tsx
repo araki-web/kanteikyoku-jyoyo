@@ -35,11 +35,11 @@ const asset = {
   concernB: "/images/concern-b.png",
   concernC: "/images/concern-c.png",
   consultationIcons: [
-    "/images/consultation-03.png",
-    "/images/consultation-02.png",
-    "/images/consultation-01.png",
-    "/images/consultation-04.png",
-    "/images/consultation-05.png",
+    "/images/consultation-new-01.webp",
+    "/images/consultation-new-02.webp",
+    "/images/consultation-new-03.webp",
+    "/images/consultation-new-04.webp",
+    "/images/consultation-new-05.webp",
   ],
 } as const;
 

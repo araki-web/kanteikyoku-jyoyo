@@ -1185,7 +1185,7 @@ em {
 .single-line-cta b { display: none; }
 
 .condition-section {
-  background: #fff;
+  background: #e8eae9;
 }
 .condition-heading-line { display: inline; font-weight: inherit; }
 .condition-heading-break { font-style: normal; }
@@ -1199,11 +1199,11 @@ em {
   align-items: center;
   min-height: 130px;
   overflow: hidden;
-  border: 1px solid #5d6267;
+  border: 1px solid #d1d5d4;
   border-radius: 12px;
-  color: #fff;
-  background: linear-gradient(145deg, #1d2023, #41464b);
-  box-shadow: 0 9px 20px rgba(18, 21, 23, .18);
+  color: #1d2327;
+  background: #fff;
+  box-shadow: 0 9px 20px rgba(32, 43, 48, .09);
 }
 
 .concern-visual-card--reverse { grid-template-columns: 1fr 36%; }
@@ -1222,8 +1222,8 @@ em {
 .concern-person--right img { right: 0; }
 
 .concern-visual-card p { padding: 15px 13px; font-size: clamp(18px, 5.4vw, 25px); font-weight: 900; line-height: 1.35; text-align: center; }
-.concern-visual-card p strong { color: #f2d36f; font-size: 1.08em; }
-.concern-visual-card p b { color: #fff; font-size: .94em; }
+.concern-visual-card p strong { color: #174f7a; font-size: 1.08em; }
+.concern-visual-card p b { color: #1d2327; font-size: .94em; }
 
 .concern-grid {
   display: grid;

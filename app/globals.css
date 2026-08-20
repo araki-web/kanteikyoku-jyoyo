@@ -425,7 +425,8 @@ em {
   box-shadow: 0 14px 32px rgba(35,0,4,.24);
 }
 
-.campaign-image img { width: 100%; height: auto; }
+.campaign-image picture,
+.campaign-image img { display: block; width: 100%; height: auto; }
 .campaign-image.small { width: 100%; margin-top: 20px; box-shadow: none; }
 
 .campaign-ribbon {
@@ -1758,17 +1759,17 @@ em {
   .why-section .campaign-offer,
   .big-cta .campaign-offer,
   .final-cta .campaign-offer {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-    align-items: center;
-    gap: 64px;
+    display: block;
     margin-top: 40px;
   }
+  .why-section .campaign-image,
+  .big-cta .campaign-image,
+  .final-cta .campaign-image { width: 100%; max-width: 1000px; }
   .why-section .campaign-message,
   .big-cta .campaign-message,
   .final-cta .campaign-message {
-    margin: 0;
-    text-align: left;
+    margin: 24px auto 0;
+    text-align: center;
   }
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .footer-info { text-align: right; }

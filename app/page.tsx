@@ -27,6 +27,7 @@ const asset = {
   fvSp: "/images/fv-sp.webp",
   fvPc: "/images/fv-pc.png",
   campaign10Up: "/images/campaign-10up.webp",
+  campaign10UpPc: "/images/campaign-10up-pc.webp",
   lineIcon: "/images/line-icon.png",
   phoneIcon: "/images/phone-icon.png",
   reason02: "/images/reason-02.webp",
@@ -193,7 +194,14 @@ function CampaignLockup({ small = false, hero = false }: { small?: boolean; hero
     );
   }
 
-  return <figure className={`campaign-image${small ? " small" : ""}`}><img src={asset.campaign10Up} alt="OPENに向けて買取強化中。買取価格10%UP、OPEN前限定11月30日まで" width="750" height="489" loading="lazy" /></figure>;
+  return (
+    <figure className={`campaign-image${small ? " small" : ""}`}>
+      <picture>
+        {!small && <source media="(min-width: 768px)" srcSet={asset.campaign10UpPc} />}
+        <img src={asset.campaign10Up} alt="OPENに向けて買取強化中。買取価格10%UP、OPEN前限定11月30日まで" width="750" height="489" loading="lazy" />
+      </picture>
+    </figure>
+  );
 }
 
 function ReservationBlock({ dark = false }: { dark?: boolean }) {

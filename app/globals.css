@@ -1488,13 +1488,7 @@ em {
 
 .consultation-section {
   overflow: hidden;
-  background-color: #fbf8f0;
-  background-image:
-    linear-gradient(rgba(255,255,255,.78), rgba(255,255,255,.78)),
-    url("/images/category-pattern.png");
-  background-position: center top;
-  background-repeat: repeat;
-  background-size: 836px auto;
+  background: #fff;
 }
 
 .example-disclaimer { margin: -20px 0 19px; color: var(--muted); font-size: 11px; text-align: center; }
@@ -1506,17 +1500,27 @@ em {
 .consultation-card > p { color: #4d4742; font-size: 14px; line-height: 1.8; text-align: left; }
 .swipe-hint { margin-top: 10px; color: var(--muted); font-size: 11px; text-align: center; }
 
-.staff-section { background: #fff; }
-.staff-grid { display: grid; gap: 28px; }
-.staff-copy .section-heading { text-align: left; }
-.staff-copy .heading-rule { margin-left: 0; }
-.staff-name { display: grid; margin-bottom: 18px; padding: 11px 15px; border-left: 5px solid var(--red); background: var(--cream); }
+.staff-section {
+  background-color: #fbf8f0;
+  background-image:
+    linear-gradient(rgba(255,255,255,.78), rgba(255,255,255,.78)),
+    url("/images/category-pattern.png");
+  background-position: center top;
+  background-repeat: repeat;
+  background-size: 836px auto;
+}
+.staff-intro .section-heading { text-align: center; }
+.staff-intro .heading-rule { margin-inline: auto; }
+.staff-members { display: grid; gap: 22px; max-width: 980px; margin-inline: auto; }
+.staff-card { display: grid; justify-items: center; align-content: start; padding: 24px 20px 22px; border: 1px solid #d8c8b8; border-radius: 14px; background: rgba(255,255,255,.96); box-shadow: 0 10px 25px rgba(54,33,21,.12); text-align: center; }
+.staff-card figure { width: min(64vw, 210px); aspect-ratio: 1; margin-bottom: 18px; overflow: hidden; padding: 5px; border-radius: 50%; background: linear-gradient(135deg, #77510d, #ffeaa0, #85600d); box-shadow: 0 8px 20px rgba(61,39,18,.16); }
+.staff-card figure img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; }
+.staff-card--temporary figure { background: linear-gradient(145deg, #fffdf7, #efe2c7); }
+.staff-card--temporary figure img { object-fit: contain; transform: scale(1.34); transform-origin: center 28%; }
+.staff-name { display: grid; width: 100%; margin-bottom: 14px; padding: 10px 12px; border-top: 1px solid var(--gold); border-bottom: 1px solid var(--gold); background: var(--cream); }
 .staff-name small { color: var(--muted); font-size: 11px; }
-.staff-name strong { font-size: 24px; }
-.staff-copy > p { font-size: 14px; }
-.staff-visual { position: relative; margin-block: 22px 34px; }
-.staff-visual figure { position: relative; width: min(78%, 290px); aspect-ratio: 1; margin-inline: auto; overflow: hidden; padding: 5px; border-radius: 50%; background: linear-gradient(135deg, #77510d, #ffeaa0, #85600d); box-shadow: var(--shadow); }
-.staff-visual figure img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; }
+.staff-name strong { font-size: 22px; }
+.staff-card > p { color: #4d4742; font-size: 13px; line-height: 1.8; text-align: left; }
 
 .area-section { background: linear-gradient(180deg, #f8f2e6, #fff); }
 .area-content { max-width: 880px; }
@@ -1751,13 +1755,10 @@ em {
   .reason-card { padding: 28px 23px; }
   .liberty-grid { grid-template-columns: 1.08fr .92fr; }
   .consultation-scroll { grid-auto-columns: 330px; margin-inline: 0; padding-inline: 4px; }
-  .staff-grid { grid-template-columns: .85fr 1.15fr; }
-  .staff-copy .section-heading h2 {
-    font-size: clamp(28px, 2.6vw, 32px);
-    letter-spacing: -.06em;
-    white-space: nowrap;
-  }
-  .staff-copy .section-heading h2 br { display: none; }
+  .staff-members { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+  .staff-card figure { width: min(18vw, 190px); }
+  .staff-intro .section-heading h2 { white-space: nowrap; }
+  .staff-intro .section-heading h2 br { display: none; }
   .big-cta-grid { grid-template-columns: 1fr 1fr; }
   .big-cta-copy { text-align: left; }
   .big-cta-copy h2 { font-size: 34px; }
@@ -1821,8 +1822,6 @@ em {
   }
   .reason-card h3 { font-size: 25px; }
   .reason-card p { font-size: 14px; }
-  .staff-visual { margin-right: 20px; }
-  .staff-visual figure { width: min(100%, 320px); }
   .area-list { justify-content: flex-start; }
   .area-note { text-align: left; }
 }

@@ -5,6 +5,8 @@ const asset = {
   libertyLogo: "/images/liberty-logo.jpg",
   store: "/images/store.jpg",
   staff: "/images/staff.jpg",
+  staffPoint: "/images/female-staff-point.png",
+  staffPresent: "/images/female-staff-present.png",
   bag01: "/images/bag-01.jpg",
   bag02: "/images/bag-02.jpg",
   watch: "/images/watch.jpg",
@@ -383,13 +385,25 @@ function Hero() {
       </section>
 
       <section className="staff-section section-pad">
-        <div className="shell staff-grid">
-          <div className="staff-copy">
-            <SectionHeading>私たちが<br /><em>お伺いします！</em></SectionHeading>
-            <div className="staff-name"><small>店舗責任者</small><strong>木村 航平</strong></div>
-            <p>ブランド品を売るのが初めてという方にも、できるだけ分かりやすく丁寧にご説明します。売れるかどうか分からないお品物も、まずはお気軽にご相談ください。</p>
+        <div className="shell staff-intro">
+          <SectionHeading>私たちが<br /><em>お伺いします！</em></SectionHeading>
+          <div className="staff-members">
+            <article className="staff-card">
+              <figure><img src={asset.staff} alt="店舗責任者 木村航平" width="1448" height="1086" loading="lazy" /></figure>
+              <div className="staff-name"><small>店舗責任者</small><strong>木村 航平</strong></div>
+              <p>初めての方にも、分かりやすく丁寧にご説明します。売れるか分からないお品物もお気軽にご相談ください。</p>
+            </article>
+            <article className="staff-card staff-card--temporary">
+              <figure><img src={asset.staffPoint} alt="出張買取スタッフの仮イメージ" width="1536" height="1536" loading="lazy" /></figure>
+              <div className="staff-name"><small>出張買取スタッフ</small><strong>スタッフA（仮）</strong></div>
+              <p>お品物の状態を一つずつ確認し、ご納得いただけるよう丁寧な査定を心がけます。</p>
+            </article>
+            <article className="staff-card staff-card--temporary">
+              <figure><img src={asset.staffPresent} alt="査定サポートスタッフの仮イメージ" width="1536" height="1536" loading="lazy" /></figure>
+              <div className="staff-name"><small>査定サポート</small><strong>スタッフB（仮）</strong></div>
+              <p>ご不安やご質問にも親身に対応します。気になることは何でもお声がけください。</p>
+            </article>
           </div>
-          <div className="staff-visual"><figure><img src={asset.staff} alt="出張買取を担当するスタッフ" width="1448" height="1086" loading="lazy" /></figure></div>
         </div>
         <div className="shell"><ReservationBlock /></div>
       </section>

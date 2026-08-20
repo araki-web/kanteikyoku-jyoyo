@@ -1588,6 +1588,14 @@ em {
 .final-copy h2 .final-items { color: #fff; font-size: 18px; }
 .final-frame > .campaign-lockup { margin-block: 28px; }
 
+.final-cta-followup {
+  padding-block: 46px 54px;
+  background: #fff;
+}
+
+.final-cta-followup-inner { max-width: 920px; text-align: center; }
+.final-cta-followup-inner > b { display: block; margin-bottom: 14px; color: #174f7a; font-size: clamp(18px, 5.2vw, 26px); font-weight: 900; }
+
 .site-footer {
   padding: 48px 0 22px;
   color: #d9d1c8;

@@ -444,6 +444,12 @@ function Hero() {
           <div className="campaign-terms">※キャンペーン適用条件を入力</div>
         </div>
       </section>
+      <section className="final-cta-followup" aria-label="出張買取のご予約">
+        <div className="final-cta-followup-inner shell">
+          <b>＼ 予約はカンタン ／</b>
+          <CTAButtons />
+        </div>
+      </section>
     </main>
   );
 }

@@ -255,7 +255,7 @@ function Hero() {
         <div className="shell why-grid">
           <div className="why-copy">
             <SectionHeading eyebrow="＼ OPENに向けて ／" light>ただいま <em>買取強化中！</em></SectionHeading>
-            <p>「いつか売ろう」と思っていたお品物がある方は、ぜひこの機会にご相談ください。</p>
+            <p><strong>「いつか売ろう」</strong>と思っていた<br />お品物がある方は、<br />ぜひこの機会にご相談ください。</p>
           </div>
           <CampaignLockup />
         </div>

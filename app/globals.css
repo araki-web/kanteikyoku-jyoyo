@@ -975,7 +975,7 @@ em {
   overflow: hidden;
   padding-top: 0;
   color: #fff;
-  background: linear-gradient(145deg, #910008, #e10012 52%, #8c0008);
+  background: linear-gradient(145deg, #60400d, #b88724 52%, #563507);
 }
 
 .why-section::before {
@@ -992,11 +992,14 @@ em {
 .why-copy > p {
   max-width: 610px;
   margin: 0 auto 13px;
-  font-size: 15px;
-  font-weight: 700;
+  font-size: clamp(19px, 5vw, 25px);
+  font-weight: 800;
+  line-height: 1.65;
+  text-align: center;
+  text-shadow: 0 2px 5px rgba(55, 31, 0, .28);
 }
 
-.why-copy > p strong { color: var(--gold-light); font-size: 17px; }
+.why-copy > p strong { color: #fff1ad; font-size: 1.45em; font-weight: 1000; }
 
 .why-grid > .campaign-lockup { margin-top: 38px; }
 

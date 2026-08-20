@@ -1670,7 +1670,7 @@ em {
   .hero-topline strong { font-size: 34px; }
   .hero-topline > b { transform: translateY(-11px); }
   .hero-grid { width: min(100%, 1000px); min-height: 0; padding: 0; }
-  .hero-fv-image img { aspect-ratio: 1000 / 556; object-fit: cover; }
+  .hero-fv-image img { aspect-ratio: 1000 / 480; object-fit: cover; }
   .hero-branding img { width: 210px; }
   .hero-branding > span { font-size: 21px; }
   .hero-branding p { font-size: 14px; }

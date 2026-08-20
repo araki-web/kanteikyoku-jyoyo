@@ -197,14 +197,11 @@ function CampaignLockup({ small = false, hero = false }: { small?: boolean; hero
   }
 
   return (
-    <figure className={`campaign-image campaign-art${small ? " small" : ""}`} aria-label="買取強化中。買取価格10%UP、OPEN前限定11月30日まで">
-      <div className="campaign-art-title" aria-hidden="true">
-        {Array.from("買取強化中", (character) => <span key={character}>{character}</span>)}
-      </div>
-      <div className="campaign-art-offer" aria-hidden="true">
-        <strong>10</strong><span>%</span><em>UP</em>
-      </div>
-      <div className="campaign-art-deadline" aria-hidden="true">OPEN前限定 <b>11/30</b>まで</div>
+    <figure className={`campaign-image${small ? " small" : ""}`}>
+      <picture>
+        {!small && <source media="(min-width: 768px)" srcSet={asset.campaign10UpPc} />}
+        <img src={asset.campaign10Up} alt="買取強化中。買取価格10%UP、OPEN前限定11月30日まで" width="750" height="797" loading="lazy" />
+      </picture>
     </figure>
   );
 }
@@ -391,13 +388,13 @@ function Hero() {
               <p>初めての方にも、分かりやすく丁寧にご説明します。売れるか分からないお品物もお気軽にご相談ください。</p>
             </article>
             <article className="staff-card staff-card--temporary">
-              <figure><img src={asset.staffPoint} alt="出張買取スタッフの仮イメージ" width="1536" height="1536" loading="lazy" /></figure>
-              <div className="staff-name"><small>出張買取スタッフ</small><strong>スタッフA（仮）</strong></div>
+              <figure><img src={asset.staffPoint} alt="出張買取スタッフ 杉谷伊織" width="1536" height="1536" loading="lazy" /></figure>
+              <div className="staff-name"><small>出張買取スタッフ</small><strong>杉谷 伊織</strong></div>
               <p>お品物の状態を一つずつ確認し、ご納得いただけるよう丁寧な査定を心がけます。</p>
             </article>
             <article className="staff-card staff-card--temporary">
-              <figure><img src={asset.staffPresent} alt="査定サポートスタッフの仮イメージ" width="1536" height="1536" loading="lazy" /></figure>
-              <div className="staff-name"><small>査定サポート</small><strong>スタッフB（仮）</strong></div>
+              <figure><img src={asset.staffPresent} alt="出張買取スタッフ 加茂卓也" width="1536" height="1536" loading="lazy" /></figure>
+              <div className="staff-name"><small>出張買取スタッフ</small><strong>加茂 卓也</strong></div>
               <p>ご不安やご質問にも親身に対応します。気になることは何でもお声がけください。</p>
             </article>
           </div>

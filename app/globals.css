@@ -429,62 +429,6 @@ em {
 .campaign-image img { display: block; width: 100%; height: auto; }
 .campaign-image.small { width: 100%; margin-top: 20px; box-shadow: none; }
 
-.campaign-art {
-  display: grid;
-  justify-items: center;
-  overflow: visible;
-  padding: clamp(12px, 3vw, 24px) 0 clamp(16px, 3vw, 28px);
-  border-radius: 0;
-}
-
-.campaign-art-title { display: flex; justify-content: center; gap: clamp(3px, .8vw, 7px); }
-.campaign-art-title span {
-  display: grid;
-  min-width: 1.05em;
-  min-height: 1.35em;
-  place-items: center;
-  padding: .08em .06em;
-  color: #ffe69a;
-  background: #d90017;
-  font-size: clamp(28px, 7.8vw, 46px);
-  font-weight: 1000;
-  line-height: 1;
-  box-shadow: inset 0 0 0 1px rgba(255,255,255,.16);
-}
-
-.campaign-art-offer {
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  margin-top: clamp(12px, 2.5vw, 22px);
-  color: #e00019;
-  font-family: Arial, "Helvetica Neue", sans-serif;
-  font-style: normal;
-  font-weight: 1000;
-  letter-spacing: -.08em;
-  line-height: .78;
-  white-space: nowrap;
-}
-.campaign-art-offer strong { font-size: clamp(102px, 28vw, 174px); font-weight: 1000; }
-.campaign-art-offer span { margin: 0 -.02em .02em -.04em; font-size: clamp(72px, 20vw, 124px); font-weight: 1000; }
-.campaign-art-offer em { margin-left: -.02em; font-size: clamp(82px, 23vw, 146px); font-style: normal; font-weight: 1000; }
-
-.campaign-art-deadline {
-  width: min(94%, 620px);
-  margin-top: clamp(18px, 4vw, 30px);
-  padding: clamp(7px, 1.8vw, 12px) 12%;
-  clip-path: polygon(0 0, 100% 0, 96% 50%, 100% 100%, 0 100%, 4% 50%);
-  color: #fff;
-  background: #df0019;
-  font-size: clamp(17px, 4.6vw, 29px);
-  font-weight: 1000;
-  letter-spacing: .02em;
-  line-height: 1.15;
-  text-align: center;
-  white-space: nowrap;
-}
-.campaign-art-deadline b { font-size: 1.08em; }
-
 .campaign-ribbon {
   position: absolute;
   top: -13px;
@@ -1573,9 +1517,9 @@ em {
 .staff-intro .heading-rule { margin-inline: auto; }
 .staff-members { display: grid; gap: 22px; max-width: 980px; margin-inline: auto; }
 .staff-card { display: grid; justify-items: center; align-content: start; padding: 24px 20px 22px; border: 1px solid #d8c8b8; border-radius: 14px; background: rgba(255,255,255,.96); box-shadow: 0 10px 25px rgba(54,33,21,.12); text-align: center; }
-.staff-card figure { width: min(64vw, 210px); aspect-ratio: 1; margin-bottom: 18px; overflow: hidden; padding: 5px; border-radius: 50%; background: linear-gradient(135deg, #77510d, #ffeaa0, #85600d); box-shadow: 0 8px 20px rgba(61,39,18,.16); }
+.staff-card figure { width: min(64vw, 210px); aspect-ratio: 1; margin-bottom: 18px; overflow: hidden; padding: 0; border: 1px solid #e3ddd3; border-radius: 50%; background: #f5f2ed; box-shadow: none; }
 .staff-card figure img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; }
-.staff-card--temporary figure { background: linear-gradient(145deg, #fffdf7, #efe2c7); }
+.staff-card--temporary figure { background: #f5f2ed; }
 .staff-card--temporary figure img { object-fit: contain; transform: scale(1.34); transform-origin: center 28%; }
 .staff-name { display: grid; justify-items: center; width: 100%; margin-bottom: 18px; padding: 0 12px 14px; background: transparent; }
 .staff-name::after { width: 54px; height: 2px; margin-top: 11px; content: ""; background: linear-gradient(90deg, transparent, var(--gold-dark), transparent); }

@@ -422,7 +422,7 @@ em {
   margin: 28px auto 0;
   overflow: hidden;
   border-radius: 8px;
-  box-shadow: 0 14px 32px rgba(35,0,4,.24);
+  box-shadow: none;
 }
 
 .campaign-image picture,
@@ -1709,8 +1709,11 @@ em {
     align-items: center;
     gap: 54px;
   }
-  .open-copy .section-heading { text-align: left; }
-  .open-copy .heading-rule { margin-left: 0; }
+  .open-copy { grid-column: 1 / -1; }
+  .open-copy .section-heading { text-align: center; }
+  .open-copy .heading-rule { margin-inline: auto; }
+  .open-grid > .store-photo { grid-column: 1; grid-row: 2; }
+  .open-grid > .open-date { grid-column: 2; grid-row: 2; }
   .open-date { margin-bottom: 0; }
   .why-copy .section-heading { text-align: left; }
   .why-copy .heading-rule { margin-left: 0; }
@@ -1760,7 +1763,7 @@ em {
   .big-cta .campaign-offer,
   .final-cta .campaign-offer {
     display: block;
-    margin-top: 40px;
+    margin-top: -20px;
   }
   .why-section .campaign-image,
   .big-cta .campaign-image,

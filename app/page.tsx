@@ -27,7 +27,7 @@ const asset = {
   fvSp: "/images/fv-sp.webp",
   fvPc: "/images/fv-pc.png",
   campaign10Up: "/images/campaign-10up.webp",
-  campaign10UpPc: "/images/campaign-10up-pc.webp",
+  campaign10UpPc: "/images/campaign-10up-pc.png",
   lineIcon: "/images/line-icon.png",
   phoneIcon: "/images/phone-icon.png",
   reason02: "/images/reason-02.webp",

@@ -350,11 +350,9 @@ function Hero() {
             </article>
             <article className="reason-card liberty">
               <span>REASON <b>02</b></span>
-              <h3>運営しているのは<br /><em>株式会社Li-Lu</em>です。</h3>
+              <h3>運営の親会社は<br /><em>株式会社リバティ</em>です。</h3>
               <figure className="reason-store"><img src={asset.reason02} alt="親会社・株式会社リバティの店舗外観" width="1672" height="941" loading="lazy" /></figure>
-              <p className="liberty-cm"><strong>「リ、リ、リ、リバティ」で</strong><br />おなじみ！</p>
-              <div className="sales"><small>親会社リバティグループ売上</small><strong><i>約</i>600<i>億円</i></strong><b>規模</b></div>
-              <p>城陽店の運営会社は株式会社Li-Luです。親会社である株式会社リバティは、全国約40拠点を展開する自動車販売企業。長年培ってきた実績と企業基盤を背景に、地域のお客様に安心してご利用いただけるサービスを提供しています。</p>
+              <p>CMやラジオの<strong>「リーリーリーリバティー！」</strong>のフレーズで親しまれている株式会社リバティは、全国に約40拠点を構え、<strong>グループ売上高約600億円</strong>を誇る自動車販売企業です。豊富な実績と安定した経営基盤をもとに、地域社会の皆様へ心からご満足いただける「安心」をお約束いたします。</p>
             </article>
             <article className="reason-card campaign"><span>REASON <b>03</b></span><h3>12月のOPENに向けて<br /><em>現在買取強化中！</em></h3><figure className="reason-store reason-product-image"><img src={asset.reason03} alt="買取強化中のブランドバッグ、時計、ジュエリー" width="1254" height="1254" loading="lazy" /></figure><p>12月1日の城陽店OPENに向けて、現在買取を強化中。買取価格10%UPは11月末日まで！</p></article>
           </div>

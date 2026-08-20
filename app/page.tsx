@@ -32,7 +32,7 @@ const asset = {
   campaign10UpPc: "/images/campaign-simple-pc.png",
   lineIcon: "/images/line-icon.png",
   phoneIcon: "/images/phone-icon.png",
-  reason02: "/images/reason-02-showroom.png",
+  reason02: "/images/reason-02-car-lot-staff.png",
   reason03: "/images/reason-03.webp",
   concernA: "/images/concern-a.png",
   concernB: "/images/concern-b.png",
@@ -351,10 +351,10 @@ function Hero() {
             <article className="reason-card liberty">
               <span>REASON <b>02</b></span>
               <h3>運営の親会社は<br /><em>株式会社リバティ</em>です。</h3>
-              <figure className="reason-store"><img src={asset.reason02} alt="親会社・株式会社リバティの自動車展示場をイメージしたショールーム" width="1536" height="1152" loading="lazy" /></figure>
+              <figure className="reason-store"><img src={asset.reason02} alt="自動車展示場で車をご案内する爽やかなスタッフのイメージ" width="1536" height="1152" loading="lazy" /></figure>
               <p>CMやラジオの<strong>「リーリーリーリバティー！」</strong>のフレーズで親しまれている株式会社リバティは、全国に約40拠点を構え、<strong>グループ売上高約600億円</strong>を誇る自動車販売企業です。豊富な実績と安定した経営基盤をもとに、地域社会の皆様へ心からご満足いただける「安心」をお約束いたします。</p>
             </article>
-            <article className="reason-card campaign"><span>REASON <b>03</b></span><h3>12月のOPENに向けて<br /><em>現在買取強化中！</em></h3><figure className="reason-store reason-product-image"><img src={asset.reason03} alt="買取強化中のブランドバッグ、時計、ジュエリー" width="1254" height="1254" loading="lazy" /></figure><p>12月1日の城陽店OPENに向けて、現在買取を強化中。買取価格10%UPは11月末日まで！</p></article>
+            <article className="reason-card campaign"><span>REASON <b>03</b></span><h3>12月のOPENに向けて<br /><em>現在買取強化中！</em></h3><figure className="reason-store reason-product-image"><img src={asset.reason03} alt="買取強化中のブランドバッグ、時計、ジュエリー" width="1254" height="1254" loading="lazy" /></figure><p>12月1日の城陽店OPENに向けて、現在<strong>ブランドバッグ・時計・ジュエリー・貴金属</strong>などの買取を強化しています。OPEN前の今だからこそ、地域の皆様にかんてい局の査定力と便利な出張買取を知っていただけるよう、一点ずつ丁寧に価値を見極めます。<strong>買取価格10%UPは11月末日まで</strong>の期間限定です。</p></article>
           </div>
         </div>
       </section>

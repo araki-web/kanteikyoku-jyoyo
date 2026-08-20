@@ -426,7 +426,7 @@ function Hero() {
         <div className="shell">
           <SectionHeading>質屋かんてい局<br /><em>城陽店</em></SectionHeading>
           <div className="store-grid">
-            <figure><img src={asset.store} alt="質屋かんてい局 城陽店 店舗外観" width="1448" height="1086" loading="lazy" /><figcaption>2026年12月1日（火）<b>GRAND OPEN予定！</b></figcaption></figure>
+            <figure><div className="store-image-crop"><img src={asset.store} alt="質屋かんてい局 城陽店 店舗外観" width="1448" height="1086" loading="lazy" /></div><figcaption>2026年12月1日（火）<b>GRAND OPEN予定！</b></figcaption></figure>
             <dl className="store-details">
               <div><dt>住所</dt><dd>店舗住所を入力</dd></div><div><dt>営業時間</dt><dd>営業時間を入力</dd></div><div><dt>電話番号</dt><dd>電話番号を入力</dd></div><div><dt>駐車場</dt><dd>駐車場情報を入力</dd></div><div><dt>運営会社</dt><dd>株式会社Li-Lu<br /><small>親会社：株式会社リバティ</small></dd></div>
               <div className="map-placeholder"><dt>MAP</dt><dd>正式な住所確定後、地図を設置</dd></div>

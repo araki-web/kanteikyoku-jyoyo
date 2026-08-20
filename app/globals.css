@@ -1075,6 +1075,7 @@ em {
 }
 
 .campaign-section-heading .campaign-section-deadline em {
+  color: #fff1ad;
   font-size: 1.15em;
   font-style: normal;
 }
@@ -1620,9 +1621,11 @@ em {
 .store-section { background: #fff; }
 .store-grid { display: grid; gap: 25px; }
 .store-grid > figure { overflow: hidden; border: 1px solid var(--gold); background: #171514; }
+.store-image-crop { overflow: hidden; aspect-ratio: 4 / 3; }
 .store-grid > figure img {
+  display: block;
   width: 100%;
-  aspect-ratio: 4 / 3;
+  height: 100%;
   object-fit: cover;
   object-position: 58% 50%;
   transform: scale(1.36);

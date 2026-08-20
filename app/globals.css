@@ -1606,8 +1606,6 @@ em {
 .final-copy h2 .final-copy-pair + .final-copy-pair { margin-top: .55em; }
 .final-copy h2 .final-items { color: #fff; font-size: 18px; }
 .final-frame > .campaign-lockup { margin-block: 28px; }
-.final-reserve { margin-top: 24px; padding-inline: 16px; text-align: center; }
-.final-reserve > b { display: block; margin-bottom: 10px; }
 
 .site-footer {
   padding: 48px 0 22px;
@@ -1699,8 +1697,7 @@ em {
   .cta-buttons { grid-template-columns: 1fr 1fr; }
   .cta-button { min-height: 90px; }
   .cta-button strong { font-size: 22px; }
-  .reservation-block > p,
-  .final-reserve > b { font-size: 20px; }
+  .reservation-block > p { font-size: 20px; }
   .section-heading h2 { font-size: 44px; }
   .about-title h2 { font-size: clamp(30px, 4vw, 46px); }
   .open-grid,
@@ -1755,7 +1752,6 @@ em {
   .big-cta-copy h2 { font-size: 34px; }
   .store-grid { align-items: start; }
   .final-frame { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 54px; padding: 0 40px; }
-  .final-reserve,
   .final-frame > .campaign-terms { grid-column: 1 / -1; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .footer-info { text-align: right; }

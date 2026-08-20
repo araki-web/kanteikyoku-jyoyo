@@ -444,7 +444,6 @@ function Hero() {
             <CampaignLockup />
             <p className="campaign-message">お家に眠っている<br /><strong className="campaign-products">バッグ・時計・ジュエリー・貴金属</strong><br />この機会に一度<br />査定してみませんか？</p>
           </div>
-          <div className="final-reserve"><b>＼ 予約はカンタン ／</b><CTAButtons /></div>
           <div className="campaign-terms">※キャンペーン適用条件を入力</div>
         </div>
       </section>

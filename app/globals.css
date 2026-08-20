@@ -1191,8 +1191,39 @@ em {
 .condition-heading-break { font-style: normal; }
 
 .condition-grid { display: grid; max-width: 900px; gap: 38px; }
-.condition-concern-images { display: grid; gap: 5px; width: min(100%, 634px); margin-inline: auto; }
-.condition-concern-images img { display: block; width: 100%; height: auto; }
+.condition-concern-images { display: grid; gap: 10px; width: min(100%, 760px); margin-inline: auto; }
+
+.concern-visual-card {
+  display: grid;
+  grid-template-columns: 36% 1fr;
+  align-items: center;
+  min-height: 130px;
+  overflow: hidden;
+  border: 1px solid #5d6267;
+  border-radius: 12px;
+  color: #fff;
+  background: linear-gradient(145deg, #1d2023, #41464b);
+  box-shadow: 0 9px 20px rgba(18, 21, 23, .18);
+}
+
+.concern-visual-card--reverse { grid-template-columns: 1fr 36%; }
+
+.concern-person {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 130px;
+  overflow: hidden;
+  background: #f1f1ee;
+}
+
+.concern-person img { position: absolute; top: 50%; display: block; width: auto; max-width: none; height: 130px; transform: translateY(-50%); }
+.concern-person--left img { left: 0; }
+.concern-person--right img { right: 0; }
+
+.concern-visual-card p { padding: 15px 13px; font-size: clamp(18px, 5.4vw, 25px); font-weight: 900; line-height: 1.35; text-align: center; }
+.concern-visual-card p strong { color: #f2d36f; font-size: 1.08em; }
+.concern-visual-card p b { color: #fff; font-size: .94em; }
 
 .concern-grid {
   display: grid;
@@ -1701,7 +1732,12 @@ em {
   .category-grid { grid-template-columns: repeat(4, 1fr); gap: 15px; }
   .category-card h3 { font-size: 15px; }
   .condition-grid { grid-template-columns: 1fr; }
-  .condition-concern-images { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; width: 100%; }
+  .condition-concern-images { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; width: 100%; }
+  .concern-visual-card { grid-template-columns: 42% 1fr; min-height: 150px; }
+  .concern-visual-card--reverse { grid-template-columns: 1fr 42%; }
+  .concern-visual-card .concern-person { min-height: 150px; }
+  .concern-visual-card p { padding: 12px 8px; font-size: 17px; }
+  .concern-person img { height: 150px; }
   .condition-heading-line { white-space: nowrap; }
   .condition-heading-break { display: none; }
   .condition-mix-visual { min-height: 0; aspect-ratio: 4 / 3; }

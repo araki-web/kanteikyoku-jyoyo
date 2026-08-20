@@ -1451,7 +1451,7 @@ em {
 .reason-services span { display: grid; aspect-ratio: 1; place-content: center; border: 2px solid var(--gold-dark); border-radius: 50%; color: var(--gold-dark); background: radial-gradient(circle at 36% 28%, #fffdf7, #f4e6bf 70%, #d8b665); font: 800 8px/1.2 Arial, sans-serif; letter-spacing: .08em; text-align: center; box-shadow: 0 5px 12px rgba(87,57,8,.14); }
 .reason-services b { display: block; margin-bottom: 5px; color: var(--ink); font-family: "Yu Gothic", sans-serif; font-size: 13px; letter-spacing: 0; }
 .reason-card h3 em { color: var(--red); }
-.reason-store { overflow: hidden; margin-bottom: 14px; border: 3px solid #fff; box-shadow: 0 8px 18px rgba(62,40,18,.14); }
+.reason-store { overflow: hidden; margin-bottom: 14px; border: 3px solid #fff; box-shadow: none; }
 .reason-store img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
 .reason-card.liberty .reason-store img,
 .reason-card.campaign .reason-store img { aspect-ratio: 4 / 3; }
@@ -1739,7 +1739,11 @@ em {
   .open-copy .heading-rule { margin-inline: auto; }
   .open-grid > .store-photo { grid-column: 1; grid-row: 2; }
   .open-grid > .open-date { grid-column: 2; grid-row: 2; }
-  .open-date { margin-bottom: 0; }
+  .open-date { margin-bottom: 0; padding-block: 24px; }
+  .open-date span { font-size: 18px; }
+  .open-date strong { margin-block: 6px; font-size: 54px; }
+  .open-date strong small { font-size: 20px; }
+  .open-date b { font-size: 27px; }
   .why-copy .section-heading { text-align: left; }
   .why-copy .heading-rule { margin-left: 0; }
   .why-copy .campaign-period { margin-left: 0; }

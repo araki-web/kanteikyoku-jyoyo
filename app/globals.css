@@ -976,7 +976,7 @@ em {
   overflow: hidden;
   padding-top: 0;
   color: #fff;
-  background: linear-gradient(145deg, #910008, #e10012 52%, #8c0008);
+  background: linear-gradient(145deg, #765005, #bd8b1d 50%, #775006);
 }
 
 .why-section::before,
@@ -986,8 +986,10 @@ em {
   inset: 0;
   z-index: -1;
   content: "";
-  opacity: .2;
-  background-image: repeating-linear-gradient(-45deg, transparent 0 9px, rgba(255,255,255,.22) 10px 11px);
+  opacity: .32;
+  background-image:
+    radial-gradient(circle at 50% 10%, rgba(255,239,166,.42), transparent 46%),
+    linear-gradient(110deg, transparent 15%, rgba(255,255,255,.11) 42%, transparent 62%);
 }
 
 .why-section > .why-grid { padding-top: 42px; }
@@ -1535,7 +1537,7 @@ em {
   z-index: 0;
   overflow: hidden;
   color: #fff;
-  background: linear-gradient(145deg, #910008, #e10012 52%, #8c0008);
+  background: linear-gradient(145deg, #765005, #bd8b1d 50%, #775006);
 }
 
 .big-cta-grid { position: relative; display: grid; gap: 20px; }
@@ -1588,7 +1590,7 @@ em {
   z-index: 0;
   overflow: hidden;
   color: #fff;
-  background: linear-gradient(145deg, #910008, #e10012 52%, #8c0008);
+  background: linear-gradient(145deg, #765005, #bd8b1d 50%, #775006);
 }
 
 .final-frame {

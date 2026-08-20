@@ -28,8 +28,8 @@ const asset = {
   fvProducts: "/images/fv-products.webp",
   fvSp: "/images/fv-sp.webp",
   fvPc: "/images/fv-pc.png",
-  campaign10Up: "/images/campaign-10up.webp",
-  campaign10UpPc: "/images/campaign-10up-pc.png",
+  campaign10Up: "/images/campaign-simple-sp.png",
+  campaign10UpPc: "/images/campaign-simple-pc.png",
   lineIcon: "/images/line-icon.png",
   phoneIcon: "/images/phone-icon.png",
   reason02: "/images/reason-02.webp",
@@ -200,7 +200,7 @@ function CampaignLockup({ small = false, hero = false }: { small?: boolean; hero
     <figure className={`campaign-image${small ? " small" : ""}`}>
       <picture>
         {!small && <source media="(min-width: 768px)" srcSet={asset.campaign10UpPc} />}
-        <img src={asset.campaign10Up} alt="OPENに向けて買取強化中。買取価格10%UP、OPEN前限定11月30日まで" width="750" height="489" loading="lazy" />
+        <img src={asset.campaign10Up} alt="買取強化中。買取価格10%UP、OPEN前限定11月30日まで" width="750" height="797" loading="lazy" />
       </picture>
     </figure>
   );
@@ -262,10 +262,6 @@ function Hero() {
 
       <section className="why-section section-pad" id="why">
         <div className="shell why-grid">
-          <div className="why-copy">
-            <SectionHeading eyebrow="＼ OPENに向けて ／" light>ただいま <em>買取強化中！</em></SectionHeading>
-            <p className="campaign-period">11月30日まで</p>
-          </div>
           <div className="campaign-offer">
             <CampaignLockup />
             <p className="campaign-message"><strong>「いつか売ろう」</strong>と思っていた<br />お品物がある方は、<br />ぜひこの機会にご相談ください。</p>
@@ -418,10 +414,6 @@ function Hero() {
 
       <section className="big-cta section-pad">
         <div className="shell why-grid campaign-repeat-grid">
-          <div className="why-copy">
-            <SectionHeading eyebrow="＼ OPENに向けて ／" light>ただいま <em>買取強化中！</em></SectionHeading>
-            <p className="campaign-period">11月30日まで</p>
-          </div>
           <div className="campaign-offer">
             <CampaignLockup />
             <p className="campaign-message"><strong>「売ろうかな？」</strong>と思った<br />今がチャンス！</p>
@@ -455,10 +447,6 @@ function Hero() {
 
       <section className="final-cta section-pad">
         <div className="final-frame shell">
-          <div className="why-copy">
-            <SectionHeading eyebrow="＼ OPENに向けて ／" light>ただいま <em>買取強化中！</em></SectionHeading>
-            <p className="campaign-period">11月30日まで</p>
-          </div>
           <div className="campaign-offer">
             <CampaignLockup />
             <p className="campaign-message">お家に眠っている<br /><strong className="campaign-products">バッグ・時計・ジュエリー・貴金属</strong><br />この機会に一度<br />査定してみませんか？</p>

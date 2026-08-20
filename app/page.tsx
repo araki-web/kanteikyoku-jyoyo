@@ -417,7 +417,7 @@ function Hero() {
           <div className="campaign-offer">
             <div className="campaign-section-heading"><span>＼ OPENに向けて ／</span><strong>ただいま買取強化中！</strong><b className="campaign-section-deadline">OPEN前限定 <em>11/30</em>まで</b></div>
             <CampaignLockup />
-            <p className="campaign-message"><strong>「売ろうかな？」</strong>と思った<br />今がチャンス！</p>
+            <p className="campaign-message"><strong>「売ろうかな？」</strong>と思った<br />今がチャンス！<span className="campaign-message-note">ご相談だけでも大歓迎！</span></p>
           </div>
         </div>
       </section>

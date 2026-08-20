@@ -1092,6 +1092,14 @@ em {
 
 .campaign-message strong { color: #fff1ad; font-size: 1.2em; font-weight: 1000; }
 .campaign-message .campaign-products { display: inline-block; font-size: clamp(14px, 4vw, 18px); white-space: nowrap; }
+.campaign-message .campaign-message-note {
+  display: block;
+  margin-top: 10px;
+  color: #fff;
+  font-size: .78em;
+  font-weight: 900;
+  letter-spacing: .04em;
+}
 
 .why-grid > .campaign-lockup { margin-top: 38px; }
 

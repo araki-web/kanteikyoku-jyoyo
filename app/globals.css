@@ -992,6 +992,7 @@ em {
   content: "";
   opacity: .32;
   background-image:
+    repeating-linear-gradient(135deg, rgba(255,255,255,.12) 0 2px, transparent 2px 24px),
     radial-gradient(circle at 50% 10%, rgba(255,239,166,.42), transparent 46%),
     linear-gradient(110deg, transparent 15%, rgba(255,255,255,.11) 42%, transparent 62%);
 }
@@ -1018,6 +1019,29 @@ em {
 }
 
 .campaign-offer > .campaign-image { margin-top: 0; }
+
+.campaign-section-heading {
+  margin: 0 auto 18px;
+  text-align: center;
+  text-shadow: 0 2px 5px rgba(55,31,0,.28);
+}
+
+.campaign-section-heading span {
+  display: block;
+  margin-bottom: 5px;
+  color: #fff1ad;
+  font-size: clamp(17px, 4.5vw, 22px);
+  font-weight: 900;
+}
+
+.campaign-section-heading strong {
+  display: block;
+  color: #fff;
+  font-size: clamp(28px, 7vw, 40px);
+  font-weight: 1000;
+  letter-spacing: .02em;
+  line-height: 1.25;
+}
 
 .campaign-message {
   max-width: 610px;

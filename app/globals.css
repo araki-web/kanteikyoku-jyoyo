@@ -987,22 +987,6 @@ em {
   background-image: repeating-linear-gradient(-45deg, transparent 0 9px, rgba(255,255,255,.22) 10px 11px);
 }
 
-.why-woman {
-  position: relative;
-  z-index: 1;
-  width: 100%;
-  margin: 0;
-  background: #fff;
-}
-
-.why-woman img {
-  display: block;
-  width: min(92%, 360px);
-  height: auto;
-  margin-inline: auto;
-  filter: drop-shadow(0 8px 12px rgba(70, 0, 0, .14));
-}
-
 .why-section > .why-grid { padding-top: 42px; }
 
 .why-copy > p {
@@ -1680,7 +1664,6 @@ em {
   .why-copy .section-heading { text-align: left; }
   .why-copy .heading-rule { margin-left: 0; }
   .why-section { padding-top: 0; }
-  .why-woman img { width: min(100%, 420px); }
   .why-section > .why-grid { padding-top: 54px; }
   .why-grid > .campaign-lockup { margin-top: 0; }
   .steps-grid { grid-template-columns: repeat(3, 1fr); gap: 18px; }

@@ -26,7 +26,6 @@ const asset = {
   fvProducts: "/images/fv-products.webp",
   fvSp: "/images/fv-sp.webp",
   fvPc: "/images/fv-pc.webp",
-  whyWoman: "/images/why-woman.webp",
   campaign10Up: "/images/campaign-10up.webp",
   lineIcon: "/images/line-icon.png",
   phoneIcon: "/images/phone-icon.png",
@@ -194,7 +193,7 @@ function CampaignLockup({ small = false, hero = false }: { small?: boolean; hero
     );
   }
 
-  return <figure className={`campaign-image${small ? " small" : ""}`}><img src={asset.campaign10Up} alt="OPENに向けて買取強化中。買取価格10%UP、OPEN前限定11月30日まで" width="665" height="390" loading="lazy" /></figure>;
+  return <figure className={`campaign-image${small ? " small" : ""}`}><img src={asset.campaign10Up} alt="OPENに向けて買取強化中。買取価格10%UP、OPEN前限定11月30日まで" width="750" height="489" loading="lazy" /></figure>;
 }
 
 function ReservationBlock({ dark = false }: { dark?: boolean }) {
@@ -253,7 +252,6 @@ function Hero() {
 
       <section className="why-section section-pad" id="why">
         <div className="why-rays" aria-hidden="true" />
-        <figure className="why-woman"><img src={asset.whyWoman} alt="買取強化中のご案内をする女性" width="1349" height="917" loading="lazy" /></figure>
         <div className="shell why-grid">
           <div className="why-copy">
             <SectionHeading eyebrow="＼ OPENに向けて ／" light>ただいま <em>買取強化中！</em></SectionHeading>

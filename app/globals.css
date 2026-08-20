@@ -1800,6 +1800,8 @@ em {
   .reason-card p { font-size: 14px; }
   .staff-visual { margin-right: 20px; }
   .staff-visual figure { width: min(100%, 320px); }
+  .staff-copy .section-heading h2 { font-size: clamp(34px, 3vw, 38px); white-space: nowrap; }
+  .staff-copy .section-heading h2 br { display: none; }
   .area-list { justify-content: flex-start; }
   .area-note { text-align: left; }
 }

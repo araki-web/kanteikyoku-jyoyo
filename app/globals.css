@@ -1448,9 +1448,9 @@ em {
 .reason-card h3 em { color: var(--red); }
 .reason-store { overflow: hidden; margin-bottom: 14px; border: 3px solid #fff; box-shadow: 0 8px 18px rgba(62,40,18,.14); }
 .reason-store img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
-.reason-brand .reason-store img { object-position: 50% 48%; transform: scale(1.14); }
+.reason-brand .reason-store img { object-position: 58% 50%; transform: scale(1.48); }
 .reason-product-image { background: radial-gradient(circle at 50% 38%, #fffdf7 0 34%, #f3e6c7 70%, #d8b96d 100%); }
-.reason-product-image img { padding: 0; object-fit: contain; background: transparent; transform: scale(1.18); transform-origin: center 55%; }
+.reason-product-image img { padding: 0; object-fit: contain; background: transparent; transform: scale(1.55); transform-origin: center 58%; }
 .reason-card.liberty { color: #1a1510; background: #fff; }
 .reason-card.liberty > span { color: var(--red); }
 .reason-card.liberty p { color: #4d4439; }
@@ -1547,7 +1547,13 @@ em {
 .store-section { background: #fff; }
 .store-grid { display: grid; gap: 25px; }
 .store-grid > figure { overflow: hidden; border: 1px solid var(--gold); background: #171514; }
-.store-grid > figure img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+.store-grid > figure img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: 58% 50%;
+  transform: scale(1.36);
+}
 .store-grid figcaption { padding: 12px; color: #fff; font-size: 13px; font-weight: 900; text-align: center; }
 .store-grid figcaption b { display: block; color: var(--gold-light); font-size: 17px; }
 .store-details { border-top: 2px solid var(--ink); }

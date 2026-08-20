@@ -1482,8 +1482,8 @@ em {
 .staff-name strong { font-size: 24px; }
 .staff-copy > p { font-size: 14px; }
 .staff-visual { position: relative; margin-block: 22px 34px; }
-.staff-visual figure { position: relative; overflow: hidden; padding: 5px; background: linear-gradient(135deg, #77510d, #ffeaa0, #85600d); box-shadow: var(--shadow); }
-.staff-visual figure img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+.staff-visual figure { position: relative; width: min(100%, 420px); aspect-ratio: 1; margin-inline: auto; overflow: hidden; padding: 5px; border-radius: 50%; background: linear-gradient(135deg, #77510d, #ffeaa0, #85600d); box-shadow: var(--shadow); }
+.staff-visual figure img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; }
 
 .area-section { background: linear-gradient(180deg, #f8f2e6, #fff); }
 .area-content { max-width: 880px; }
@@ -1559,7 +1559,9 @@ em {
 .final-copy > p { color: #fff2cf; font-size: 25px; font-weight: 900; line-height: 1.35; white-space: nowrap; }
 .final-copy > p em { color: var(--gold-light); font-size: 37px; }
 .final-copy h2 { margin: 20px 0; font-size: 20px; line-height: 1.65; }
-.final-copy h2 span { color: #fff; font-size: 18px; }
+.final-copy h2 .final-copy-pair { display: block; color: inherit; font-size: inherit; line-height: 1.38; }
+.final-copy h2 .final-copy-pair + .final-copy-pair { margin-top: .55em; }
+.final-copy h2 .final-items { color: #fff; font-size: 18px; }
 .final-frame > .campaign-lockup { margin-block: 28px; }
 .final-reserve { margin-top: 24px; padding-inline: 16px; text-align: center; }
 .final-reserve > b { display: block; margin-bottom: 10px; }

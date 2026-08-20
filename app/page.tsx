@@ -36,9 +36,9 @@ const asset = {
   concernB: "/images/concern-b.png",
   concernC: "/images/concern-c.png",
   consultationIcons: [
-    "/images/consultation-01.png",
-    "/images/consultation-02.png",
     "/images/consultation-03.png",
+    "/images/consultation-02.png",
+    "/images/consultation-01.png",
     "/images/consultation-04.png",
     "/images/consultation-05.png",
   ],
@@ -422,7 +422,7 @@ function Hero() {
 
       <section className="final-cta section-pad">
         <div className="final-frame shell">
-          <div className="final-copy"><p>OPEN前の今だけ！</p><h2>お家に眠っている<br /><span>バッグ・時計・ジュエリー・貴金属</span><br />この機会に一度<br />査定してみませんか？</h2></div>
+          <div className="final-copy"><p>OPEN前の今だけ！</p><h2><span className="final-copy-pair">お家に眠っている<br /><b className="final-items">バッグ・時計・ジュエリー・貴金属</b></span><span className="final-copy-pair">この機会に一度<br />査定してみませんか？</span></h2></div>
           <CampaignLockup />
           <div className="final-reserve"><b>＼ 予約はカンタン ／</b><CTAButtons /></div>
           <div className="campaign-terms">※キャンペーン適用条件を入力</div>

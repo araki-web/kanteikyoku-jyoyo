@@ -989,13 +989,18 @@ em {
 
 .why-section > .why-grid { padding-top: 42px; }
 
+.why-copy .section-heading { margin-bottom: 10px; }
+.why-copy .heading-rule { display: none; }
+
 .campaign-period {
   display: table;
-  margin: 0 auto 13px;
-  padding: 5px 18px;
-  border-top: 1px solid rgba(255,255,255,.7);
-  border-bottom: 1px solid rgba(255,255,255,.7);
-  color: #fff4c7;
+  min-width: min(88%, 300px);
+  margin: 0 auto 18px;
+  padding: 8px 30px;
+  color: #b90013;
+  background: #f2d36f;
+  box-shadow: 0 5px 12px rgba(73, 24, 0, .2);
+  clip-path: polygon(0 0, 100% 0, 94% 50%, 100% 100%, 0 100%, 6% 50%);
   font-size: clamp(18px, 4.8vw, 24px);
   font-weight: 1000;
   letter-spacing: .06em;

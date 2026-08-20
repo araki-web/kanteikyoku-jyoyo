@@ -1043,6 +1043,26 @@ em {
   line-height: 1.25;
 }
 
+.campaign-section-heading .campaign-section-deadline {
+  display: table;
+  min-width: min(88%, 350px);
+  margin: 14px auto 0;
+  padding: 8px 32px;
+  color: var(--red);
+  background: linear-gradient(90deg, #d8ae3c, #ffe69a 50%, #d8ae3c);
+  clip-path: polygon(0 0, 100% 0, 94% 50%, 100% 100%, 0 100%, 6% 50%);
+  font-size: clamp(16px, 4.3vw, 22px);
+  font-weight: 1000;
+  letter-spacing: .04em;
+  line-height: 1.35;
+  text-shadow: none;
+}
+
+.campaign-section-heading .campaign-section-deadline em {
+  font-size: 1.15em;
+  font-style: normal;
+}
+
 .campaign-message {
   max-width: 610px;
   margin: 18px auto 0;

@@ -263,7 +263,7 @@ function Hero() {
       <section className="why-section section-pad" id="why">
         <div className="shell why-grid">
           <div className="campaign-offer">
-            <div className="campaign-section-heading"><span>＼ OPENに向けて ／</span><strong>ただいま買取強化中！</strong></div>
+            <div className="campaign-section-heading"><span>＼ OPENに向けて ／</span><strong>ただいま買取強化中！</strong><b className="campaign-section-deadline">OPEN前限定 <em>11/30</em>まで</b></div>
             <CampaignLockup />
             <p className="campaign-message"><strong>「いつか売ろう」</strong>と思っていた<br />お品物がある方は、<br />ぜひこの機会にご相談ください。</p>
           </div>
@@ -415,7 +415,7 @@ function Hero() {
       <section className="big-cta section-pad">
         <div className="shell why-grid campaign-repeat-grid">
           <div className="campaign-offer">
-            <div className="campaign-section-heading"><span>＼ OPENに向けて ／</span><strong>ただいま買取強化中！</strong></div>
+            <div className="campaign-section-heading"><span>＼ OPENに向けて ／</span><strong>ただいま買取強化中！</strong><b className="campaign-section-deadline">OPEN前限定 <em>11/30</em>まで</b></div>
             <CampaignLockup />
             <p className="campaign-message"><strong>「売ろうかな？」</strong>と思った<br />今がチャンス！</p>
           </div>
@@ -449,7 +449,7 @@ function Hero() {
       <section className="final-cta section-pad">
         <div className="final-frame shell">
           <div className="campaign-offer">
-            <div className="campaign-section-heading"><span>＼ OPENに向けて ／</span><strong>ただいま買取強化中！</strong></div>
+            <div className="campaign-section-heading"><span>＼ OPENに向けて ／</span><strong>ただいま買取強化中！</strong><b className="campaign-section-deadline">OPEN前限定 <em>11/30</em>まで</b></div>
             <CampaignLockup />
             <p className="campaign-message">お家に眠っている<br /><strong className="campaign-products">バッグ・時計・ジュエリー・貴金属</strong><br />この機会に一度<br />査定してみませんか？</p>
           </div>

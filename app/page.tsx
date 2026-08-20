@@ -291,16 +291,13 @@ function Hero() {
             <SectionHeading>こんなお品物も<br /><b className="condition-heading-line"><em>諦める前に</em><i className="condition-heading-break"><br /></i>ご相談ください！</b></SectionHeading>
             <div className="condition-concern-images" aria-label="よくあるご相談">
               <article className="concern-visual-card">
-                <figure className="concern-person concern-person--left"><img src={asset.concernA} alt="悩んでいる女性" width="634" height="217" loading="lazy" /></figure>
-                <p><strong>ボロボロ</strong>だけど<br /><b>大丈夫？</b></p>
-              </article>
-              <article className="concern-visual-card concern-visual-card--reverse">
-                <p><strong>他のお店で</strong><br /><b>断られたんだけど…</b></p>
-                <figure className="concern-person concern-person--right"><img src={asset.concernB} alt="悩んでいる男性" width="634" height="217" loading="lazy" /></figure>
+                <img src={asset.concernA} alt="ボロボロだけど大丈夫？" width="634" height="217" loading="lazy" />
               </article>
               <article className="concern-visual-card">
-                <figure className="concern-person concern-person--left"><img src={asset.concernC} alt="悩んでいる女性" width="634" height="217" loading="lazy" /></figure>
-                <p><strong>こんな状態でも</strong><br /><b>売れる？</b></p>
+                <img src={asset.concernB} alt="他のお店で断られたんだけど" width="634" height="217" loading="lazy" />
+              </article>
+              <article className="concern-visual-card">
+                <img src={asset.concernC} alt="こんな状態でも売れる？" width="634" height="217" loading="lazy" />
               </article>
             </div>
             <div className="condition-message">

@@ -5,8 +5,8 @@ const asset = {
   libertyLogo: "/images/liberty-logo.jpg",
   store: "/images/store.jpg",
   staff: "/images/staff.jpg",
-  staffPoint: "/images/female-staff-point.png",
-  staffPresent: "/images/female-staff-present.png",
+  staffSugitani: "/images/staff-sugitani.png",
+  staffKamo: "/images/staff-kamo.png",
   bag01: "/images/bag-01.jpg",
   bag02: "/images/bag-02.jpg",
   watch: "/images/watch.jpg",
@@ -389,13 +389,13 @@ function Hero() {
               <div className="staff-name"><small>店舗責任者</small><strong>木村 航平</strong></div>
               <p>初めての方にも、分かりやすく丁寧にご説明します。売れるか分からないお品物もお気軽にご相談ください。</p>
             </article>
-            <article className="staff-card staff-card--temporary">
-              <figure><img src={asset.staffPoint} alt="出張買取スタッフ 杉谷伊織" width="1536" height="1536" loading="lazy" /></figure>
+            <article className="staff-card">
+              <figure><img src={asset.staffSugitani} alt="出張買取スタッフ 杉谷伊織" width="1448" height="1086" loading="lazy" /></figure>
               <div className="staff-name"><small>出張買取スタッフ</small><strong>杉谷 伊織</strong></div>
               <p>お品物の状態を一つずつ確認し、ご納得いただけるよう丁寧な査定を心がけます。</p>
             </article>
-            <article className="staff-card staff-card--temporary">
-              <figure><img src={asset.staffPresent} alt="出張買取スタッフ 加茂卓也" width="1536" height="1536" loading="lazy" /></figure>
+            <article className="staff-card">
+              <figure><img src={asset.staffKamo} alt="出張買取スタッフ 加茂卓也" width="1448" height="1086" loading="lazy" /></figure>
               <div className="staff-name"><small>出張買取スタッフ</small><strong>加茂 卓也</strong></div>
               <p>ご不安やご質問にも親身に対応します。気になることは何でもお声がけください。</p>
             </article>

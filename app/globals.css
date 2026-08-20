@@ -1031,7 +1031,7 @@ em {
   text-align: center;
 }
 
-.steps-section { background: #fff; }
+.steps-section { background: linear-gradient(180deg, #f8f2e6, #fff); }
 
 .steps-grid {
   display: grid;
@@ -1177,7 +1177,7 @@ em {
 .single-line-cta b { display: none; }
 
 .condition-section {
-  background: #e9ecea;
+  background: #fff;
 }
 .condition-heading-line { display: inline; font-weight: inherit; }
 .condition-heading-break { font-style: normal; }
@@ -1464,7 +1464,7 @@ em {
 
 .consultation-section {
   overflow: hidden;
-  background: #e9ecea;
+  background: #fff;
 }
 
 .example-disclaimer { margin: -20px 0 19px; color: var(--muted); font-size: 11px; text-align: center; }

@@ -197,11 +197,14 @@ function CampaignLockup({ small = false, hero = false }: { small?: boolean; hero
   }
 
   return (
-    <figure className={`campaign-image${small ? " small" : ""}`}>
-      <picture>
-        {!small && <source media="(min-width: 768px)" srcSet={asset.campaign10UpPc} />}
-        <img src={asset.campaign10Up} alt="買取強化中。買取価格10%UP、OPEN前限定11月30日まで" width="750" height="797" loading="lazy" />
-      </picture>
+    <figure className={`campaign-image campaign-art${small ? " small" : ""}`} aria-label="買取強化中。買取価格10%UP、OPEN前限定11月30日まで">
+      <div className="campaign-art-title" aria-hidden="true">
+        {Array.from("買取強化中", (character) => <span key={character}>{character}</span>)}
+      </div>
+      <div className="campaign-art-offer" aria-hidden="true">
+        <strong>10</strong><span>%</span><em>UP</em>
+      </div>
+      <div className="campaign-art-deadline" aria-hidden="true">OPEN前限定 <b>11/30</b>まで</div>
     </figure>
   );
 }

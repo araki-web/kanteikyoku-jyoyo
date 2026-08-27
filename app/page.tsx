@@ -15,7 +15,7 @@ const asset = {
   gold: "/images/gold.jpg",
   wallet: "/images/wallet.webp",
   diamond: "/images/diamond.webp",
-  platinum: "/images/platinum.webp",
+  car: "/images/car.webp",
   preciousMetals: "/images/precious-metals.webp",
   step01: "/images/step-01.webp",
   step02: "/images/step-02.webp",
@@ -47,9 +47,7 @@ const asset = {
 } as const;
 
 const contact = {
-  phoneDisplay: "電話番号を入力",
   phoneHref: "#store-info",
-  phoneHours: "受付時間を入力",
   lineHref: "#store-info",
 } as const;
 
@@ -60,9 +58,18 @@ const categories = [
   { name: "ジュエリー", image: asset.jewelry01 },
   { name: "ダイヤモンド", image: asset.diamond, cutout: true },
   { name: "金", image: asset.gold },
-  { name: "プラチナ", image: asset.platinum, cutout: true },
+  { name: "自動車", image: asset.car, cutout: true },
   { name: "その他貴金属", image: asset.preciousMetals, cutout: true },
 ] as const;
+
+const purchaseResults = Array.from({ length: 10 }, (_, index) => ({
+  id: String(index + 1).padStart(2, "0"),
+  brand: "ブランド名を入力",
+  product: "商品名を入力",
+  price: "買取価格を入力",
+  date: "買取日を入力",
+  store: "店舗名を入力",
+}));
 
 const concerns = [
   "古いバッグ",
@@ -125,7 +132,7 @@ const faqs = [
   ["箱や保証書がなくても大丈夫ですか？", "お品物によって異なります。付属品がない場合も、まずはご相談ください。"],
   ["査定にはどのくらい時間がかかりますか？", "※品数や訪問条件に応じた、正式な所要時間の目安を入力してください。"],
   ["出張買取はどこまで来てもらえますか？", "城陽市を中心に京都南部などを想定しています。正式な対象エリアはご予約時にご確認ください。"],
-  ["10%UPキャンペーンはいつまでですか？", "2026年11月30日までの予定です。適用条件は確定後に本ページでご案内します。"],
+  ["10%UPキャンペーンはいつまでですか？", "2026年12月20日までの予定です。適用条件は確定後に本ページでご案内します。"],
   ["10%UPの対象外商品はありますか？", "※対象商品・上限金額・対象外品・その他の適用条件を入力してください。"],
   ["出張買取には何が必要ですか？", "※本人確認書類など、正式に必要なものを入力してください。"],
 ] as const;
@@ -139,17 +146,16 @@ function CTAButtons({ compact = false }: { compact?: boolean }) {
       <a className="cta-button phone" href={contact.phoneHref}>
         <PhoneIcon />
         <span>
-          <small>電話で出張買取を予約</small>
-          <strong>{contact.phoneDisplay}</strong>
-          {!compact && <em>{contact.phoneHours}</em>}
+          <small>ご相談のみもOK</small>
+          <strong>今すぐ無料査定</strong>
+          <em>受付時間 10:30〜18:00</em>
         </span>
       </a>
       <a className="cta-button line" href={contact.lineHref}>
         <LineIcon />
         <span>
-          <small>LINEでカンタン</small>
-          <strong>出張買取を予約</strong>
-          {!compact && <em>写真を送って相談もOK</em>}
+          <small>写真を送って相談もOK</small>
+          <strong>サクッとLINEで相談</strong>
         </span>
       </a>
     </div>
@@ -191,7 +197,7 @@ function CampaignLockup({ small = false, hero = false }: { small?: boolean; hero
           </div>
           <div className="offer-copy"><strong>UP</strong></div>
         </div>
-        <div className="deadline"><span>OPEN前限定</span><strong>11/30</strong>まで</div>
+        <div className="deadline"><span>OPEN前限定</span><strong>12/20</strong>まで</div>
       </div>
     );
   }
@@ -200,8 +206,9 @@ function CampaignLockup({ small = false, hero = false }: { small?: boolean; hero
     <figure className={`campaign-image${small ? " small" : ""}`}>
       <picture>
         {!small && <source media="(min-width: 768px)" srcSet={asset.campaign10UpPc} />}
-        <img src={asset.campaign10Up} alt="買取強化中。買取価格10%UP、OPEN前限定11月30日まで" width="750" height="797" loading="lazy" />
+        <img src={asset.campaign10Up} alt="買取強化中。買取価格10%UP、OPEN前限定12月20日まで" width="750" height="797" loading="lazy" />
       </picture>
+      <span className="campaign-date-overlay"><b>OPEN前限定</b><strong>12/20</strong>まで</span>
     </figure>
   );
 }
@@ -209,7 +216,7 @@ function CampaignLockup({ small = false, hero = false }: { small?: boolean; hero
 function ReservationBlock({ dark = false }: { dark?: boolean }) {
   return (
     <div className={`reservation-block${dark ? " dark" : ""}`} id="reserve">
-      <p>＼ まずは質問だけでもOK ／</p>
+      <p>＼ ご相談だけも大歓迎 ／</p>
       <CTAButtons />
       <small className="contact-note">電話番号・LINE URL・受付時間は公開前に差し替えてください</small>
     </div>
@@ -224,8 +231,8 @@ function Header() {
           <img src={asset.logo} alt="質屋かんてい局" width="404" height="90" />
           <span>城陽店</span>
         </a>
-        <div className="header-open"><b>京都初出店</b><span>12.1 OPEN予定</span></div>
-        <a className="header-cta" href="#reserve"><PhoneIcon /><span className="header-cta-copy"><span>出張買取</span><strong>予約する</strong></span></a>
+        <div className="header-open"><b>京都初出店</b><span>12月 OPEN予定</span></div>
+        <a className="header-cta" href="#reserve"><PhoneIcon /><span className="header-cta-copy"><span>ご相談のみもOK</span><strong>今すぐ無料査定</strong></span></a>
       </div>
     </header>
   );
@@ -235,13 +242,16 @@ function Hero() {
   return (
     <main id="top">
       <section className="hero" aria-labelledby="hero-title">
-        <div className="hero-topline"><strong><em>2026</em><span>.12.1</span> <small>TUE</small></strong><b>GRAND OPEN予定！</b></div>
+        <div className="hero-topline"><strong><em>2026</em><span>.12</span></strong><b>GRAND OPEN予定！</b></div>
         <div className="hero-grid">
           <h1 id="hero-title" className="sr-only">無料出張査定で高額買取</h1>
-          <picture className="hero-fv-image">
-            <source media="(min-width: 700px)" srcSet={asset.fvPc} />
-            <img src={asset.fvSp} alt="無料出張査定・高額買取。OPEN前限定で買取価格10%UP、11月30日まで" width="750" height="1041" />
-          </picture>
+          <div className="hero-fv-image">
+            <picture>
+              <source media="(min-width: 700px)" srcSet={asset.fvPc} />
+              <img src={asset.fvSp} alt="無料出張査定・高額買取。OPEN前限定で買取価格10%UP、12月20日まで" width="750" height="1041" />
+            </picture>
+            <span className="fv-date-overlay"><b>OPEN前限定</b><strong>12/20</strong>まで</span>
+          </div>
         </div>
         <div className="hero-trust"><span>全国展開の質屋・リユースチェーン</span><i aria-hidden="true" /><strong>京都初出店！</strong></div>
       </section>
@@ -256,19 +266,40 @@ function Hero() {
             <SectionHeading><small className="section-subtitle">＼ 京都に初登場！ ／</small><b className="open-one-line">全国展開の<em>「質屋かんてい局」</em>が</b>城陽市にOPEN！</SectionHeading>
           </div>
           <figure className="store-photo gold-frame"><img src={asset.store} alt="質屋かんてい局 城陽店の店舗外観" width="1448" height="1086" loading="lazy" /></figure>
-          <div className="open-date"><span>質屋かんてい局 城陽店</span><strong>2026.12.1 <small>TUE</small></strong><b>GRAND OPEN予定！</b></div>
+          <div className="open-date"><span>質屋かんてい局 城陽店</span><strong>2026.12</strong><b>GRAND OPEN予定！</b></div>
         </div>
       </section>
 
       <section className="why-section section-pad" id="why">
         <div className="shell why-grid">
           <div className="campaign-offer">
-            <div className="campaign-section-heading"><span>＼ OPENに向けて ／</span><strong>ただいま買取強化中！</strong><b className="campaign-section-deadline">OPEN前限定 <em>11/30</em>まで</b></div>
+            <div className="campaign-section-heading"><span>＼ OPENに向けて ／</span><strong>ただいま買取強化中！</strong><b className="campaign-section-deadline">OPEN前限定 <em>12/20</em>まで</b></div>
             <CampaignLockup />
             <p className="campaign-message"><strong>「いつか売ろう」</strong>と思っていた<br />お品物がある方は、<br />ぜひこの機会にご相談ください。</p>
           </div>
         </div>
         <div className="campaign-terms">※キャンペーンの対象商品・上限金額・対象外品・その他適用条件を入力</div>
+      </section>
+
+      <section className="results-section section-pad" id="purchase-results">
+        <div className="shell">
+          <SectionHeading eyebrow="PURCHASE RESULTS">買取実績</SectionHeading>
+          <p className="results-lead">公開時に実際の買取内容へ差し替えられる、10件分の掲載枠です。</p>
+          <div className="results-grid">
+            {purchaseResults.map((result) => (
+              <article className="result-card" key={result.id}>
+                <div className="result-photo"><span>商品写真</span><small>IMAGE {result.id}</small></div>
+                <div className="result-copy">
+                  <p className="result-brand">{result.brand}</p>
+                  <h3>{result.product}</h3>
+                  <strong>{result.price}</strong>
+                  <dl><div><dt>買取日</dt><dd>{result.date}</dd></div><div><dt>店舗名</dt><dd>{result.store}</dd></div></dl>
+                </div>
+              </article>
+            ))}
+          </div>
+          <p className="results-note">※掲載内容・買取価格は、実績確定後に差し替えてください。</p>
+        </div>
       </section>
 
       <section className="categories-section section-pad">
@@ -356,19 +387,17 @@ function Hero() {
               <div className="reason-services reason-liberty-stats"><span><b>全国約40拠点</b>NETWORK</span><span><b>グループ売上<br />600億円規模</b>GROUP SALES</span><span><b>地域最大級<br />の展示場</b>SHOWROOM</span></div>
               <p>CMやラジオの<strong>「リーリーリーリバティー！」</strong>のフレーズで親しまれている株式会社リバティは、全国に約40拠点を構え、<strong>グループ売上高約600億円</strong>を誇る自動車販売企業です。豊富な実績と安定した経営基盤をもとに、地域社会の皆様へ心からご満足いただける「安心」をお約束いたします。</p>
             </article>
-            <article className="reason-card campaign"><span>REASON <b>03</b></span><h3>12月のOPENに向けて<br /><em>現在買取強化中！</em></h3><figure className="reason-store reason-product-image"><img src={asset.reason03} alt="買取強化中のブランドバッグ、時計、ジュエリー" width="1254" height="1254" loading="lazy" /></figure><p>12月1日の城陽店OPENに向けて、現在<strong>ブランドバッグ・時計・ジュエリー・貴金属</strong>などの買取を強化しています。OPEN前の今だからこそ、地域の皆様にかんてい局の査定力と便利な出張買取を知っていただけるよう、一点ずつ丁寧に価値を見極めます。<strong>買取価格10%UPは11月末日まで</strong>の期間限定です。</p></article>
+            <article className="reason-card campaign"><span>REASON <b>03</b></span><h3>12月のOPENに向けて<br /><em>現在買取強化中！</em></h3><figure className="reason-store reason-product-image"><img src={asset.reason03} alt="買取強化中のブランドバッグ、時計、ジュエリー" width="1254" height="1254" loading="lazy" /></figure><p>12月の城陽店OPENに向けて、現在<strong>ブランドバッグ・時計・ジュエリー・貴金属</strong>などの買取を強化しています。OPEN前の今だからこそ、地域の皆様にかんてい局の査定力と便利な出張買取を知っていただけるよう、一点ずつ丁寧に価値を見極めます。<strong>買取価格10%UPは12月20日まで</strong>の期間限定です。</p></article>
           </div>
         </div>
       </section>
 
       <section className="consultation-section section-pad">
         <div className="shell">
-          <SectionHeading>こんなご相談を<br /><em>お待ちしています</em></SectionHeading>
-          <p className="example-disclaimer">※以下は実在の口コミではなく、ご相談イメージです</p>
+          <SectionHeading>こんな方に<br /><em>おすすめ！</em></SectionHeading>
           <div className="consultation-scroll">
             {consultationExamples.map((item, index) => (
               <article className="consultation-card" key={item.text}>
-                <span className="consultation-label">ご相談イメージ {String(index + 1).padStart(2, "0")}</span>
                 <div className="consultation-person" aria-label={`${item.person}のご相談イメージ`}>
                   <img src={asset.consultationIcons[index]} alt="" width="178" height="187" loading="lazy" />
                 </div>
@@ -415,7 +444,7 @@ function Hero() {
       <section className="big-cta section-pad">
         <div className="shell why-grid campaign-repeat-grid">
           <div className="campaign-offer">
-            <div className="campaign-section-heading"><span>＼ OPENに向けて ／</span><strong>ただいま買取強化中！</strong><b className="campaign-section-deadline">OPEN前限定 <em>11/30</em>まで</b></div>
+            <div className="campaign-section-heading"><span>＼ OPENに向けて ／</span><strong>ただいま買取強化中！</strong><b className="campaign-section-deadline">OPEN前限定 <em>12/20</em>まで</b></div>
             <CampaignLockup />
             <p className="campaign-message"><strong>「売ろうかな？」</strong>と思った<br />今がチャンス！<span className="campaign-message-note">ご相談だけでも大歓迎！</span></p>
           </div>
@@ -426,7 +455,7 @@ function Hero() {
         <div className="shell">
           <SectionHeading>質屋かんてい局<br /><em>城陽店</em></SectionHeading>
           <div className="store-grid">
-            <figure><div className="store-image-crop"><img src={asset.store} alt="質屋かんてい局 城陽店 店舗外観" width="1448" height="1086" loading="lazy" /></div><figcaption>2026年12月1日（火）<b>GRAND OPEN予定！</b></figcaption></figure>
+            <figure><div className="store-image-crop"><img src={asset.store} alt="質屋かんてい局 城陽店 店舗外観" width="1448" height="1086" loading="lazy" /></div><figcaption>2026年12月<b>GRAND OPEN予定！</b></figcaption></figure>
             <dl className="store-details">
               <div><dt>住所</dt><dd>店舗住所を入力</dd></div><div><dt>営業時間</dt><dd>営業時間を入力</dd></div><div><dt>電話番号</dt><dd>電話番号を入力</dd></div><div><dt>駐車場</dt><dd>駐車場情報を入力</dd></div><div><dt>運営会社</dt><dd>株式会社Li-Lu<br /><small>親会社：株式会社リバティ</small></dd></div>
               <div className="map-placeholder"><dt>MAP</dt><dd>正式な住所確定後、地図を設置</dd></div>
@@ -449,7 +478,7 @@ function Hero() {
       <section className="final-cta section-pad">
         <div className="final-frame shell">
           <div className="campaign-offer">
-            <div className="campaign-section-heading"><span>＼ OPENに向けて ／</span><strong>ただいま買取強化中！</strong><b className="campaign-section-deadline">OPEN前限定 <em>11/30</em>まで</b></div>
+            <div className="campaign-section-heading"><span>＼ OPENに向けて ／</span><strong>ただいま買取強化中！</strong><b className="campaign-section-deadline">OPEN前限定 <em>12/20</em>まで</b></div>
             <CampaignLockup />
             <p className="campaign-message">お家に眠っている<br /><strong className="campaign-products">バッグ・時計・ジュエリー・貴金属</strong><br />この機会に一度<br />査定してみませんか？</p>
           </div>
@@ -458,7 +487,7 @@ function Hero() {
       </section>
       <section className="final-cta-followup" aria-label="出張買取のご予約">
         <div className="final-cta-followup-inner shell">
-          <b>＼ 予約はカンタン ／</b>
+          <b>＼ ご相談だけも大歓迎 ／</b>
           <CTAButtons />
         </div>
       </section>
@@ -469,8 +498,8 @@ function Hero() {
 function MobileStickyCTA() {
   return (
     <nav className="mobile-sticky" aria-label="出張買取のご予約">
-      <a href={contact.phoneHref}><PhoneIcon /><span>電話で<br /><b>予約</b></span></a>
-      <a href={contact.lineHref}><LineIcon /><span>LINEで<br /><b>予約</b></span></a>
+      <a href={contact.phoneHref}><PhoneIcon /><span>今すぐ<br /><b>無料査定</b></span></a>
+      <a href={contact.lineHref}><LineIcon /><span>LINEで<br /><b>相談</b></span></a>
     </nav>
   );
 }

@@ -29,7 +29,7 @@ const asset = {
   fvSp: "/images/fv-sp.png",
   fvPc: "/images/fv-pc.png",
   campaign10Up: "/images/campaign-simple-sp.png",
-  campaign10UpPc: "/images/campaign-simple-pc-20260901.png",
+  campaign10UpPc: "/images/campaign-simple-pc-20260901-v2.png",
   lineIcon: "/images/line-icon.png",
   phoneIcon: "/images/phone-icon.png",
   reason02: "/images/reason-02-car-lot-staff.png",

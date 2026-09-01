@@ -26,7 +26,7 @@ const asset = {
   categoryPossibilityPc: "/images/category-possibility-pc.png",
   categoryPossibilitySp: "/images/category-possibility-sp.png",
   fvProducts: "/images/fv-products.webp",
-  fvSp: "/images/fv-sp.webp",
+  fvSp: "/images/fv-sp.png",
   fvPc: "/images/fv-pc.png",
   campaign10Up: "/images/campaign-simple-sp.png",
   campaign10UpPc: "/images/campaign-simple-pc.png",
@@ -242,18 +242,22 @@ function Hero() {
   return (
     <main id="top">
       <section className="hero" aria-labelledby="hero-title">
-        <div className="hero-topline"><strong><em>2026</em><span>.12</span></strong><b>GRAND OPEN予定！</b></div>
+        <div className="hero-topline"><strong>2026年12月</strong><b>GRAND OPEN予定！</b></div>
         <div className="hero-grid">
           <h1 id="hero-title" className="sr-only">無料出張査定で高額買取</h1>
           <div className="hero-fv-image">
             <picture>
               <source media="(min-width: 700px)" srcSet={asset.fvPc} />
-              <img src={asset.fvSp} alt="無料出張査定・高額買取。OPEN前限定で買取価格10%UP、12月20日まで" width="750" height="1041" />
+              <img src={asset.fvSp} alt="買取査定金額が今だけ10%UP。出張料・査定料・キャンセル料無料" width="1500" height="2042" />
             </picture>
-            <span className="fv-date-overlay"><b>OPEN前限定</b><strong>12/20</strong>まで</span>
           </div>
         </div>
-        <div className="hero-trust"><span>全国展開の質屋・リユースチェーン</span><i aria-hidden="true" /><strong>京都初出店！</strong></div>
+        <div className="hero-service-band">
+          <p>城陽・宇治・京田辺など京都南部へ</p>
+          <strong aria-label="無料出張査定">
+            {"無料出張査定".split("").map((character) => <i key={character}>{character}</i>)}
+          </strong>
+        </div>
       </section>
 
       <section className="hero-cta section-pad" aria-label="出張買取のご予約">

@@ -1053,6 +1053,26 @@ em {
   line-height: 1.25;
 }
 
+.campaign-section-deadline {
+  display: table;
+  margin: 12px auto 0;
+  padding: 5px 24px;
+  border: 2px solid #fff;
+  color: #fff;
+  background: transparent;
+  font-size: clamp(15px, 4vw, 19px);
+  font-weight: 900;
+  letter-spacing: .05em;
+  line-height: 1.25;
+  text-shadow: none;
+}
+
+.campaign-section-deadline em {
+  color: inherit;
+  font-size: 1.15em;
+  font-style: normal;
+}
+
 .campaign-message {
   max-width: 610px;
   margin: 18px auto 0;

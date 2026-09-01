@@ -148,7 +148,7 @@ function CTAButtons({ compact = false }: { compact?: boolean }) {
         <span>
           <small>ご相談のみもOK</small>
           <strong>今すぐ無料査定</strong>
-          <em>受付時間 10:30〜18:00</em>
+          <em>受付時間 10:00〜18:00</em>
         </span>
       </a>
       <a className="cta-button line" href={contact.lineHref}>
@@ -208,7 +208,7 @@ function CampaignLockup({ small = false, hero = false }: { small?: boolean; hero
         {!small && <source media="(min-width: 768px)" srcSet={asset.campaign10UpPc} />}
         <img src={asset.campaign10Up} alt="買取強化中。買取価格10%UP、OPEN前限定12月20日まで" width="750" height="797" loading="lazy" />
       </picture>
-      <span className="campaign-date-overlay"><b>OPEN前限定</b><strong>12/20</strong>まで</span>
+      <figcaption>※割引額上限10万円以内</figcaption>
     </figure>
   );
 }
@@ -218,7 +218,6 @@ function ReservationBlock({ dark = false }: { dark?: boolean }) {
     <div className={`reservation-block${dark ? " dark" : ""}`} id="reserve">
       <p>＼ ご相談だけも大歓迎 ／</p>
       <CTAButtons />
-      <small className="contact-note">電話番号・LINE URL・受付時間は公開前に差し替えてください</small>
     </div>
   );
 }
@@ -277,7 +276,7 @@ function Hero() {
       <section className="why-section section-pad" id="why">
         <div className="shell why-grid">
           <div className="campaign-offer">
-            <div className="campaign-section-heading"><span>＼ OPENに向けて ／</span><strong>ただいま買取強化中！</strong><b className="campaign-section-deadline">OPEN前限定 <em>12/20</em>まで</b></div>
+            <div className="campaign-section-heading"><span>＼ OPENに向けて ／</span><strong>ただいま買取強化中！</strong></div>
             <CampaignLockup />
             <p className="campaign-message"><strong>「いつか売ろう」</strong>と思っていた<br />お品物がある方は、<br />ぜひこの機会にご相談ください。</p>
           </div>
@@ -448,7 +447,7 @@ function Hero() {
       <section className="big-cta section-pad">
         <div className="shell why-grid campaign-repeat-grid">
           <div className="campaign-offer">
-            <div className="campaign-section-heading"><span>＼ OPENに向けて ／</span><strong>ただいま買取強化中！</strong><b className="campaign-section-deadline">OPEN前限定 <em>12/20</em>まで</b></div>
+            <div className="campaign-section-heading"><span>＼ OPENに向けて ／</span><strong>ただいま買取強化中！</strong></div>
             <CampaignLockup />
             <p className="campaign-message"><strong>「売ろうかな？」</strong>と思った<br />今がチャンス！<span className="campaign-message-note">ご相談だけでも大歓迎！</span></p>
           </div>
@@ -461,7 +460,7 @@ function Hero() {
           <div className="store-grid">
             <figure><div className="store-image-crop"><img src={asset.store} alt="質屋かんてい局 城陽店 店舗外観" width="1448" height="1086" loading="lazy" /></div><figcaption>2026年12月<b>GRAND OPEN予定！</b></figcaption></figure>
             <dl className="store-details">
-              <div><dt>住所</dt><dd>店舗住所を入力</dd></div><div><dt>営業時間</dt><dd>営業時間を入力</dd></div><div><dt>電話番号</dt><dd>電話番号を入力</dd></div><div><dt>駐車場</dt><dd>駐車場情報を入力</dd></div><div><dt>運営会社</dt><dd>株式会社Li-Lu<br /><small>親会社：株式会社リバティ</small></dd></div>
+              <div><dt>住所</dt><dd>店舗住所を入力</dd></div><div><dt>営業時間</dt><dd>準備中</dd></div><div><dt>電話番号</dt><dd>準備中</dd></div><div><dt>駐車場</dt><dd>敷地内にあり</dd></div><div><dt>運営会社</dt><dd>株式会社Li-Lu<br /><small>親会社：株式会社リバティ<br />FC加盟会社 FTC株式会社</small></dd></div>
               <div className="map-placeholder"><dt>MAP</dt><dd>正式な住所確定後、地図を設置</dd></div>
             </dl>
           </div>
@@ -482,11 +481,10 @@ function Hero() {
       <section className="final-cta section-pad">
         <div className="final-frame shell">
           <div className="campaign-offer">
-            <div className="campaign-section-heading"><span>＼ OPENに向けて ／</span><strong>ただいま買取強化中！</strong><b className="campaign-section-deadline">OPEN前限定 <em>12/20</em>まで</b></div>
+            <div className="campaign-section-heading"><span>＼ OPENに向けて ／</span><strong>ただいま買取強化中！</strong></div>
             <CampaignLockup />
             <p className="campaign-message">お家に眠っている<br /><strong className="campaign-products">バッグ・時計・ジュエリー・貴金属</strong><br />この機会に一度<br />査定してみませんか？</p>
           </div>
-          <div className="campaign-terms">※キャンペーン適用条件を入力</div>
         </div>
       </section>
       <section className="final-cta-followup" aria-label="出張買取のご予約">
@@ -511,9 +509,12 @@ function MobileStickyCTA() {
 function Footer() {
   return (
     <footer className="site-footer">
-      <div className="shell footer-grid">
-        <div className="footer-brand"><img src={asset.logo} alt="質屋かんてい局" width="404" height="90" loading="lazy" /><strong>城陽店</strong><p>運営会社 株式会社Li-Lu<br />親会社 株式会社リバティ</p></div>
-        <div className="footer-info"><p>住所：店舗住所を入力</p><p>電話番号：電話番号を入力</p><p>古物商許可番号：必要表示を入力</p><span className="privacy-placeholder">プライバシーポリシー（URLを設定）</span></div>
+      <div className="shell footer-content">
+        <strong>かんてい局 城陽店</strong>
+        <p>古物商許可番号：京都府公安委員会 第○○○○○○号（株式会社Li-Lu）</p>
+        <nav className="footer-links" aria-label="フッターリンク">
+          <span className="footer-link-placeholder">プライバシーポリシー</span><i>｜</i><span className="footer-link-placeholder">特定商取引法に基づく表記</span><i>｜</i><span className="footer-link-placeholder">利用規約</span>
+        </nav>
       </div>
       <p className="copyright">© 2026 質屋かんてい局 城陽店</p>
     </footer>

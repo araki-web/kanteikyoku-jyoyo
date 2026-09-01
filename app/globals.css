@@ -426,27 +426,7 @@ em {
 .campaign-image picture,
 .campaign-image img { display: block; width: 100%; height: auto; }
 .campaign-image.small { width: 100%; margin-top: 20px; box-shadow: none; }
-.campaign-date-overlay {
-  position: absolute;
-  bottom: 7.2%;
-  left: 5.3%;
-  z-index: 2;
-  display: flex;
-  width: 65.6%;
-  height: 9.5%;
-  align-items: center;
-  justify-content: center;
-  gap: .25em;
-  padding: .2em .6em;
-  clip-path: polygon(0 0, 100% 0, 94% 50%, 100% 100%, 0 100%, 6% 50%);
-  color: #d00018;
-  background: linear-gradient(90deg, #e7c348, #ffe58b 48%, #dfb73b);
-  font-size: clamp(11px, 3.5vw, 22px);
-  font-weight: 1000;
-  line-height: 1;
-  white-space: nowrap;
-}
-.campaign-date-overlay strong { font-size: 1.08em; }
+.campaign-image figcaption { padding: 8px 10px 2px; color: #fff; font-size: 12px; font-weight: 800; line-height: 1.4; text-align: center; }
 
 .campaign-ribbon {
   position: absolute;
@@ -1071,43 +1051,6 @@ em {
   font-weight: 1000;
   letter-spacing: .02em;
   line-height: 1.25;
-}
-
-.campaign-section-heading .campaign-section-deadline {
-  display: table;
-  position: relative;
-  z-index: 0;
-  isolation: isolate;
-  min-width: min(88%, 350px);
-  margin: 14px auto 0;
-  padding: 8px 32px;
-  color: #fff;
-  background: transparent;
-  clip-path: polygon(0 0, 100% 0, 94% 50%, 100% 100%, 0 100%, 6% 50%);
-  font-size: clamp(16px, 4.3vw, 22px);
-  font-weight: 1000;
-  letter-spacing: .04em;
-  line-height: 1.35;
-  text-shadow: none;
-}
-
-.campaign-section-heading .campaign-section-deadline::before {
-  position: absolute;
-  z-index: -1;
-  inset: 0;
-  padding: 2px;
-  background: #fff;
-  clip-path: inherit;
-  content: "";
-  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-}
-
-.campaign-section-heading .campaign-section-deadline em {
-  color: #fff1ad;
-  font-size: 1.15em;
-  font-style: normal;
 }
 
 .campaign-message {
@@ -1794,13 +1737,12 @@ em {
   background: #080808;
 }
 
-.footer-grid { display: grid; gap: 28px; }
-.footer-brand img { width: 200px; padding: 6px; background: #fff; }
-.footer-brand strong { display: block; margin-block: 10px; color: #fff; font-size: 20px; }
-.footer-brand p,
-.footer-info p,
-.footer-info a { font-size: 11px; }
-.footer-info .privacy-placeholder { display: inline-flex; align-items: center; min-height: 44px; margin-top: 13px; padding-block: 10px; color: var(--gold-light); font-size: 11px; text-decoration: underline; }
+.footer-content { text-align: center; }
+.footer-content > strong { display: block; color: #fff; font-size: 20px; }
+.footer-content > p { margin-top: 12px; font-size: 11px; line-height: 1.7; }
+.footer-links { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 6px; margin-top: 18px; }
+.footer-link-placeholder { color: var(--gold-light); font-size: 11px; text-decoration: underline; text-underline-offset: 3px; }
+.footer-links i { color: #777; font-size: 11px; font-style: normal; }
 .copyright { margin-top: 35px; color: #777; font-size: 10px; text-align: center; }
 
 .mobile-sticky {
@@ -1926,25 +1868,6 @@ em {
     margin-inline: 0;
     padding: 5px 0 10px;
   }
-  .campaign-date-overlay {
-    top: 37%;
-    bottom: auto;
-    left: 52.8%;
-    width: 14.3%;
-    height: auto;
-    aspect-ratio: 1;
-    flex-direction: column;
-    gap: 0;
-    padding: .7em .3em;
-    border-radius: 50%;
-    clip-path: none;
-    background: radial-gradient(circle at 35% 28%, #fff1a6, #e5c34e 72%);
-    box-shadow: inset 0 0 0 3px rgba(187,143,18,.24);
-    font-size: clamp(10px, 1.35vw, 16px);
-    line-height: 1.15;
-    text-align: center;
-  }
-  .campaign-date-overlay b { display: block; }
   .category-card h3 { font-size: 15px; }
   .condition-grid { grid-template-columns: 1fr; }
   .condition-concern-images { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; width: 100%; }
@@ -1998,8 +1921,6 @@ em {
     margin: 24px auto 0;
     text-align: center;
   }
-  .footer-grid { grid-template-columns: 1fr 1fr; }
-  .footer-info { text-align: right; }
   .mobile-sticky { display: none; }
 }
 

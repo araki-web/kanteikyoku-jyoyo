@@ -262,27 +262,6 @@ function Hero() {
         <div className="shell"><ReservationBlock /></div>
       </section>
 
-      <section className="open-section section-pad" id="open">
-        <div className="shell open-grid">
-          <div className="open-copy">
-            <SectionHeading><small className="section-subtitle">＼ 京都に初登場！ ／</small><b className="open-one-line">全国展開の<em>「質屋かんてい局」</em>が</b>城陽市にOPEN！</SectionHeading>
-          </div>
-          <figure className="store-photo gold-frame"><img src={asset.store} alt="質屋かんてい局 城陽店の店舗外観" width="1448" height="1086" loading="lazy" /></figure>
-          <div className="open-date"><span>質屋かんてい局 城陽店</span><strong>2026.12</strong><b>GRAND OPEN予定！</b></div>
-        </div>
-      </section>
-
-      <section className="why-section section-pad" id="why">
-        <div className="shell why-grid">
-          <div className="campaign-offer">
-            <div className="campaign-section-heading"><span>＼ OPENに向けて ／</span><strong>ただいま買取強化中！</strong><b className="campaign-section-deadline">OPEN前限定 <em>12/20</em>まで</b></div>
-            <CampaignLockup />
-            <p className="campaign-message"><strong>「いつか売ろう」</strong>と思っていた<br />お品物がある方は、<br />ぜひこの機会にご相談ください。</p>
-          </div>
-        </div>
-        <div className="campaign-terms">※割引額上限10万円以内</div>
-      </section>
-
       <section className="results-section section-pad" id="purchase-results">
         <div className="shell">
           <SectionHeading eyebrow="PURCHASE RESULTS">買取実績</SectionHeading>
@@ -302,6 +281,27 @@ function Hero() {
           </div>
           <p className="results-note">※掲載内容・買取価格は、実績確定後に差し替えてください。</p>
         </div>
+      </section>
+
+      <section className="open-section section-pad" id="open">
+        <div className="shell open-grid">
+          <div className="open-copy">
+            <SectionHeading><small className="section-subtitle">＼ 京都に初登場！ ／</small><b className="open-one-line">全国展開の<em>「質屋かんてい局」</em>が</b>城陽市にOPEN！</SectionHeading>
+          </div>
+          <figure className="store-photo gold-frame"><img src={asset.store} alt="質屋かんてい局 城陽店の店舗外観" width="1448" height="1086" loading="lazy" /></figure>
+          <div className="open-date"><span>質屋かんてい局 城陽店</span><strong>2026.12</strong><b>GRAND OPEN予定！</b></div>
+        </div>
+      </section>
+
+      <section className="why-section section-pad" id="why">
+        <div className="shell why-grid">
+          <div className="campaign-offer">
+            <div className="campaign-section-heading"><span>＼ OPENに向けて ／</span><strong>ただいま買取強化中！</strong><b className="campaign-section-deadline">OPEN前限定 <em>12/20まで</em></b></div>
+            <CampaignLockup />
+            <p className="campaign-message"><strong>「いつか売ろう」</strong>と思っていた<br />お品物がある方は、<br />ぜひこの機会にご相談ください。</p>
+          </div>
+        </div>
+        <div className="campaign-terms">※割引額上限10万円以内</div>
       </section>
 
       <section className="categories-section section-pad">
@@ -446,7 +446,7 @@ function Hero() {
       <section className="big-cta section-pad">
         <div className="shell why-grid campaign-repeat-grid">
           <div className="campaign-offer">
-            <div className="campaign-section-heading"><span>＼ OPENに向けて ／</span><strong>ただいま買取強化中！</strong><b className="campaign-section-deadline">OPEN前限定 <em>12/20</em>まで</b></div>
+            <div className="campaign-section-heading"><span>＼ OPENに向けて ／</span><strong>ただいま買取強化中！</strong><b className="campaign-section-deadline">OPEN前限定 <em>12/20まで</em></b></div>
             <CampaignLockup />
             <p className="campaign-message"><strong>「売ろうかな？」</strong>と思った<br />今がチャンス！<span className="campaign-message-note">ご相談だけでも大歓迎！</span></p>
           </div>
@@ -480,7 +480,7 @@ function Hero() {
       <section className="final-cta section-pad">
         <div className="final-frame shell">
           <div className="campaign-offer">
-            <div className="campaign-section-heading"><span>＼ OPENに向けて ／</span><strong>ただいま買取強化中！</strong><b className="campaign-section-deadline">OPEN前限定 <em>12/20</em>まで</b></div>
+            <div className="campaign-section-heading"><span>＼ OPENに向けて ／</span><strong>ただいま買取強化中！</strong><b className="campaign-section-deadline">OPEN前限定 <em>12/20まで</em></b></div>
             <CampaignLockup />
             <p className="campaign-message">お家に眠っている<br /><strong className="campaign-products">バッグ・時計・ジュエリー・貴金属</strong><br />この機会に一度<br />査定してみませんか？</p>
           </div>

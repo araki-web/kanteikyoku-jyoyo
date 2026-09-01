@@ -256,6 +256,10 @@ function Hero() {
             {"無料出張査定".split("").map((character) => <i key={character}>{character}</i>)}
           </strong>
         </div>
+        <div className="hero-campaign-cue" aria-label="京都初出店記念 買取価格アップは12月20日まで">
+          <p><span>京都初出店記念</span><strong>買取価格UPは<em>12/20</em>まで</strong></p>
+          <div className="hero-campaign-arrows" aria-hidden="true"><i /><i /><i /></div>
+        </div>
       </section>
 
       <section className="hero-cta section-pad" aria-label="出張買取のご予約">

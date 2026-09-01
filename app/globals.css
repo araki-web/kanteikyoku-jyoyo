@@ -735,6 +735,59 @@ em {
   line-height: 1;
 }
 
+.hero-campaign-cue {
+  position: relative;
+  z-index: 4;
+  padding: 15px 16px 10px;
+  border-bottom: 1px solid #ead99f;
+  background: linear-gradient(180deg, #fffdf7, #fff8e9);
+  text-align: center;
+}
+
+.hero-campaign-cue p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  margin: 0;
+  font-weight: 1000;
+  line-height: 1.25;
+}
+
+.hero-campaign-cue p > span {
+  color: #9a741b;
+  font-size: clamp(17px, 5vw, 22px);
+  letter-spacing: .08em;
+}
+
+.hero-campaign-cue p > strong {
+  color: #c60016;
+  font-size: clamp(21px, 6.2vw, 28px);
+  letter-spacing: .02em;
+}
+
+.hero-campaign-cue p em {
+  color: inherit;
+  font-size: 1.15em;
+  font-style: normal;
+}
+
+.hero-campaign-arrows {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 7px;
+}
+
+.hero-campaign-arrows i {
+  width: 0;
+  height: 0;
+  border-top: 11px solid #c60016;
+  border-right: 9px solid transparent;
+  border-left: 9px solid transparent;
+}
+
 .hero-cta {
   position: relative;
   padding-block: 38px 44px;
@@ -1846,6 +1899,11 @@ em {
   .hero-service-band p { font-size: 20px; }
   .hero-service-band strong { gap: 7px; }
   .hero-service-band strong i { width: 48px; font-size: 29px; }
+  .hero-campaign-cue { padding: 14px 24px 9px; }
+  .hero-campaign-cue p { flex-direction: row; gap: 12px; white-space: nowrap; }
+  .hero-campaign-cue p > span { font-size: 22px; }
+  .hero-campaign-cue p > strong { font-size: 27px; }
+  .hero-campaign-arrows { margin-top: 5px; }
   .cta-buttons { grid-template-columns: 1fr 1fr; }
   .cta-button { min-height: 90px; }
   .cta-button strong { font-size: 22px; }

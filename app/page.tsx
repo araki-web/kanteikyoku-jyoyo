@@ -29,7 +29,7 @@ const asset = {
   fvSp: "/images/fv-sp.png",
   fvPc: "/images/fv-pc.png",
   campaign10Up: "/images/campaign-simple-sp.png",
-  campaign10UpPc: "/images/campaign-simple-pc.png",
+  campaign10UpPc: "/images/campaign-simple-pc-20260901.png",
   lineIcon: "/images/line-icon.png",
   phoneIcon: "/images/phone-icon.png",
   reason02: "/images/reason-02-car-lot-staff.png",
@@ -38,11 +38,11 @@ const asset = {
   concernB: "/images/concern-b.png",
   concernC: "/images/concern-c.png",
   consultationIcons: [
-    "/images/consultation-new-01.webp",
-    "/images/consultation-new-02.webp",
-    "/images/consultation-new-03.webp",
-    "/images/consultation-new-04.webp",
-    "/images/consultation-new-05.webp",
+    "/images/consultation-recommend-01.png",
+    "/images/consultation-recommend-02.png",
+    "/images/consultation-recommend-03.png",
+    "/images/consultation-recommend-04.png",
+    "/images/consultation-recommend-05.png",
   ],
 } as const;
 
@@ -208,7 +208,6 @@ function CampaignLockup({ small = false, hero = false }: { small?: boolean; hero
         {!small && <source media="(min-width: 768px)" srcSet={asset.campaign10UpPc} />}
         <img src={asset.campaign10Up} alt="買取強化中。買取価格10%UP、OPEN前限定12月20日まで" width="750" height="797" loading="lazy" />
       </picture>
-      <figcaption>※割引額上限10万円以内</figcaption>
     </figure>
   );
 }
@@ -281,7 +280,7 @@ function Hero() {
             <p className="campaign-message"><strong>「いつか売ろう」</strong>と思っていた<br />お品物がある方は、<br />ぜひこの機会にご相談ください。</p>
           </div>
         </div>
-        <div className="campaign-terms">※キャンペーンの対象商品・上限金額・対象外品・その他適用条件を入力</div>
+        <div className="campaign-terms">※割引額上限10万円以内</div>
       </section>
 
       <section className="results-section section-pad" id="purchase-results">
@@ -397,7 +396,7 @@ function Hero() {
 
       <section className="consultation-section section-pad">
         <div className="shell">
-          <SectionHeading>こんな方に<br /><em>おすすめ！</em></SectionHeading>
+          <SectionHeading><b className="recommend-title">こんな方におすすめ！</b></SectionHeading>
           <div className="consultation-scroll">
             {consultationExamples.map((item, index) => (
               <article className="consultation-card" key={item.text}>

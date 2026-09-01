@@ -1603,6 +1603,12 @@ em {
   background: #fff;
 }
 
+.recommend-title {
+  display: block;
+  font-size: clamp(24px, 6.8vw, 48px);
+  white-space: nowrap;
+}
+
 .example-disclaimer { margin: -20px 0 19px; color: var(--muted); font-size: 11px; text-align: center; }
 .consultation-scroll { display: grid; grid-auto-columns: 82%; grid-auto-flow: column; gap: 13px; overflow-x: auto; padding: 6px 16px 22px; margin-inline: -16px; scroll-snap-type: x mandatory; scrollbar-width: thin; }
 .consultation-card { position: relative; display: grid; justify-items: center; align-content: start; gap: 12px; min-height: 0; padding: 22px 24px 17px; border: 1px solid #d8c8b8; border-radius: 12px; background: #fff; box-shadow: 0 10px 25px rgba(54,33,21,.12); scroll-snap-align: center; }

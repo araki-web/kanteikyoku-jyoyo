@@ -143,7 +143,7 @@ em {
 
 .header-cta {
   display: flex;
-  flex: 0 0 118px;
+  flex: 0 0 148px;
   align-items: center;
   justify-content: center;
   gap: 5px;
@@ -153,7 +153,7 @@ em {
   line-height: 1.15;
 }
 
-.header-cta-copy { display: grid; text-align: center; }
+.header-cta-copy { display: grid; text-align: center; white-space: nowrap; }
 .header-cta .button-icon { flex-basis: 28px; width: 28px; height: 28px; margin-right: 0; }
 
 .header-cta span {
@@ -1867,10 +1867,10 @@ em {
   .brand { padding-left: 22px; }
   .brand img { width: 180px; }
   .brand span { font-size: 16px; }
-  .header-open { display: grid; place-content: center; padding-inline: 24px; text-align: center; line-height: 1.15; }
-  .header-open b { color: var(--red); font-size: 12px; }
-  .header-open span { font-size: 15px; font-weight: 900; }
-  .header-cta { flex-basis: 150px; }
+  .header-open { display: flex; align-items: center; justify-content: center; gap: 7px; padding-inline: 10px; text-align: center; line-height: 1.15; white-space: nowrap; }
+  .header-open b { color: #111; font-size: 15px; }
+  .header-open span { color: var(--red); font-size: 17px; font-weight: 1000; }
+  .header-cta { flex-basis: 190px; }
   .header-cta span { font-size: 12px; }
   .header-cta strong { font-size: 16px; }
   .section-pad { padding-block: 96px; }

@@ -234,7 +234,7 @@ function Header() {
           <span>城陽店</span>
         </a>
         <div className="header-open"><b>買取価格UPは</b><span>12月20日まで</span></div>
-        <a className="header-cta" href={contact.phoneHref}><PhoneIcon /><span className="header-cta-copy"><span>ご相談のみも<br />OK</span></span></a>
+        <a className="header-cta" href={contact.phoneHref}><PhoneIcon /><span className="header-cta-copy"><span>ご相談のみもOK</span></span></a>
       </div>
     </header>
   );

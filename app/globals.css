@@ -757,7 +757,7 @@ em {
 
 .hero-campaign-cue p > span {
   display: block;
-  width: min(88vw, 470px);
+  width: min(82vw, 330px);
   line-height: 0;
 }
 
@@ -1899,12 +1899,12 @@ em {
   .hero-service-band p { font-size: 20px; }
   .hero-service-band strong { gap: 7px; }
   .hero-service-band strong i { width: 48px; font-size: 29px; }
-  .hero-campaign-cue { padding: 14px 24px 3px; }
+  .hero-campaign-cue { padding: 14px 24px; }
   .hero-campaign-cue p { flex-direction: column; gap: 2px; white-space: nowrap; }
-  .hero-campaign-cue p > span { width: min(68vw, 470px); }
+  .hero-campaign-cue p > span { width: 330px; max-width: 100%; }
   .hero-campaign-cue p > strong { font-size: 27px; }
   .hero-campaign-arrows { margin-top: 12px; }
-  .hero-cta { padding-top: 2px; }
+  .hero-cta { padding-top: 0; }
   .cta-buttons { grid-template-columns: 1fr 1fr; }
   .cta-button { min-height: 90px; }
   .cta-button strong { font-size: 22px; }

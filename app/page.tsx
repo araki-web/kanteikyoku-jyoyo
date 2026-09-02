@@ -62,14 +62,18 @@ const categories = [
   { name: "その他貴金属", image: asset.preciousMetals, cutout: true },
 ] as const;
 
-const purchaseResults = Array.from({ length: 10 }, (_, index) => ({
-  id: String(index + 1).padStart(2, "0"),
-  brand: "ブランド名を入力",
-  product: "商品名を入力",
-  price: "買取価格を入力",
-  date: "買取日を入力",
-  store: "店舗名を入力",
-}));
+const purchaseResults = [
+  { id: "01", image: "/images/purchase-result-01.webp", brand: "LOUIS VUITTON ルイヴィトン", product: "オンザゴーMM ジャイアント モノグラム", price: "¥200,000", date: "2026/9/1", store: "質屋 かんてい局名古屋栄錦三丁目店" },
+  { id: "02", image: "/images/purchase-result-02.webp", brand: "GUCCI グッチ", product: "GGキャンバスハンドバッグ", price: "¥30,000", date: "2026/9/1", store: "質屋かんてい局 須賀川店" },
+  { id: "03", image: "/images/purchase-result-03.webp", brand: "CHANEL シャネル", product: "マトラッセ キャビアスキン ココマーク ラインストーン フラグメントケース", price: "¥100,000", date: "2026/8/29", store: "質屋かんてい局 横浜港南店" },
+  { id: "04", image: "/images/purchase-result-04.webp", brand: "ROLEX ロレックス", product: "サブマリーナー", price: "¥1,000,000", date: "2026/8/31", store: "質屋かんてい局 市川インター店" },
+  { id: "05", image: "/images/purchase-result-05.webp", brand: "LOUIS VUITTON ルイヴィトン", product: "ポルトフォイユ・マルコNM", price: "¥40,000", date: "2026/8/31", store: "質屋かんてい局 須賀川店" },
+  { id: "06", image: "/images/purchase-result-06.webp", brand: "カルティエ Cartier", product: "トリニティリング", price: "¥100,000", date: "2026/8/30", store: "質屋かんてい局 つくば店" },
+  { id: "07", image: "/images/purchase-result-07.webp", brand: "Pt850/Pt900【プラチナ850/900】", product: "サファイア/ダイヤモンド ネックレス", price: "¥42,000", date: "2026/8/26", store: "質屋かんてい局 伊丹店" },
+  { id: "08", image: "/images/purchase-result-08.webp", brand: "ジッポ | ZIPPO", product: "オイルライター", price: "¥2,000", date: "2026/8/28", store: "質屋かんてい局 つくば店" },
+  { id: "09", image: "/images/purchase-result-09.webp", brand: "HUBLOT ウブロ", product: "クラシック・フュージョン チタニウム グリーン", price: "¥380,000", date: "2026/8/28", store: "質屋かんてい局 光の森店" },
+  { id: "10", image: "/images/purchase-result-10.webp", brand: "SAINT LAURENT サンローラン", product: "スマホリング", price: "¥5,500", date: "2026/8/28", store: "質屋かんてい局 名古屋緑店" },
+] as const;
 
 const concerns = [
   "古いバッグ",
@@ -269,11 +273,11 @@ function Hero() {
       <section className="results-section section-pad" id="purchase-results">
         <div className="shell">
           <SectionHeading eyebrow="PURCHASE RESULTS">買取実績</SectionHeading>
-          <p className="results-lead">公開時に実際の買取内容へ差し替えられる、10件分の掲載枠です。</p>
+          <p className="results-lead">全国の質屋かんてい局でお買取りした実績をご紹介します。</p>
           <div className="results-grid">
             {purchaseResults.map((result) => (
               <article className="result-card" key={result.id}>
-                <div className="result-photo"><span>商品写真</span><small>IMAGE {result.id}</small></div>
+                <div className="result-photo"><img src={result.image} alt={`${result.brand} ${result.product}`} width="1200" height="1200" loading="lazy" /></div>
                 <div className="result-copy">
                   <p className="result-brand">{result.brand}</p>
                   <h3>{result.product}</h3>
@@ -283,7 +287,7 @@ function Hero() {
               </article>
             ))}
           </div>
-          <p className="results-note">※掲載内容・買取価格は、実績確定後に差し替えてください。</p>
+          <p className="results-note">※買取価格は商品の状態・付属品・相場などにより変動します。</p>
         </div>
       </section>
 

@@ -1690,6 +1690,8 @@ em {
 .consultation-card { position: relative; display: grid; justify-items: center; align-content: start; gap: 12px; min-height: 0; padding: 22px 24px 17px; border: 1px solid #d8c8b8; border-radius: 12px; background: #fff; box-shadow: 0 10px 25px rgba(54,33,21,.12); scroll-snap-align: center; }
 .consultation-person { display: grid; justify-items: center; }
 .consultation-person img { display: block; width: 138px; height: 142px; object-fit: contain; }
+.consultation-card:nth-child(2) .consultation-person img,
+.consultation-card:nth-child(5) .consultation-person img { transform: scale(1.14); transform-origin: center; }
 .consultation-card > p { color: #4d4742; font-size: 14px; line-height: 1.8; text-align: left; }
 .swipe-hint { margin-top: 10px; color: var(--muted); font-size: 11px; text-align: center; }
 

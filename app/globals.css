@@ -1875,9 +1875,9 @@ em {
   .header-cta strong { font-size: 16px; }
   .section-pad { padding-block: 96px; }
   .hero { min-height: 0; background: #f3f2ee; }
-  .hero-topline { min-height: 72px; gap: 18px; }
+  .hero-topline { min-height: 72px; gap: 8px; }
   .hero-topline strong { font-size: 34px; }
-  .hero-topline > b { transform: translateY(-11px); }
+  .hero-topline > b { transform: translateY(-6px); }
   .hero-grid { width: min(100%, 1000px); min-height: 0; padding: 0; }
   .hero-fv-image img { aspect-ratio: 1000 / 480; object-fit: cover; }
   .hero-branding img { width: 210px; }

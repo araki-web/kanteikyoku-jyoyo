@@ -245,7 +245,7 @@ em {
   white-space: nowrap;
 }
 
-.hero-topline > b { color: #c60016; font-size: clamp(23px, 6.4vw, 34px); font-weight: 1000; letter-spacing: .08em; line-height: 1.2; transform: translateY(-5px); }
+.hero-topline > b { color: #c60016; font-size: clamp(21px, 5.8vw, 30px); font-weight: 1000; letter-spacing: .08em; line-height: 1.2; transform: translateY(-5px); }
 
 .hero-grid {
   position: relative;
@@ -1882,7 +1882,7 @@ em {
   .hero { min-height: 0; background: #f3f2ee; }
   .hero-topline { min-height: 72px; gap: 8px; }
   .hero-topline strong { font-size: 23px; }
-  .hero-topline > b { font-size: 34px; transform: translateY(-6px); }
+  .hero-topline > b { font-size: 30px; transform: translateY(-10px); }
   .hero-grid { width: min(100%, 1000px); min-height: 0; padding: 0; }
   .hero-fv-image img { aspect-ratio: 1000 / 480; object-fit: cover; }
   .hero-branding img { width: 210px; }

@@ -66,7 +66,7 @@ const purchaseResults = [
   { id: "01", image: "/images/purchase-result-01.webp", brand: "LOUIS VUITTON ルイヴィトン", product: "オンザゴーMM ジャイアント モノグラム", price: "¥200,000", date: "2026/9/1", store: "質屋 かんてい局名古屋栄錦三丁目店" },
   { id: "02", image: "/images/purchase-result-02.webp", brand: "GUCCI グッチ", product: "GGキャンバスハンドバッグ", price: "¥30,000", date: "2026/9/1", store: "質屋かんてい局 須賀川店" },
   { id: "03", image: "/images/purchase-result-03.webp", brand: "CHANEL シャネル", product: "マトラッセ キャビアスキン ココマーク ラインストーン フラグメントケース", price: "¥100,000", date: "2026/8/29", store: "質屋かんてい局 横浜港南店" },
-  { id: "04", image: "/images/purchase-result-04.webp", brand: "ROLEX ロレックス", product: "サブマリーナー", price: "¥1,000,000", date: "2026/8/31", store: "質屋かんてい局 市川インター店" },
+  { id: "04", image: "/images/purchase-result-04.webp", brand: "ROLEX ロレックス", product: "サブマリーナー", price: "¥1,300,000", date: "2026/8/31", store: "質屋かんてい局 市川インター店" },
   { id: "05", image: "/images/purchase-result-05.webp", brand: "LOUIS VUITTON ルイヴィトン", product: "ポルトフォイユ・マルコNM", price: "¥40,000", date: "2026/8/31", store: "質屋かんてい局 須賀川店" },
   { id: "06", image: "/images/purchase-result-06.webp", brand: "カルティエ Cartier", product: "トリニティリング", price: "¥100,000", date: "2026/8/30", store: "質屋かんてい局 つくば店" },
   { id: "07", image: "/images/purchase-result-07.webp", brand: "Pt850/Pt900【プラチナ850/900】", product: "サファイア/ダイヤモンド ネックレス", price: "¥42,000", date: "2026/8/26", store: "質屋かんてい局 伊丹店" },

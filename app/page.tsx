@@ -261,7 +261,7 @@ function Hero() {
           </strong>
         </div>
         <div className="hero-campaign-cue" aria-label="京都初出店記念 買取価格アップは12月20日まで">
-          <p><span>京都初出店記念</span><strong>買取価格UPは<em>12/20</em>まで</strong></p>
+          <p><span><img src="/images/kyoto-first-opening.png" alt="京都初出店記念" width="940" height="136" /></span><strong>買取価格UPは<em>12/20</em>まで</strong></p>
           <div className="hero-campaign-arrows" aria-hidden="true"><i /><i /><i /></div>
         </div>
       </section>

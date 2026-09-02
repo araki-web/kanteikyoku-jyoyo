@@ -756,9 +756,15 @@ em {
 }
 
 .hero-campaign-cue p > span {
-  color: #9a741b;
-  font-size: clamp(17px, 5vw, 22px);
-  letter-spacing: .08em;
+  display: block;
+  width: min(88vw, 470px);
+  line-height: 0;
+}
+
+.hero-campaign-cue p > span img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .hero-campaign-cue p > strong {
@@ -777,20 +783,20 @@ em {
   display: flex;
   justify-content: center;
   gap: 8px;
-  margin-top: 7px;
+  margin-top: 5px;
 }
 
 .hero-campaign-arrows i {
   width: 0;
   height: 0;
-  border-top: 11px solid #c60016;
-  border-right: 9px solid transparent;
-  border-left: 9px solid transparent;
+  border-top: 22px solid #c60016;
+  border-right: 18px solid transparent;
+  border-left: 18px solid transparent;
 }
 
 .hero-cta {
   position: relative;
-  padding-block: 38px 44px;
+  padding-block: 14px 44px;
   background-color: #fbf8f0;
   background-image:
     linear-gradient(rgba(255,255,255,.78), rgba(255,255,255,.78)),
@@ -1898,9 +1904,9 @@ em {
   .hero-service-band strong i { width: 48px; font-size: 29px; }
   .hero-campaign-cue { padding: 14px 24px 9px; }
   .hero-campaign-cue p { flex-direction: row; gap: 12px; white-space: nowrap; }
-  .hero-campaign-cue p > span { font-size: 22px; }
+  .hero-campaign-cue p > span { width: min(38vw, 470px); }
   .hero-campaign-cue p > strong { font-size: 27px; }
-  .hero-campaign-arrows { margin-top: 5px; }
+  .hero-campaign-arrows { margin-top: 4px; }
   .cta-buttons { grid-template-columns: 1fr 1fr; }
   .cta-button { min-height: 90px; }
   .cta-button strong { font-size: 22px; }

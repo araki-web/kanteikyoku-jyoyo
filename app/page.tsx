@@ -210,7 +210,7 @@ function CampaignLockup({ small = false, hero = false }: { small?: boolean; hero
     <figure className={`campaign-image${small ? " small" : ""}`}>
       <picture>
         {!small && <source media="(min-width: 768px)" srcSet={asset.campaign10UpPc} />}
-        <img src={asset.campaign10Up} alt="買取強化中。買取価格10%UP、OPEN前限定12月20日まで" width="750" height="797" loading="lazy" />
+        <img src={asset.campaign10Up} alt="買取査定金額が今だけ10%UP" width="1500" height="898" loading="lazy" />
       </picture>
     </figure>
   );

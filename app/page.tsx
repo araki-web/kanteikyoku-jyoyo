@@ -233,7 +233,7 @@ function Header() {
           <img src={asset.logo} alt="質屋かんてい局" width="404" height="90" />
           <span>城陽店</span>
         </a>
-        <div className="header-open"><b>買取価格UPは</b><span>12月20日まで</span></div>
+        <div className="header-open"><b>買取価格UPは</b><em className="header-deadline">12月20日まで</em></div>
         <a className="header-cta" href={contact.phoneHref}><PhoneIcon /><span className="header-cta-copy"><span>ご相談のみもOK</span></span></a>
       </div>
     </header>

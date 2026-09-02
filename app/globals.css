@@ -1869,7 +1869,7 @@ em {
   .brand span { font-size: 16px; }
   .header-open { display: flex; align-items: center; justify-content: center; gap: 7px; padding-inline: 10px; text-align: center; line-height: 1.15; white-space: nowrap; }
   .header-open b { color: #111; font-size: 15px; }
-  .header-open span { color: var(--red); font-size: 17px; font-weight: 1000; }
+  .header-open .header-deadline { color: #c60016; font-size: 17px; font-style: normal; font-weight: 1000; }
   .header-cta { flex-basis: 190px; }
   .header-cta span { font-size: 12px; }
   .header-cta strong { font-size: 16px; }

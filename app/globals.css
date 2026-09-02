@@ -1717,7 +1717,7 @@ em {
 .staff-card > p { color: #4d4742; font-size: 13px; line-height: 1.8; text-align: left; }
 .staff-intro + .shell { margin-top: clamp(54px, 8vw, 84px); padding-top: clamp(30px, 5vw, 46px); border-top: 1px solid rgba(118,80,5,.28); }
 
-.area-section { background: linear-gradient(180deg, #f8f2e6, #fff); }
+.area-section { background: linear-gradient(180deg, #f8f2e6, #f1e3c8); }
 .area-content { max-width: 880px; }
 .area-list { display: flex; flex-wrap: wrap; gap: 7px; justify-content: center; }
 .area-list span { padding: 7px 12px; border: 1px solid var(--gold); border-radius: 99px; background: #fff; font-size: 12px; font-weight: 800; }
@@ -1743,7 +1743,12 @@ em {
 .reservation-block.dark > p { color: #fff; }
 .reservation-block.dark .contact-note { color: #ffe2e5; }
 
-.store-section { background: #fff; }
+.store-section {
+  position: relative;
+  border-top: 7px solid var(--gold-dark);
+  background: linear-gradient(180deg, #f1f6f9 0%, #fff 58%);
+  box-shadow: inset 0 2px 0 rgba(255,255,255,.9);
+}
 .store-grid { display: grid; gap: 25px; }
 .store-grid > figure { overflow: hidden; border: 1px solid var(--gold); background: #171514; }
 .store-image-crop { overflow: hidden; aspect-ratio: 4 / 3; }

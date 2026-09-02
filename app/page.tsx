@@ -467,7 +467,7 @@ function Hero() {
           <div className="store-grid">
             <figure><div className="store-image-crop"><img src={asset.store} alt="質屋かんてい局 城陽店 店舗外観" width="1448" height="1086" loading="lazy" /></div><figcaption>2026年12月<b>GRAND OPEN予定！</b></figcaption></figure>
             <dl className="store-details">
-              <div><dt>住所</dt><dd>京都府城陽市久世荒内318番</dd></div><div><dt>営業時間</dt><dd>準備中</dd></div><div><dt>電話番号</dt><dd><a href={contact.phoneHref}>070-1456-2797</a></dd></div><div><dt>駐車場</dt><dd>敷地内にあり</dd></div><div><dt>運営会社</dt><dd>株式会社Li-Lu<br /><small>親会社：株式会社リバティ<br />FC加盟会社 FTC株式会社</small></dd></div>
+              <div><dt>住所</dt><dd>京都府城陽市久世荒内318番</dd></div><div><dt>営業時間</dt><dd>準備中</dd></div><div><dt>電話番号</dt><dd>準備中</dd></div><div><dt>駐車場</dt><dd>敷地内にあり</dd></div><div><dt>運営会社</dt><dd>株式会社Li-Lu<br /><small>親会社：株式会社リバティ<br />FC加盟会社 FTC株式会社</small></dd></div>
             </dl>
           </div>
         </div>

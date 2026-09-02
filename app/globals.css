@@ -1087,7 +1087,7 @@ em {
   text-align: center;
 }
 
-.campaign-offer > .campaign-image { margin-top: 0; }
+.campaign-offer > .campaign-image { margin-top: -38px; }
 
 .campaign-section-heading {
   margin: 0 auto 18px;
@@ -1904,7 +1904,7 @@ em {
   .hero-campaign-cue p > span { width: 330px; max-width: 100%; }
   .hero-campaign-cue p > strong { font-size: 27px; }
   .hero-campaign-arrows { margin-top: 12px; }
-  .hero-cta { padding-top: 0; }
+  .hero-cta { padding-top: 8px; }
   .cta-buttons { grid-template-columns: 1fr 1fr; }
   .cta-button { min-height: 90px; }
   .cta-button strong { font-size: 22px; }
@@ -1931,6 +1931,7 @@ em {
   .open-copy .heading-rule { margin-inline: auto; }
   .open-grid > .store-photo { grid-column: 1; grid-row: 2; }
   .open-grid > .open-date { grid-column: 2; grid-row: 2; }
+  .open-grid { row-gap: 27px; }
   .open-date { margin-bottom: 0; padding-block: 24px; }
   .open-date span { font-size: 18px; }
   .open-date strong { margin-block: 6px; font-size: 54px; }
@@ -2001,6 +2002,7 @@ em {
   .why-section .campaign-image,
   .big-cta .campaign-image,
   .final-cta .campaign-image { width: 100%; max-width: 1000px; }
+  .campaign-offer > .campaign-image { margin-top: -64px; }
   .why-section .campaign-message,
   .big-cta .campaign-message,
   .final-cta .campaign-message {
@@ -2008,6 +2010,10 @@ em {
     text-align: center;
   }
   .mobile-sticky { display: none; }
+}
+
+@media (min-width: 850px) {
+  .results-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 16px; }
 }
 
 @media (min-width: 1024px) {
@@ -2025,7 +2031,6 @@ em {
     margin-inline: auto;
     gap: 18px;
   }
-  .results-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 16px; }
   .result-photo { min-height: 150px; }
   .result-copy { padding: 15px; }
 
@@ -2038,7 +2043,8 @@ em {
   .reason-card h3 { font-size: 25px; }
   .reason-card p { font-size: 14px; }
   .area-list { justify-content: flex-start; }
-  .area-note { text-align: left; }
+  .area-note { font-size: 18px; line-height: 1.6; text-align: left; }
+  .area-note strong { font-size: 21px; }
 }
 
 @media (min-width: 1280px) {

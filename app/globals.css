@@ -782,7 +782,7 @@ em {
 .hero-campaign-arrows {
   display: flex;
   justify-content: center;
-  gap: 8px;
+  gap: 18px;
   margin-top: 12px;
 }
 
@@ -790,8 +790,8 @@ em {
   width: 0;
   height: 0;
   border-top: 22px solid #c60016;
-  border-right: 18px solid transparent;
-  border-left: 18px solid transparent;
+  border-right: 23px solid transparent;
+  border-left: 23px solid transparent;
 }
 
 .hero-cta {
@@ -1087,7 +1087,7 @@ em {
   text-align: center;
 }
 
-.campaign-offer > .campaign-image { margin-top: -38px; }
+.campaign-offer > .campaign-image { margin-top: 10px; }
 
 .campaign-section-heading {
   margin: 0 auto 18px;

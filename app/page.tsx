@@ -419,6 +419,16 @@ function Hero() {
         </div>
       </section>
 
+      <section className="big-cta section-pad">
+        <div className="shell why-grid campaign-repeat-grid">
+          <div className="campaign-offer">
+            <div className="campaign-section-heading"><span>＼ OPENに向けて ／</span><strong>ただいま買取強化中！</strong><b className="campaign-section-deadline">OPEN前限定 <em>12/20まで</em></b></div>
+            <CampaignLockup />
+            <p className="campaign-message"><strong>「売ろうかな？」</strong>と思った<br />今がチャンス！<span className="campaign-message-note">ご相談だけでも大歓迎！</span></p>
+          </div>
+        </div>
+      </section>
+
       <section className="staff-section section-pad">
         <div className="shell staff-intro">
           <SectionHeading>私たちが<br /><em>お伺いします！</em></SectionHeading>
@@ -448,16 +458,6 @@ function Hero() {
           <SectionHeading>城陽市を中心に<br /><em>京都南部へ出張！</em></SectionHeading>
           <div className="area-list">{areas.map((area) => <span key={area}>{area}</span>)}</div>
           <p className="area-note">上記以外のエリアも<br /><strong>お気軽にお問い合わせください。</strong><br /><small>※正式な営業対象地域に差し替えてください</small></p>
-        </div>
-      </section>
-
-      <section className="big-cta section-pad">
-        <div className="shell why-grid campaign-repeat-grid">
-          <div className="campaign-offer">
-            <div className="campaign-section-heading"><span>＼ OPENに向けて ／</span><strong>ただいま買取強化中！</strong><b className="campaign-section-deadline">OPEN前限定 <em>12/20まで</em></b></div>
-            <CampaignLockup />
-            <p className="campaign-message"><strong>「売ろうかな？」</strong>と思った<br />今がチャンス！<span className="campaign-message-note">ご相談だけでも大歓迎！</span></p>
-          </div>
         </div>
       </section>
 

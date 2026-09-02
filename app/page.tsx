@@ -47,7 +47,7 @@ const asset = {
 } as const;
 
 const contact = {
-  phoneHref: "#store-info",
+  phoneHref: "tel:07014562797",
   lineHref: "#store-info",
 } as const;
 
@@ -467,8 +467,8 @@ function Hero() {
           <div className="store-grid">
             <figure><div className="store-image-crop"><img src={asset.store} alt="質屋かんてい局 城陽店 店舗外観" width="1448" height="1086" loading="lazy" /></div><figcaption>2026年12月<b>GRAND OPEN予定！</b></figcaption></figure>
             <dl className="store-details">
-              <div><dt>住所</dt><dd>店舗住所を入力</dd></div><div><dt>営業時間</dt><dd>準備中</dd></div><div><dt>電話番号</dt><dd>準備中</dd></div><div><dt>駐車場</dt><dd>敷地内にあり</dd></div><div><dt>運営会社</dt><dd>株式会社Li-Lu<br /><small>親会社：株式会社リバティ<br />FC加盟会社 FTC株式会社</small></dd></div>
-              <div className="map-placeholder"><dt>MAP</dt><dd>正式な住所確定後、地図を設置</dd></div>
+              <div><dt>住所</dt><dd>京都府城陽市久世荒内318番</dd></div><div><dt>営業時間</dt><dd>準備中</dd></div><div><dt>電話番号</dt><dd><a href={contact.phoneHref}>070-1456-2797</a></dd></div><div><dt>駐車場</dt><dd>敷地内にあり</dd></div><div><dt>運営会社</dt><dd>株式会社Li-Lu<br /><small>親会社：株式会社リバティ<br />FC加盟会社 FTC株式会社</small></dd></div>
+              <div className="map-placeholder"><dt>MAP</dt><dd>京都府城陽市久世荒内318番</dd></div>
             </dl>
           </div>
         </div>
@@ -518,7 +518,7 @@ function Footer() {
     <footer className="site-footer">
       <div className="shell footer-content">
         <strong>かんてい局 城陽店</strong>
-        <p>古物商許可番号：京都府公安委員会 第○○○○○○号（株式会社Li-Lu）</p>
+        <p>古物商許可番号：京都府公安委員会 第611092530082号（株式会社Li-Lu）</p>
         <nav className="footer-links" aria-label="フッターリンク">
           <span className="footer-link-placeholder">プライバシーポリシー</span><i>｜</i><span className="footer-link-placeholder">特定商取引法に基づく表記</span><i>｜</i><span className="footer-link-placeholder">利用規約</span>
         </nav>

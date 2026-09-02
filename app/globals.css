@@ -1755,6 +1755,7 @@ em {
 .store-details > div { display: grid; grid-template-columns: 92px 1fr; border-bottom: 1px solid #ddd3c5; }
 .store-details dt { padding: 13px 10px; background: var(--cream); font-size: 12px; font-weight: 900; }
 .store-details dd { padding: 13px 12px; color: #5d5650; font-size: 13px; }
+.store-details dd a { color: #c60016; font-weight: 900; text-decoration: underline; text-underline-offset: 3px; }
 .store-details .map-placeholder { grid-template-columns: 1fr; margin-top: 18px; border: 1px dashed var(--gold-dark); }
 .store-details .map-placeholder dt { text-align: center; }
 .store-details .map-placeholder dd { display: grid; min-height: 130px; place-items: center; background: repeating-linear-gradient(45deg,#f7f0e6 0 12px,#fff 12px 24px); text-align: center; }

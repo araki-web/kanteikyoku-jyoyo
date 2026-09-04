@@ -27,8 +27,8 @@ test("renders production metadata and tracking", async () => {
   assert.match(html, /<meta name="description" content="2026年12月、質屋かんてい局 城陽店がOPEN予定。/);
   assert.match(html, /<meta name="robots" content="index, follow">/);
   assert.match(html, /<link rel="canonical" href="https:\/\/li-lu\.libertynet\.jp\/jyoyo-pre-lp\/">/);
-  assert.match(html, /<meta property="og:image" content="https:\/\/li-lu\.libertynet\.jp\/jyoyo-pre-lp\/images\/og\.jpg">/);
-  assert.match(html, /<meta name="twitter:image" content="https:\/\/li-lu\.libertynet\.jp\/jyoyo-pre-lp\/images\/og\.jpg">/);
+  assert.match(html, /<meta property="og:image" content="https:\/\/li-lu\.libertynet\.jp\/jyoyo-pre-lp\/images\/og-20260904\.jpg">/);
+  assert.match(html, /<meta name="twitter:image" content="https:\/\/li-lu\.libertynet\.jp\/jyoyo-pre-lp\/images\/og-20260904\.jpg">/);
   assert.match(html, /GTM-MG693D6/);
   assert.doesNotMatch(html, /noindex|nofollow/i);
 });

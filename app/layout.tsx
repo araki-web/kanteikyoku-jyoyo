@@ -15,7 +15,7 @@ export function generateMetadata(): Metadata {
       locale: "ja_JP",
       url: "/jyoyo-pre-lp/",
       images: [{
-        url: "/jyoyo-pre-lp/images/og.jpg",
+        url: "/jyoyo-pre-lp/images/og-20260904.jpg",
         width: 1200,
         height: 630,
         alt: "質屋かんてい局 城陽店 2026年12月OPEN予定 出張買取の買取価格10%UP",
@@ -25,7 +25,7 @@ export function generateMetadata(): Metadata {
       card: "summary_large_image",
       title: "質屋かんてい局 城陽店｜出張買取10%UP",
       description: "OPEN前限定。12月20日まで出張買取の買取価格10%UP。",
-      images: ["/jyoyo-pre-lp/images/og.jpg"],
+      images: ["/jyoyo-pre-lp/images/og-20260904.jpg"],
     },
     icons: { icon: "/favicon.png", shortcut: "/favicon.png", apple: "/favicon.png" },
   };

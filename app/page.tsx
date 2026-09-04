@@ -2,16 +2,13 @@
 
 const asset = {
   logo: "/images/kanteikyoku-logo.png",
-  libertyLogo: "/images/liberty-logo.jpg",
   store: "/images/store.jpg",
   staff: "/images/staff.jpg",
-  staffSugitani: "/images/staff-sugitani-clean.png",
-  staffKamo: "/images/staff-kamo-clean.png",
+  staffSugitani: "/images/staff-sugitani-clean.webp",
+  staffKamo: "/images/staff-kamo-clean.webp",
   bag01: "/images/bag-01.jpg",
-  bag02: "/images/bag-02.jpg",
   watch: "/images/watch.jpg",
   jewelry01: "/images/jewelry-01.jpg",
-  jewelry02: "/images/jewelry-02.jpg",
   gold: "/images/gold.jpg",
   wallet: "/images/wallet.webp",
   diamond: "/images/diamond.webp",
@@ -20,29 +17,25 @@ const asset = {
   step01: "/images/step-01.webp",
   step02: "/images/step-02.webp",
   step03: "/images/step-03.webp",
-  homeItems: "/images/home-items.webp",
-  worriedWoman: "/images/worried-woman.png",
-  categoryWoman: "/images/category-woman.png",
   categoryPossibilityPc: "/images/category-possibility-pc.png",
   categoryPossibilitySp: "/images/category-possibility-sp.png",
-  fvProducts: "/images/fv-products.webp",
-  fvSp: "/images/fv-sp.png",
-  fvPc: "/images/fv-pc.png",
-  campaign10Up: "/images/campaign-simple-sp.png",
-  campaign10UpPc: "/images/campaign-simple-pc-20260901-v2.png",
+  fvSp: "/images/fv-sp-optimized.webp",
+  fvPc: "/images/fv-pc-optimized.webp",
+  campaign10Up: "/images/campaign-simple-sp-optimized.webp",
+  campaign10UpPc: "/images/campaign-simple-pc-optimized.webp",
   lineIcon: "/images/line-icon.png",
   phoneIcon: "/images/phone-icon.png",
-  reason02: "/images/reason-02-car-lot-staff.png",
+  reason02: "/images/reason-02-car-lot-staff.webp",
   reason03: "/images/reason-03.webp",
   concernA: "/images/concern-a.png",
   concernB: "/images/concern-b.png",
   concernC: "/images/concern-c.png",
   consultationIcons: [
-    "/images/consultation-recommend-01.png",
-    "/images/consultation-recommend-02.png",
-    "/images/consultation-recommend-03.png",
-    "/images/consultation-recommend-04.png",
-    "/images/consultation-recommend-05.png",
+    "/images/consultation-recommend-01.webp",
+    "/images/consultation-recommend-02.webp",
+    "/images/consultation-recommend-03.webp",
+    "/images/consultation-recommend-04.webp",
+    "/images/consultation-recommend-05.webp",
   ],
 } as const;
 
@@ -73,7 +66,29 @@ const purchaseResults = [
   { id: "08", image: "/images/purchase-result-08.webp", brand: "ジッポ | ZIPPO", product: "オイルライター", price: "¥2,000", date: "2026/8/28", store: "質屋かんてい局 つくば店" },
   { id: "09", image: "/images/purchase-result-09.webp", brand: "HUBLOT ウブロ", product: "クラシック・フュージョン チタニウム グリーン", price: "¥380,000", date: "2026/8/28", store: "質屋かんてい局 光の森店" },
   { id: "10", image: "/images/purchase-result-10.webp", brand: "SAINT LAURENT サンローラン", product: "スマホリング", price: "¥5,500", date: "2026/8/28", store: "質屋かんてい局 名古屋緑店" },
-] as const;
+  { id: "11", image: "/images/purchase-result-11.jpg", brand: "【CHANEL】 シャネル", product: "AP0230 クラシック スモール フラップ ウォレット", price: "¥68,000", date: "2026/09/04", store: "質屋かんてい局 市川インター店" },
+  { id: "12", image: "/images/purchase-result-12.jpg", brand: "TAG Heuer タグホイヤー", product: "CJF211N.BA0598 リンク スターダスクロノ", price: "¥125,000", date: "2026/09/04", store: "質屋かんてい局 名古屋緑店" },
+  { id: "13", image: "/images/purchase-result-13.jpg", brand: "Hermès【エルメス】", product: "ケリーフェスティバル／エトゥープ／ヴォースイフト／シルバー金具／バッグチャーム／ケリーモチーフ", price: "¥320,000", date: "2026/09/03", store: "質屋かんてい局 神戸大蔵谷インター店" },
+  { id: "14", image: "/images/purchase-result-14.jpg", brand: "【SEIKO】セイコー", product: "44-9990 キングセイコー 手巻き時計", price: "¥55,000", date: "2026/09/03", store: "加古川店" },
+  { id: "15", image: "/images/purchase-result-15.jpg", brand: "【LOUIS VUITTON】ルイヴィトン", product: "M44873 パームスプリングス バックパック MINI", price: "¥150,000", date: "2026/09/03", store: "質屋かんてい局 市川インター店" },
+  { id: "16", image: "/images/purchase-result-16.jpg", brand: "Cartier【カルティエ】", product: "W3103155 パシャ シータイマー", price: "¥170,000", date: "2026/09/03", store: "質屋かんてい局 富山インター店" },
+  { id: "17", image: "/images/purchase-result-17.jpg", brand: "LOUIS VUITTON ルイヴィトン", product: "M67498 モノグラム マヒナ ポルトフォイユ イリス XS イニシャル入り", price: "¥23,000", date: "2026/09/03", store: "質屋 かんてい局名古屋栄錦三丁目店" },
+  { id: "18", image: "/images/purchase-result-18.jpg", brand: "CHANEL", product: "プルミエール", price: "¥150,000", date: "2026/09/02", store: "かんてい局 仙台卸町店" },
+  { id: "19", image: "/images/purchase-result-19.webp", brand: "【ROLEX】ロレックス", product: "14270 / エクスプローラー1", price: "¥850,000", date: "2026/09/02", store: "質屋かんてい局 市川インター店" },
+  { id: "20", image: "/images/purchase-result-20.jpg", brand: "LOUIS VUITTON【ルイヴィトン】", product: "エピ マンダラMM", price: "¥13,000", date: "2026/09/02", store: "質屋かんてい局 光の森店" },
+  { id: "21", image: "/images/purchase-result-21.jpg", brand: "Cartier 【カルティエ】", product: "ミニラブリング/k18PG", price: "¥115,000", date: "2026/09/02", store: "新潟万代店" },
+  { id: "22", image: "/images/purchase-result-22.webp", brand: "CHANEL シャネル", product: "A92193 ボーイシャネル28 ラージ パンチングレザー チェーン ショルダーバッグ", price: "¥300,000", date: "2026/09/03", store: "質屋かんてい局 横浜港南店" },
+  { id: "23", image: "/images/purchase-result-23.jpg", brand: "Louis Vuitton", product: "M62709 キーホルダー･LVドラゴンヌ", price: "¥18,000", date: "2026/08/31", store: "かんてい局利府店" },
+  { id: "24", image: "/images/purchase-result-24.jpeg", brand: "【Pt999】プラチナ製品", product: "Pt999 枠Pt900 ペンダントトップ", price: "¥30,000", date: "2026/09/03", store: "飛田店" },
+  { id: "25", image: "/images/purchase-result-25.jpg", brand: "GUCCI グッチ", product: "バタフライ&ハートチャームネックレス", price: "¥7,000", date: "2026/09/03", store: "買取専門かんてい局 豊橋柱店" },
+  { id: "26", image: "/images/purchase-result-26.webp", brand: "グッチ｜GUCCI", product: "247205 GGキャンバス 2WAY", price: "¥44,000", date: "2026/09/02", store: "質屋かんてい局 土浦店" },
+  { id: "27", image: "/images/purchase-result-27.jpg", brand: "Pt900", product: "リング", price: "¥30,000", date: "2026/09/02", store: "かんてい局利府店" },
+  { id: "28", image: "/images/purchase-result-28.jpg", brand: "PRADA･プラダ", product: "ガレリア･サフィアーノ/ミディアム", price: "¥210,000", date: "2026/09/02", store: "美里店" },
+  { id: "29", image: "/images/purchase-result-29.webp", brand: "ロエベ", product: "A650T20X40 ゲートデュアルバッグ スモール", price: "¥100,000", date: "2026/09/02", store: "質屋かんてい局 つくば店" },
+  { id: "30", image: "/images/purchase-result-30.jpg", brand: "LOUIS VUITTON ルイヴィトン", product: "M97250 モノグラムシルエット シュシュ", price: "¥20,000", date: "2026/09/02", store: "質屋かんてい局 名古屋緑店" },
+];
+
+const purchaseResultPages = Array.from({ length: 3 }, (_, index) => purchaseResults.slice(index * 10, index * 10 + 10));
 
 const concerns = [
   "古いバッグ",
@@ -129,16 +144,16 @@ const areas = [
 ] as const;
 
 const faqs = [
-  ["出張買取には料金がかかりますか？", "※出張料・査定料など、正式な料金体系を入力してください。"],
-  ["査定してもらったら、必ず売らないといけませんか？", "※キャンセル可否・費用など、正式な運用回答を入力してください。"],
+  ["出張買取には料金がかかりますか？", "依頼をお受けした出張買取査定につきましては料金は一切かかりません。"],
+  ["査定してもらったら、必ず売らないといけませんか？", "出張手数料はいただいておりません。査定だけでも大歓迎です。"],
   ["どんなものを買取できますか？", "ブランドバッグ・時計・ジュエリー・貴金属などを取り扱う予定です。詳しい対象品はご予約時にご確認ください。"],
   ["古いものや壊れているものでも査定できますか？", "状態やお品物によって異なります。査定可能かどうか、まずは電話またはLINEでご相談ください。"],
-  ["箱や保証書がなくても大丈夫ですか？", "お品物によって異なります。付属品がない場合も、まずはご相談ください。"],
-  ["査定にはどのくらい時間がかかりますか？", "※品数や訪問条件に応じた、正式な所要時間の目安を入力してください。"],
+  ["箱や保証書がなくても大丈夫ですか？", "問題ございません。ただ、査定額に影響する可能性がございます。"],
+  ["査定にはどのくらい時間がかかりますか？", "品物の点数や、査定いただく種類によって異なります。査定時間を把握したい場合は事前にお電話かLINEにてご連絡ください。"],
   ["出張買取はどこまで来てもらえますか？", "城陽市を中心に京都南部などを想定しています。正式な対象エリアはご予約時にご確認ください。"],
-  ["10%UPキャンペーンはいつまでですか？", "2026年12月20日までの予定です。適用条件は確定後に本ページでご案内します。"],
-  ["10%UPの対象外商品はありますか？", "※対象商品・上限金額・対象外品・その他の適用条件を入力してください。"],
-  ["出張買取には何が必要ですか？", "※本人確認書類など、正式に必要なものを入力してください。"],
+  ["10%UPキャンペーンはいつまでですか？", "店舗オープン前の12月20日までです。"],
+  ["10%UPの対象外商品はありますか？", "特にありません。ただし上限金額は10万円までになります。"],
+  ["出張買取には何が必要ですか？", "査定当日は特に必要ございません。買取成約時に運転免許証やマイナンバーカードの確認をさせていただきます。"],
 ] as const;
 
 function PhoneIcon() { return <span className="button-icon phone-receiver" aria-hidden="true"><img src={asset.phoneIcon} alt="" /></span>; }
@@ -184,41 +199,20 @@ function SectionHeading({
   );
 }
 
-function CampaignLockup({ small = false, hero = false }: { small?: boolean; hero?: boolean }) {
-  if (hero) {
-    return (
-      <div className="campaign-lockup hero-campaign">
-        <div className="campaign-ribbon">
-          <span className="laurel-branch laurel-left" aria-hidden="true">{Array.from({ length: 7 }, (_, index) => <i key={index} />)}</span>
-          <b>OPENに向けて買取強化中！</b>
-          <span className="laurel-branch laurel-right" aria-hidden="true">{Array.from({ length: 7 }, (_, index) => <i key={index} />)}</span>
-        </div>
-        <div className="hero-offer">
-          <span className="hero-price-label" aria-label="買取価格"><i>買</i><i>取</i><i>価</i><i>格</i></span>
-          <div className="percent-line">
-            <span className="percent-number">10</span>
-            <span className="percent-unit"><b>%</b></span>
-          </div>
-          <div className="offer-copy"><strong>UP</strong></div>
-        </div>
-        <div className="deadline"><span>OPEN前限定</span><strong>12/20</strong>まで</div>
-      </div>
-    );
-  }
-
+function CampaignLockup() {
   return (
-    <figure className={`campaign-image${small ? " small" : ""}`}>
+    <figure className="campaign-image">
       <picture>
-        {!small && <source media="(min-width: 768px)" srcSet={asset.campaign10UpPc} />}
+        <source media="(min-width: 768px)" srcSet={asset.campaign10UpPc} />
         <img src={asset.campaign10Up} alt="買取査定金額が今だけ10%UP" width="1500" height="898" loading="lazy" />
       </picture>
     </figure>
   );
 }
 
-function ReservationBlock({ dark = false }: { dark?: boolean }) {
+function ReservationBlock() {
   return (
-    <div className={`reservation-block${dark ? " dark" : ""}`} id="reserve">
+    <div className="reservation-block">
       <p>＼ ご相談だけも大歓迎 ／</p>
       <CTAButtons />
     </div>
@@ -250,23 +244,23 @@ function Hero() {
           <div className="hero-fv-image">
             <picture>
               <source media="(min-width: 700px)" srcSet={asset.fvPc} />
-              <img src={asset.fvSp} alt="買取査定金額が今だけ10%UP。出張料・査定料・キャンセル料無料" width="1500" height="2042" />
+              <img src={asset.fvSp} alt="買取査定金額が今だけ10%UP。出張料・査定料・キャンセル料無料" width="1028" height="1400" fetchPriority="high" />
             </picture>
           </div>
         </div>
         <div className="hero-service-band">
           <p>城陽・宇治・京田辺など京都南部へ</p>
-          <strong aria-label="無料出張査定">
+          <strong role="img" aria-label="無料出張査定">
             {"無料出張査定".split("").map((character) => <i key={character}>{character}</i>)}
           </strong>
         </div>
-        <div className="hero-campaign-cue" aria-label="京都初出店記念 買取価格アップは12月20日まで">
+        <div className="hero-campaign-cue">
           <p><span><img src="/images/kyoto-first-opening.png" alt="京都初出店記念" width="940" height="136" /></span><strong>買取価格UPは<em>12/20</em>まで</strong></p>
           <div className="hero-campaign-arrows" aria-hidden="true"><i /><i /><i /></div>
         </div>
       </section>
 
-      <section className="hero-cta section-pad" aria-label="出張買取のご予約">
+      <section className="hero-cta section-pad" aria-label="出張買取のご予約（ページ上部）">
         <div className="shell"><ReservationBlock /></div>
       </section>
 
@@ -274,20 +268,37 @@ function Hero() {
         <div className="shell">
           <SectionHeading eyebrow="PURCHASE RESULTS">買取実績</SectionHeading>
           <p className="results-lead">全国の質屋かんてい局でお買取りした実績をご紹介します。</p>
-          <div className="results-grid">
-            {purchaseResults.map((result) => (
-              <article className="result-card" key={result.id}>
-                <div className="result-photo"><img src={result.image} alt={`${result.brand} ${result.product}`} width="1200" height="1200" loading="lazy" /></div>
-                <div className="result-copy">
-                  <p className="result-brand">{result.brand}</p>
-                  <h3>{result.product}</h3>
-                  <strong>{result.price}</strong>
-                  <dl><div><dt>買取日</dt><dd>{result.date}</dd></div><div><dt>店舗名</dt><dd>{result.store}</dd></div></dl>
+          <div className="results-carousel-shell" data-results-carousel-shell>
+            <button className="results-carousel-button is-prev" type="button" aria-label="前の10件を見る" data-results-carousel-prev disabled>‹</button>
+            <div className="results-carousel" data-results-carousel>
+              {purchaseResultPages.map((page, pageIndex) => (
+                <div className="results-page" role="group" key={`page-${pageIndex + 1}`} aria-label={`${pageIndex + 1}ページ目`}>
+                  <div className="results-grid">
+                    {page.map((result) => (
+                      <article className="result-card" key={result.id}>
+                        <div className="result-photo">
+                          <img src={result.image} alt={`${result.brand} ${result.product}`} width="1200" height="1200" loading="lazy" />
+                        </div>
+                        <div className="result-copy">
+                          <p className="result-brand">{result.brand}</p>
+                          <h3>{result.product}</h3>
+                          <strong>{result.price}</strong>
+                          <dl><div><dt>買取日</dt><dd>{result.date}</dd></div><div><dt>店舗名</dt><dd>{result.store}</dd></div></dl>
+                        </div>
+                      </article>
+                    ))}
+                  </div>
                 </div>
-              </article>
-            ))}
+              ))}
+            </div>
+            <button className="results-carousel-button is-next" type="button" aria-label="次の10件を見る" data-results-carousel-next>›</button>
+            <div className="results-carousel-controls" role="group" aria-label="買取実績のページ切り替え">
+              {purchaseResultPages.map((_, index) => <button type="button" key={index} aria-label={`${index + 1}ページ目を表示`} aria-current={index === 0 ? "true" : undefined} data-results-carousel-dot={index} />)}
+              <span className="results-carousel-status" aria-live="polite" data-results-carousel-status>1 / 3</span>
+            </div>
           </div>
           <p className="results-note">※買取価格は商品の状態・付属品・相場などにより変動します。</p>
+          <a className="results-more-link" href="https://kanteikyoku.jp/purchase_result/">その他の買取実績をみる</a>
         </div>
       </section>
 
@@ -337,7 +348,7 @@ function Hero() {
         <div className="shell condition-grid">
           <div>
             <SectionHeading>こんなお品物も<br /><b className="condition-heading-line"><em>諦める前に</em><i className="condition-heading-break"><br /></i>ご相談ください！</b></SectionHeading>
-            <div className="condition-concern-images" aria-label="よくあるご相談">
+            <div className="condition-concern-images" role="group" aria-label="よくあるご相談">
               <article className="concern-visual-card">
                 <img src={asset.concernA} alt="ボロボロだけど大丈夫？" width="634" height="217" loading="lazy" />
               </article>
@@ -387,15 +398,15 @@ function Hero() {
               <h3>全国チェーンの実績と<br /><em>確かな査定力</em></h3>
               <figure className="reason-store"><img src={asset.store} alt="質屋かんてい局 城陽店の外観" width="1448" height="1086" loading="lazy" /></figure>
               <div className="reason-services"><span><b>買取</b>BUY</span><span><b>販売</b>SELL</span><span><b>質預かり</b>PAWN</span></div>
-              <p>かんてい局は、全国に店舗を展開する<strong>質屋・リユースショップのチェーン</strong>。各地で培った豊富な取引実績と相場データを査定に活かしています。</p>
+              <p>かんてい局は、1982年創業・全国75店舗を展開する<strong>質屋・リユースショップのチェーン</strong>。各地で培った豊富な取引実績と相場データを査定に活かしています。</p>
               <p>買取・販売・質預かりを通じて蓄積した専門知識で、ブランドバッグ、時計、ジュエリー、貴金属などの<strong>本来の価値を見極めます。</strong></p>
             </article>
             <article className="reason-card liberty">
               <span>REASON <b>02</b></span>
               <h3>運営の親会社は<br /><em>株式会社リバティ</em>です。</h3>
               <figure className="reason-store"><img src={asset.reason02} alt="自動車展示場で車をご案内する爽やかなスタッフのイメージ" width="1536" height="1152" loading="lazy" /></figure>
-              <div className="reason-services reason-liberty-stats"><span><b>全国約40拠点</b>NETWORK</span><span><b>グループ売上<br />600億円規模</b>GROUP SALES</span><span><b>地域最大級<br />の展示場</b>SHOWROOM</span></div>
-              <p>CMやラジオの<strong>「リーリーリーリバティー！」</strong>のフレーズで親しまれている株式会社リバティは、全国に約40拠点を構え、<strong>グループ売上高約600億円</strong>を誇る自動車販売企業です。豊富な実績と安定した経営基盤をもとに、地域社会の皆様へ心からご満足いただける「安心」をお約束いたします。</p>
+              <div className="reason-services reason-liberty-stats"><span><b>全国約40拠点</b>NETWORK</span><span><b>創業から<br />買取総台数<br />約10万台</b>PURCHASES</span><span><b>地域最大級<br />の展示場</b>SHOWROOM</span></div>
+              <p>CMやラジオの<strong>「リーリーリーリバティー！」</strong>のフレーズで親しまれている株式会社リバティは、全国に約40拠点を構え、<strong>買取総台数は創業から約10万台</strong>を誇る自動車販売企業です。豊富な実績と安定した経営基盤をもとに、地域社会の皆様へ心からご満足いただける「安心」をお約束いたします。</p>
             </article>
             <article className="reason-card campaign"><span>REASON <b>03</b></span><h3>12月のOPENに向けて<br /><em>現在買取強化中！</em></h3><figure className="reason-store reason-product-image"><img src={asset.reason03} alt="買取強化中のブランドバッグ、時計、ジュエリー" width="1254" height="1254" loading="lazy" /></figure><p>12月の城陽店OPENに向けて、現在<strong>ブランドバッグ・時計・ジュエリー・貴金属</strong>などの買取を強化しています。OPEN前の今だからこそ、地域の皆様にかんてい局の査定力と便利な出張買取を知っていただけるよう、一点ずつ丁寧に価値を見極めます。<strong>買取価格10%UPは12月20日まで</strong>の期間限定です。</p></article>
           </div>
@@ -408,7 +419,7 @@ function Hero() {
           <div className="consultation-scroll">
             {consultationExamples.map((item, index) => (
               <article className="consultation-card" key={item.text}>
-                <div className="consultation-person" aria-label={`${item.person}のご相談イメージ`}>
+                <div className="consultation-person">
                   <img src={asset.consultationIcons[index]} alt="" width="178" height="187" loading="lazy" />
                 </div>
                 <p>{item.text}</p>
@@ -457,7 +468,7 @@ function Hero() {
         <div className="shell area-content">
           <SectionHeading>城陽市を中心に<br /><em>京都南部へ出張！</em></SectionHeading>
           <div className="area-list">{areas.map((area) => <span key={area}>{area}</span>)}</div>
-          <p className="area-note">上記以外のエリアも<br /><strong>お気軽にお問い合わせください。</strong><br /><small>※正式な営業対象地域に差し替えてください</small></p>
+          <p className="area-note">上記以外のエリアも<br /><strong>お気軽にお問い合わせください。</strong></p>
         </div>
       </section>
 
@@ -493,7 +504,7 @@ function Hero() {
           </div>
         </div>
       </section>
-      <section className="final-cta-followup" aria-label="出張買取のご予約">
+      <section className="final-cta-followup" aria-label="出張買取のご予約（ページ下部）">
         <div className="final-cta-followup-inner shell">
           <b>＼ ご相談だけも大歓迎 ／</b>
           <CTAButtons />
@@ -519,7 +530,7 @@ function Footer() {
         <strong>かんてい局 城陽店</strong>
         <p>古物商許可番号：京都府公安委員会 第611092530082号（株式会社Li-Lu）</p>
         <nav className="footer-links" aria-label="フッターリンク">
-          <span className="footer-link-placeholder">プライバシーポリシー</span><i>｜</i><span className="footer-link-placeholder">特定商取引法に基づく表記</span><i>｜</i><span className="footer-link-placeholder">利用規約</span>
+          <span className="footer-link-placeholder">プライバシーポリシー</span><i>｜</i><span className="footer-link-placeholder">特定商取引法に基づく表記</span>
         </nav>
       </div>
       <p className="copyright">© 2026 質屋かんてい局 城陽店</p>

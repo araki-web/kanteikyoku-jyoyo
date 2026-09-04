@@ -530,7 +530,7 @@ function Footer() {
         <strong>かんてい局 城陽店</strong>
         <p>古物商許可番号：京都府公安委員会 第611092530082号（株式会社Li-Lu）</p>
         <nav className="footer-links" aria-label="フッターリンク">
-          <span className="footer-link-placeholder">プライバシーポリシー</span><i>｜</i><span className="footer-link-placeholder">特定商取引法に基づく表記</span>
+          <a href="/privacy-policy.html" target="_blank" rel="noopener noreferrer">プライバシーポリシー</a><i>｜</i><a href="/tokushoho.html" target="_blank" rel="noopener noreferrer">特定商取引法に基づく表記</a>
         </nav>
       </div>
       <p className="copyright">© 2026 質屋かんてい局 城陽店</p>

@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { readFile } from "node:fs/promises";
 import test from "node:test";
 
 async function render() {
@@ -41,4 +42,24 @@ test("renders accessible images and all purchase results", async () => {
   assert.doesNotMatch(html, /正式な.+入力してください/);
   assert.doesNotMatch(html, /\son[a-z]+=/i);
   assert.doesNotMatch(html, /javascript:/i);
+});
+
+test("links to complete legal pages in a new tab", async () => {
+  const renderedHtml = await (await render()).text();
+  assert.match(renderedHtml, /href="\/privacy-policy\.html" target="_blank" rel="noopener noreferrer"/);
+  assert.match(renderedHtml, /href="\/tokushoho\.html" target="_blank" rel="noopener noreferrer"/);
+
+  const staticIndex = await readFile(new URL("../jyoyo-pre-lp/index.html", import.meta.url), "utf8");
+  assert.match(staticIndex, /href="\.\/privacy-policy\.html" target="_blank" rel="noopener noreferrer"/);
+  assert.match(staticIndex, /href="\.\/tokushoho\.html" target="_blank" rel="noopener noreferrer"/);
+
+  const privacy = await readFile(new URL("../jyoyo-pre-lp/privacy-policy.html", import.meta.url), "utf8");
+  assert.match(privacy, /<h1>個人情報保護方針<\/h1>/);
+  assert.match(privacy, /Ⅱ　保有個人データ（開示対象個人情報）の開示等請求手続きについて/);
+  assert.match(privacy, /kanteikyoku-joyo@g\.li-lu\.jp/);
+
+  const commerce = await readFile(new URL("../jyoyo-pre-lp/tokushoho.html", import.meta.url), "utf8");
+  assert.match(commerce, /<h1>特定商取引法に基づく表記/);
+  assert.match(commerce, /既存顧客様限定オープン前先行買取キャンペーン/);
+  assert.match(commerce, /第611092530082号/);
 });
